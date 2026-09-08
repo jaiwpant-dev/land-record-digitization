@@ -1,0 +1,33 @@
+{
+  "benchmark_type": "field_extraction",
+  "dataset": {
+    "name": "Repository land-record fixture baseline",
+    "version": "1",
+    "license": "Repository-provided fictional demonstration fixture",
+    "split": "test",
+    "ground_truth_method": "Values are the independently encoded fixture expectations used by tests/test_extraction.py and tests/test_validation.py.",
+    "selection": "The complete currently available labeled land-record fixture set (one document).",
+    "representativeness": "Not representative of production land records. It is an integration baseline only and must not be used to claim population accuracy."
+  },
+  "samples": [
+    {
+      "id": "sample-land-record-fixture-001",
+      "image": "../../../sample_documents/sample_land_record.png",
+      "ground_truth": {
+        "owner_name": "Rahul Kumar",
+        "father_name": "Ramesh Kumar",
+        "district": "Nainital",
+        "tehsil": "Bhimtal",
+        "village": "Demo Village",
+        "khata_number": "KH-1001",
+        "khasra_number": "123/2",
+        "area": {
+          "value": "2.50",
+          "unit": "hectare"
+        },
+        "land_type": "Agricultural"
+      },
+      "ground_truth_evidence": "evidence/sample-land-record-fixture-001.json"
+    }
+  ]
+}

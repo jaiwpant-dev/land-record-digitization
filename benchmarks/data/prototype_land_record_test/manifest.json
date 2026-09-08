@@ -1,0 +1,142 @@
+{
+  "benchmark_type": "field_extraction",
+  "dataset": {
+    "name": "Synthetic land-record prototype baseline",
+    "version": "1",
+    "license": "Repository-created fictional demonstration data",
+    "split": "test",
+    "ground_truth_method": "Frozen values authored before benchmark execution; no ground-truth field is passed to the API.",
+    "selection": "Four representative, programmatically rendered single-record layouts with invented data.",
+    "representativeness": "PROTOTYPE BASELINE ONLY. It is not a government-record or population-accuracy claim."
+  },
+  "samples": [
+    {
+      "id": "prototype-en-001",
+      "image": "images/prototype-en-001.png",
+      "language": "eng",
+      "ground_truth": {
+        "owner_name": "Aarav Mehta",
+        "father_name": "Vikram Mehta",
+        "district": "Nainital",
+        "tehsil": "Bhimtal",
+        "village": "Suryagaon",
+        "khata_number": "KH-2101",
+        "khasra_number": "101/2",
+        "area": {
+          "value": "1.25",
+          "unit": "hectare"
+        },
+        "land_type": "Agricultural"
+      },
+      "ocr_ground_truth": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Aarav Mehta\nFather Name: Vikram Mehta\nDistrict: Nainital\nTehsil: Bhimtal\nVillage: Suryagaon\nKhata No: KH-2101\nKhasra No: 101/2\nArea: 1.25 hectare\nLand Type: Agricultural",
+      "source_ground_truth": {
+        "owner_name": "Aarav Mehta",
+        "father_name": "Vikram Mehta",
+        "district": "Nainital",
+        "tehsil": "Bhimtal",
+        "village": "Suryagaon",
+        "khata_number": "KH-2101",
+        "khasra_number": "101/2",
+        "land_type": "Agricultural",
+        "area": "1.25",
+        "area_unit": "hectare"
+      }
+    },
+    {
+      "id": "prototype-en-002",
+      "image": "images/prototype-en-002.png",
+      "language": "eng",
+      "ground_truth": {
+        "owner_name": "Nisha Verma",
+        "father_name": "Mohan Verma",
+        "district": "Almora",
+        "tehsil": "Ranikhet",
+        "village": "Pine Valley",
+        "khata_number": "KH-2102",
+        "khasra_number": "88/3",
+        "area": {
+          "value": "0.75",
+          "unit": "acre"
+        },
+        "land_type": "Orchard"
+      },
+      "ocr_ground_truth": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Nisha Verma\nFather Name: Mohan Verma\nDistrict: Almora\nTehsil: Ranikhet\nVillage: Pine Valley\nKhata No: KH-2102\nKhasra No: 88/3\nArea: 0.75 acre\nLand Type: Orchard",
+      "source_ground_truth": {
+        "owner_name": "Nisha Verma",
+        "father_name": "Mohan Verma",
+        "district": "Almora",
+        "tehsil": "Ranikhet",
+        "village": "Pine Valley",
+        "khata_number": "KH-2102",
+        "khasra_number": "88/3",
+        "land_type": "Orchard",
+        "area": "0.75",
+        "area_unit": "acre"
+      }
+    },
+    {
+      "id": "prototype-en-003",
+      "image": "images/prototype-en-003.png",
+      "language": "eng",
+      "ground_truth": {
+        "owner_name": "Kabir Singh",
+        "father_name": "Dev Singh",
+        "district": "Pithoragarh",
+        "tehsil": "Didihat",
+        "village": "River Bend",
+        "khata_number": "KH-2103",
+        "khasra_number": "240/1",
+        "area": {
+          "value": "3.00",
+          "unit": "hectare"
+        },
+        "land_type": "Pasture"
+      },
+      "ocr_ground_truth": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Kabir Singh\nFather Name: Dev Singh\nDistrict: Pithoragarh\nTehsil: Didihat\nVillage: River Bend\nKhata No: KH-2103\nKhasra No: 240/1\nArea: 3.00 hectare\nLand Type: Pasture",
+      "source_ground_truth": {
+        "owner_name": "Kabir Singh",
+        "father_name": "Dev Singh",
+        "district": "Pithoragarh",
+        "tehsil": "Didihat",
+        "village": "River Bend",
+        "khata_number": "KH-2103",
+        "khasra_number": "240/1",
+        "land_type": "Pasture",
+        "area": "3.00",
+        "area_unit": "hectare"
+      }
+    },
+    {
+      "id": "prototype-en-004",
+      "image": "images/prototype-en-004.png",
+      "language": "eng",
+      "ground_truth": {
+        "owner_name": "Ira Shah",
+        "father_name": "Ketan Shah",
+        "district": "Dehradun",
+        "tehsil": "Vikasnagar",
+        "village": "Green Field",
+        "khata_number": "KH-2104",
+        "khasra_number": "19/4",
+        "area": {
+          "value": "450",
+          "unit": "square_meter"
+        },
+        "land_type": "Residential"
+      },
+      "ocr_ground_truth": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Ira Shah\nFather Name: Ketan Shah\nDistrict: Dehradun\nTehsil: Vikasnagar\nVillage: Green Field\nKhata No: KH-2104\nKhasra No: 19/4\nArea: 450 sq m\nLand Type: Residential",
+      "source_ground_truth": {
+        "owner_name": "Ira Shah",
+        "father_name": "Ketan Shah",
+        "district": "Dehradun",
+        "tehsil": "Vikasnagar",
+        "village": "Green Field",
+        "khata_number": "KH-2104",
+        "khasra_number": "19/4",
+        "land_type": "Residential",
+        "area": "450",
+        "area_unit": "square_meter"
+      }
+    }
+  ]
+}

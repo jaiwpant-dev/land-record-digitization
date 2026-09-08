@@ -1,0 +1,1040 @@
+{
+  "dataset": {
+    "name": "FUNSD",
+    "language": "English",
+    "modality": "real noisy scanned forms",
+    "license": "Official FUNSD terms: non-commercial research and educational use only",
+    "source_url": "https://guillaumejaume.github.io/FUNSD/",
+    "terms_url": "https://guillaumejaume.github.io/FUNSD/work/",
+    "download_url": "https://guillaumejaume.github.io/FUNSD/dataset.zip",
+    "split": "testing_data",
+    "ground_truth_source": "Original paired JSON form[*].words[*].text; copied unchanged under annotations/",
+    "annotation_decoding": "UTF-8, with Windows-1252 fallback for legacy official JSON; source bytes are copied unchanged.",
+    "transcription_serialization": "Words retain supplied text and entity order; words in an entity are space-separated and entities newline-separated.",
+    "selection": "first 50 annotation filenames in lexical order from official testing_data"
+  },
+  "benchmark_type": "generic_ocr",
+  "evaluated_images": 50,
+  "skipped_images": [],
+  "http_responses_received": 50,
+  "transport_failures": 0,
+  "successful_http_requests": 0,
+  "failed_http_requests": 50,
+  "ocr_text_available": 50,
+  "ocr_text_unavailable": 0,
+  "exact_matches": 0,
+  "exact_match_rate": 0.0,
+  "character_errors": 25787,
+  "reference_characters": 53011,
+  "character_error_rate": 0.486446,
+  "http_status_counts": {
+    "422": 50
+  },
+  "pipeline_status_counts": {
+    "failed": 50
+  },
+  "land_record_field_extraction_accuracy": null,
+  "land_record_field_extraction_note": "Not applicable: this is a generic word/line OCR dataset, not a labeled land-record field dataset.",
+  "samples": [
+    {
+      "id": "82092117",
+      "image": "images\\82092117.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "\nTO:\nDATE:\n3\nFax:\nNOTE:\n82092117\n614 -466 -5087\nDec 10 '98 17 :46 P. 01\nATT. GEN. ADMIN. OFFICE\nAttorney General Betty D. Montgomery\nCONFIDENTIAL FACSIMILE TRANSMISSION COVER SHEET\n(614) 466- 5087\nFAX NO.\nGeorge Baroody\n(336) 335- 7392\nFAX NUMBER:\nPHONE NUMBER:\n(336) 335- 7363\nNUMBER OF PAGES INCLUDING COVER SHEET:\nJune Flynn for Eric Brown/ (614) 466- 8980\nSENDER /PHONE NUMBER:\nSPECIAL INSTRUCTIONS:\nIF YOU DO NOT RECEIVE ANY OF THE PAGES PROPERLY, PLEASE CONTACT SENDER AS SOON AS POSSIBLE\nTHIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED. CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. If the reader of this message is not the intended recipient of the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or conveying of this communication in any manner is strictly prohibited. If you have received this comunication in error, please notify us immediately by telephone and return the original message to us at the address below via the U. S. Postal Service. Thank you for your cooperation.\nState Office Tower / 30 East Broad Street/ Columbus, Ohio 43215 -3428 www ag state oh us An Equal Opportunity Employer\n Primed an  \n12 /10 /98",
+      "prediction": "x\n\nATT. GEN. ADMIN. OFFICE Fax+614-466-5087 Dec 10 \"98 17:46 P.Ot\n\n4 Attorney General\nBetty D. Montgomery\n\nCONFIDENTIAL FACSIMILE\nTRANSMISSION COVER SHEET\n\nFAX NO, (614) 466-5087\n\nTO: _ George Baroody\n\nFAX NUMBER: ___(336) 335-7392 PHONE NUMBER: (336) 335-7363\nDATE: ___ 12/10/98 ;\n\nNUMBER OF PAGES INCLUDING COVER SHEET: 3\n\nSENDER/PHONE NUMBER: June Flynn for Eric Brown/(614) 466-3980\nSPECIAL INSTRUCTIONS:\nIF YO! Le) OP’\n\nTHIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO:\nWHOM IT JS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED,\n\nthe message to the intended reciplent, you are hereby aotified that any dissemination, ‘distribution,\ncopying, or conveying of this communication in any manner Is strictly prohibited, if you have\nreceived this communication in error, please notify us immediately by telephone and rem the\nrigs macaeng fo at: tis eee ehaw vin Sip US: Pose) Goren Tira 909, fo yor\ncoopéfation.\n\nState Office Tower / 30 East Broad Street / Columbus, Ohio 43215-3428",
+      "exact_match": false,
+      "character_errors": 589,
+      "reference_characters": 1349,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82200067_0069",
+      "image": "images\\82200067_0069.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\nx\nSUBJECT:\n\n\nDIVISION:\nDIVISION:\nDIVISION:\nDIVISION:\n\nREGION:\nDIVISION:\nDIVISION:\nDIVISION:\n225\n27\n15\n31\n18\n19\n20\n82200067\n09/ 17/ 97 10: 55  603 841 1898\nLORILLARD PTLD\n☑ 001\nK. A. Sparrow\nT. D. Blachly\nOLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S  PROGRESS REPORT\nAUG 4\nSEP 15\nMAY 12\nJUN 23\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE)\nPortland # REPS: 6\nBoise # REPS: 2. 5\nEugene # REPS: 5\nSeattle South # REPS: 7\nSeattle North # REPS: 4\nHelena # REPS: 4\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S\nNAME OF ACCOUNT\n VOLUME\nNO. OF STORES\nNAME OF ACCOUNT\n VOLUME\nNO. OF STORES\nTexaco  Seattle\nTexaco  Portland\nMaid -O Clover\nDari Mart\nZip Trip\nMaverick\nAstro Gas\n105 / 5\n61 / 3\n20 / 2\n125 / 5\n106 / 4\n77 / 1\n600 / 7\n  \n \nPage 1 of 3 Pages",
+      "prediction": "08/17/97 =: 10:55 503 641 1898 LORILLARD PTLD Boor\n\nTO: K. A. Sparrow\n\nFROM: T.D, Blachly\n\nSUBJECT:\n\nREGION:\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S} SCOPE)\n\nDIVISION:\nDIVISION: Partland # REPS: 6 DIVISION: Soattle South #REPS: 7\nDIVISION: Boise # REPS: 2.5 DIVISION; Seattle North PREPS: 4\n\n# REPS: 5 DIVISION: Helena @REPS: 6\n\nDIVISION: Eugene\n\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION\n(15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S\n\nPaget of 3 Pages\n\nBets OGMUD-1B ode\n\n£9000228",
+      "exact_match": false,
+      "character_errors": 581,
+      "reference_characters": 849,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82250337_0338",
+      "image": "images\\82250337_0338.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\nDATE:\nMANUFACTURER:\nBRAND:\nOct.\nDec.\nJan.\nNov.\nX\nB&W\n82250337\nCOMPETITIVE PRODUCT INTRODUCTION PROGRESS REPORT\nSam Zolot\nKool Waterfall\nAll Packings\nTYPE OF PACKINGS:\nD. J. Landro\n2- Dec- 97\nREPORTING PERIODS:\nTEST MARKET GEOGRAPHY:\nDivisions 621 and 627 wisconsin\nPRICE POINT:\nFULLS $ P/ V $\n(Indicate Distributor's Cost Per Carton)\nSALES FORCE INVOLVEMENT:\nThey have crew- worked distribution, and it is reported that they may crew- work it again Sales force has been busy promoting old style backs to clean up inventory. All POS is being converted to \"B\" Kool.\nDISTRIBUTORS ACCEPTANCE INTRO TERMS INTRO DEALS INVOLVEMENT:\nAll accounts have the new packaging. It was not a problem obtaining new distribution. All accounts appear to have 100% distribution of new packings.\nCHAINS ACCEPTANCE/ MERCHANDISING:\nThis has not been a problem. New packaging is just following  on the old \"packaging\".\nINDEPENDENTS ACCEPTANCE/ MERCHANDISING:\nVery well received. The  packs are peing consolidated and promoted in select retail locations at 40 off $4 00 off cartons.\nADVERTISING EFFECTIVENESS OF P. O. S.:\nThe theme \"B\" Kool has replaced all previous POS. They have effectively replaced all old POS. New door signage, hour signs, poster mats, and clocks have the new design. \"B\" Kool also appears on billboards in llinois.\nPAGE 1 OF 2",
+      "prediction": "COMPETITIVE PRODUCT INTRODUCTION\nPROGRESS REPORT\n\nTO: Sam Zolot MANUFACTURER: Baw.\nFROM: D. J. Landro BRAND: Kool Waterfall\nDATE: 2-Dec-97 TYPE OF PACKINGS: All Packings _\n\nREPORTING PERIODS: Nov. X Dec.\n\nTEST MARKET GEOGRAPHY: Divisions 621 and 627\n\nPRICE POINT: FULL S PVS$ (indicate Distributor's Cost Per Carton)\n\nSALES FORCE INVOLVEMENT:\nThey have crew-worked distribution, and it is reported that they may crew-work it again. Sales force has been busy\n\npromoting old style packs to clean up inventory. All POS is being converted to \"B* Kool.\n\nDISTRIBUTORS - ACCEPTANCE/INTRO TERMS/INTRO DEALS/INVOLVEMENT:\n\nAll accounts have the new packaging. It was not a problem obtaining new distribution. All accounts appear\n\nto have 100% distribution of new packings.\n\nCHAINS - ACCEPTANCE/MERCHANDISING:\nThis has not been a problem. New packaging is just following up on the old “packaging”.\n\nINDEPENDENTS - ACCEPTANCE/MERCHANDISING:\nVery weil received. The old packs are being consolidated and promoted in select retail locations at 40¢\noff/$4.00 off cartons.\n\nADVERTISING - EFFECTIVENESS OF P.O.S.:\n\nThe theme \"B\" Koo! has replaced all previous POS. They have effectively replaced all old POS. New\ndoor signage, hour signs, poster mats, and clocks have the new design. “B\" Kool also appears on billboards\n\nin Illinois.\n\nPAGE 1 OF 2\n\nLEE0S228",
+      "exact_match": false,
+      "character_errors": 242,
+      "reference_characters": 1334,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82251504",
+      "image": "images\\82251504.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "17\ncc:\n:\nFrom:\nArea:\nRegion:\n5\nX\nChains:\nIndependents:\n82251504\n11/05/97 11: 03\n 813 384 0683\nLORILLARD TAMPA GREENSBOR\n0002/ 003\n \nRetail Excel Progress Report\nSubmission for:\nDistribution by/ to:\nDM to RSM 1st of Month RSM to R W. C. 10th\nD. O. S.\nR. W. Caldarella\nKent B. Mills\nJuly 31\nAugust 29\nSeptember 30\nOctober 31\nNovember 28\nDecember 30\nAcceptance/ Response:\nWhat is the retailers response to Lorillard's Excel\nMerchandising plan?\nThis program has been successful to date with chains where our \"Flex\nPayment\". was not  place. The chains where  were using the \"Flex Payment\" system we have not been las successful. The P. O. S. requirements of the P- 1 Plan with Oil Companies is difficult to obtain.\nAdditional P. V. merchandising is being secured quickly,\nAdditional monies have assisted Region 17 in fighting PM Exclusives and PM/ RJR co-existence situations.\nHardware Evaluation/ Effectiveness:\nComment on the assembly of displays and\napplication of shields:\nThe displays are easily assembled and durable. Some questions have been raised conceming the inability to be flush with the counter and/ or  against the register. As well as the ability to place this or the Back Bar if the settlement goes through\nPemanent Advertising Evaluation/ Effectiveness/ Acceptance: (P- 1/ P- 5 & C 5 Plans Only:\nNot available at this time",
+      "prediction": ": 11/08/97 11:03 T3813 884 0663 LORILLARD_TAXPA _ +++ GREENSBOR 002/003\n\na aa\n\nRetail Excel Progress Report\n\nSubmission for: Distribution by/to:\n\nJuly 37 () OM to RSM 1st of Month\nAugust29( ) To: B.W. Caldarella RSM to RW.C, 10th\nSeptember 30 ( ) cc: D.O.S.\n\nOctober 31 (X) From: Kent 8, Mills\n\nNovember 28 ( )\n\nDecember 30 ( ) Area: 5 Region: 17\n\nAcceptance/Response: What is the retailers response to Lorillard's Excel\nMerchandising plan?\nhains:\n\nHardware Evaluation/Effectiveness: Comment on the assembly of displays and\napplication of shields:\nhe displays are easil\n\nvOSLSZZ8",
+      "exact_match": false,
+      "character_errors": 962,
+      "reference_characters": 1335,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82252956_2958",
+      "image": "images\\82252956_2958.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "AUG 4\nSEP 15\nJUN 23\nMAY 12\nREGION:\nDIVISION:\n7\n7\nTO:\nFROM:\nSUBJECT:\nOLOGOLD.XLS\n82252956\nGEOGRAPHY\nDISTRIBUTION\n144/14\n93\nK. A. Sparrow\nSUBMISSION DATE\nD. J. Landro\nOLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S PROGRESS REPORT\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE)\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nMilw. South\nMilw. North\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\n# REP\n# REP\n# REPS\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S\nNAME OF ACCOUNT\nIND/LOR VOLUME\nNO. OF STORES\nNAME OF ACCOUNT\nIND/LOR VOLUME\nNO. OF TORES\nPage1 of 3 Pages\nWalgreen Drug",
+      "prediction": "TO: K. A. Sparrow\n\nFROM: D. J. Landro mayi2f |= aucatCisd\nJun 23x] sepas[_\n\nSUBJECT: OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S - PROGRESS REPORT\n\nREGION:\n\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S) SCOPE)\n\nDIVISION:\nDIVISION NAME: Milw. South DIVISION NAME: #REP Zz\nDIVISION NAME: Milw. North _ DIVISION NAME: # REP 7\nDIVISION NAME: DIVISION NAME: #REPS\n\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION\n(15 + STORES) STOCKING NO OLD GOLD MENTHOL LIGHTS OR ULTRA LIGHTS 100'S\n\nOLOGOLO.XLS Page1 of 3 Pages",
+      "exact_match": false,
+      "character_errors": 314,
+      "reference_characters": 667,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82253058_3059",
+      "image": "images\\82253058_3059.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "82253058\nLORILLARD\nTO:\nFROM:\nDATE:\nAUG\nSEPT\nOCT\nNOV\nMANUFACTURER\nBRAND:\nX\n12/ 10/ 36 09: 51\n 317 8450977\n 001/ 002\nCOMPETITIVE PRODUCT INTRODUCTION\nPROGRESS REPORT\nMRS. K. A. SPARROW\nR. J. Reynolds\nCamel Menthol\nFull Flavor Box and Light Box\nTYPE OF PACKINGS:\nR. G. Ryan\n12/ 10/ 96\nREPORTING PERIODS:\n(Forward by the 10th of the following month.)\nTEST MARKET GEOGRAPHY\nAll of Region 7.\nPRICE POINT:\nFULL $ 11.89 P/ V $ (Indicate Distributor's Cost Per Carton)\nMerchandising the top tray of permanent counter displays and labeling\ncarton fixtures in the Camel section. Also placing metal signs and temporary counter displays.\nSALES FORCE INVOLVEMENT:\nDISTRIBUTORS - ACCEPTANCE/ INTRO TERMS/ INTRO DEALS:\nProduct is being introduced to all Direct: Accounts in the Region. Acceptance is spotty at this time.\nDISTRIBUTOR INVOLVEMENT:\nAssembly of promotional products and shipment to retail Indianapolis Direct Accounts are reported to be receiving B1G1F product.\nCHAINS - ACCEPTANCE/ MERCHANDISING ALLOWANCE\nChain acceptance has been very good.\nINDEPENDENTS - ACCEPTANCE/ MERCHANDISING ALLOWANCE\nAcceptance is better at high volume locations than at lower volume retail calls.\nCAMEL WK1/ FMT\nPAGE 1 OF 2",
+      "prediction": "be\n\n12/10/36 09:54 ‘@317 845097) LORILLARD\n\nCOMPETITIVE PRODUCT INTRODUCTION\nPROGRESS REPORT\n\nTO: MRS. K. A. SPARROW MANUFACTURER: R. J. Reynolds .\n\nFROM: RG. Ryan BRAND: Camel Menthol _\nDATE: 1210/96 TYPE OF PACKINGS: Full Flavor Box and Light Box\n\nREPORTING PERIODS: AUG SEPT ocT\n(Forward by the 10th of the following month.)\n\n‘TEST MARKET GEOGRAPHY: __AllofRegion7.\n\nPRICE POINT: FULL $11.89 PVS_\n\nSALES FORCE INVOLVEMENT: Merchandising the top tray of permanent counter displays and labeling\ncarton fixtures in the Camel section, Also placing metal signs and temporary counter displays.\n\nDISTRIBUTORS — ACCEPTANCE/INTRO TERMS/INTRO DEALS:\nProduct is being introduced to all Direct Accounts in the Region. Acceptance is spotty at at this time.\n\nDISTRIBUTOR INVOLVEMENT:\nAssembly of promotional products an\nreceiving 81G1F product.\n\nCHAINS — ACCEPTANCE/MERCHANDISING ALLOWANCE\nChain acceptance has been very good.\n\nINDEPENDENTS — AOCEETANCE MER CHANDENS ALOWANCE:\n\n82253058\n\nCAMEL.WK1/FMT PAGE 1 OF 2\n\nBooroo2",
+      "exact_match": false,
+      "character_errors": 467,
+      "reference_characters": 1199,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82253245_3247",
+      "image": "images\\82253245_3247.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\nSUBJECT:\nX\nPRE-\nSELL\nDISTRIBUTION\nSheetz\n18\n150\n183\n21\n82\n106\n87\n5\n23\n35\n43\nKroger\ncvs\n82253245\nK. A. Sparrow\nR. E. Lane\nSUBMISSION DATE\nJUNE 30\nAUG 11\nSEP 22\nNOV 10\nSTYLE LOW PRICE PROGRESS REPORT\nEFFECTIVENESS OF: Transition Plan\n(Report on June 30 only)\nOverall pre- sell efforts were successful Retail accounts that previously stocked\nStyle Full Price accepted the introduction of the low price\nBIGIF 2 FOR 1:\nProved to be an excellent tool for pulling the balance of Style Full Price packs through\nthe system. This aided the field greatly during the transition\n$ 7.00 CARTON COUPON/ BUYDOWN:\nEffective in those retail calls that we could not exchange product out of.\nThose situations were limited.\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO LOW PRICE STYLE\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO. OF STORES\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO. OF STORES\nM. Maskos & Sons\nPollock Candy and Cigar\nMcKeesport Candy Co.\nSicc Serva\nThrift/ Eckerd\n104/ 22\n521/ 42\n137/ 20\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15+ STORES) STOCKING NO LOW PRICE STYLE\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO OF STORES\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO OF STORES\nRich Oil\nSuper America\nW H Smith\n7- 11 318 Zon\nDairy Marts\nWidman Drugs\nSTYLE XLS\nPage 1 of 3 Pages",
+      "prediction": "\" +\nTO: ‘ KA. Sparrow SUBMISSION DATE\n\nFROM: RE. Lane June sof xX] sep22 [9\nAuG 11 C9 Novio (7)\nSUBJECT: STYLE LOW PRICE - PROGRESS REPORT\n: : EERCTIVENESS OmTranaion PI\n(Report on June 30 only)\nPRE-SELL Overall pre-sell efforts were successful, Retail accounts that previously stocked\n\nStyle Full Price accepted the introduction of the low price.\n\nBIGIF /2 FOR 1: Proved to be an excellent tool for pulling the balance of Style Full Price packs through\nthe system. This aided the field greatly during the transition.\n\n$7.00 CARTON COUPON/BUYDOWN: Effective in those retail calls that we could not exchange product out of.\n\nThose situations were limited.\n\nRECT At NTS. Sa CHAINS Hi UARTERED WITHIN THE RI\n(iS + STORES) STOCKING NO LOW PRICE STYLE\n\nThrittfEckerd\n\nRECT ACCOUNTS AND CHAI I JAR OUTSIDE THE Ri\n(45 + STORES) STOCKING NO LOW PRICE STYLE\n\n82\n406\n\nAe\n\n11 318 Zon\n\nSTYLE.XLS. Page1 of 3 Pages\n\nS¥CZSC78",
+      "exact_match": false,
+      "character_errors": 580,
+      "reference_characters": 1307,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82253362_3364",
+      "image": "images\\82253362_3364.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\nSUBJECT:\n☑\nGEOGRAPHY\nREGION:\nFULL\nX\nDIVISION:\nFULL\nPARTIAL\nPARTIAL\nDISTRIBUTION\n20\n15\n29\n44\n17\n34\n15\n20\n22\n27\n15\n37\nChevron\nExxon\nWalgreen's\n?\n?\n?\n?\n?\n?\n?\n115\n38\n217\n38\n27\n70\n177\n82253362\nMAVPROGO\nK. A. Sparrow\nSUBMISSION DATE\nMAY 19 ☐\nJUN 30 ☐\nAUG 11 ☐\nSEP 22\nJ. L. McGinnis\nMAVERICK SPECIALS MENTHOL - PROGRESS REPORT\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE)\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\n# REPS\n# REPS\n# REPS\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO. OF STORES\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO. OF STORES\nSac N Pac\nACO Texaco\nLone Star\n75/ 2\n95/ 3\n76/ 3\n26/ 2\n42/ 2\n106 /4\n62/ 2\n78/ 4\n319/ 16\n65/ 3\n69/ 3\n80/ 4\nShopper Mart\nNeal One Stop\nMini Mart\nAlbertson's -Houston\nValley Shamrock\nGet  Go\nSpeedy Stop\nWestern Beverage\nDon & Bens\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL\nNAME OF ACCOUNT\nIND/ LOR VOLUME\nNO. OF STORES\nNAME OF ACCOUNTS\nIND/ LOR VOLUME\nNO. OF STORES\nBrookshire Bro's\nEckerd Drugs  S. Texas\nPhilip's 66\nStar Enterprise\nPage 1 of 3 Pages",
+      "prediction": "TO: , K.A. Sparrow 7 SUBMISSION DATE\nFROM: Ji. McGinnis may 19 (—) Aus 11)\nyun 30 [—) SEP 22 Sa\n\nSUBJECT:\n\nREGION: FULL _X PARTIAL,\n\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S) SCOPE)\n\nDIVISION: FULL, PARTIAL.\nDIVISION NAME: DIVISION NAME; # REPS\nDIVISION NAME: DIVISION NAME: #REPS\nDIVISION NAME: DIVISION NAME: #REPS\n\nIRI EAI bi\n(15+ STORES STOCKING NO MAVERICK SPECIALS. MENTHOL\n\nMAVPROGXLS Page of 3 Pages\n\nCISESCTS",
+      "exact_match": false,
+      "character_errors": 946,
+      "reference_characters": 1218,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82254765",
+      "image": "images\\82254765.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\n1/24/97\n2\n1\n1\n1\nITEMS\nzbulan\n82254765\n01/17/97\nREQFORM\n1500\n500\nK. A. SPARROW\nDATE TO NYO:\nS. Reindel\nNassau/ 107\nDIV. NAME/ NO:\n1997 SPECIAL EVENT REQUEST FORM\nNAME OF EVENT:\n\"DATE OF EVENT:\n3/18/97\nH. Levinson Tradeshow\nSAMPLE 10'S (400 PACKS PER CASE)\nSAMPLES/ ITEMS REQUIRED:\nNEWPORT K. S.\nNEWPORT 100's\nNEWPORT LTS K. S.\nNEWPORT LTS. 100\nKENT III K. S.\n# CASES\nKENT GL LTS K. S.\n GL 100\nKENT III 100\nTRUE K. S.\nKENT K. S.\nKENT 100\nQUANTITY REQUIRED\nBASEBALL CAP\nWATER BOTTLES\nSHIP TO:\nCUSTOMER SHIPPING NUMBER\n198- 1160006\nNYO ONLY:\nDATE FORWARDED TO PROMOTION SERVICES:\nPLEASE ALLOW 6 WEEKS FOR PROCESSING OF YOUR REQUEST",
+      "prediction": "DIV. NAME / NO: Nassau _/ 107\n\n1997 SPECIAL EVENT REQUEST FORM\n\nNAME OF EVENT: H. Levinson Tradeshow\n“DATE OF EVENT: 3/18/97\n\nSAMPLES / ITEMS REQUIRED: SAMPLE 10'S (400 PACKS PER CASE)\n\ni CASES\n\nNEWPORTKS. KENT UIKS. KENT GLLTSKS.\nNEWPORT 100'S KENT I 100 KENT GL 100\nNEWPORT LTS. KS. “TRUEKS. 1\nNEWPORT LTS. 100 KENTKS. I\n\n~ KENT 100 _\n\n_ _ ITEMS QUANTITY REQUIRED\n\n_ BASEBALL CAP 1500\n\n- _WATER BOTTLES - 500\nSHIP TO:\n‘CUSTOMER SHIPPING NUMBER 198-1160006\nNYO ONLY:\nDATE FORWARDED TO PROMOTION SERVICES: Ll Pi\n\n* PLEASE ALLOW 6 WEEKS FOR PROCESSING OF YOUR REQUEST.\n\nREQFORM\n\nDATETONYO: 1/24/97\n\nGOLYS7C8\n\n01/17/97",
+      "exact_match": false,
+      "character_errors": 369,
+      "reference_characters": 637,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82491256",
+      "image": "images\\82491256.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "COURT:\nJUDGE:\nAsbestos\nCASE FORM\nCASE NAME:\nLORILLARD ENTITIES:\nDATE FILED:\nDATE SERVED:\nCASE TYPE:\nPLAINTIFF COUNSEL:\nLORILLARD COUNSEL:\nTRIAL DATE:\nWartnick, Chaber, Harowitz, Smith & Tigerman Madelyn J. Chaber 101 California Street, Suite 2200 San Francisco, California 94111 415 986- 5566\nAugust 3, 1998\nJuly 23, 1998\nLorillard Tobacco Company\nSan Francisco Superior Court - No. 996378\nWanda G. Robinson and Carroll Robinson v Raybestos- Manhattan, et al.\n82491256 94624999",
+      "prediction": "CASE NAME:\nCOURT:\n\nLORILLARD\nENTITIES:\n\nDATE FILED:\n\nDATE SERVED:\n\nCASE TYPE:\n\nPLAINTIFF'S\nCOUNSEL:\n\nLORILLARD\nCOUNSEL:\n\nTRIAL DATE:\n\nCASE FORM\nWanda G. Robinson and Carroll Robinson y. Raybestos-Manhattan, et al.\n\nSan Francisco Superior Court - No. 996378\n\nLorillard Tobacco Company\nSuly 23, 1998\nAugust 3, 1998\nAsbestos\nWartnick, Chaber, Harowitz, Smith& Tigerman\nMadelyn J. Chaber\n101 California Street, Suite 2200\n\nSan Francisco, California 94111\n415/986-5566\n\nIGZL6¥Z8\n\n666h29h6\n\n|",
+      "exact_match": false,
+      "character_errors": 333,
+      "reference_characters": 477,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82504862",
+      "image": "images\\82504862.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "COURT:\nAsbestos\nJUDGE:\nCASE FORM\nCASE NAME:\nLORILLARD ENTITIES\nDATE FILED\nDATE SERVED\nCASE TYPE:\nPLAINTIEE'S COUNSEL:\nLORILLARD COUNSEL:\nTRIAL DATE:\n82504862 946225115\nWartnick Chaber, Harowitz, Smith& Tigerman StephenM. Tigerman 101 California Street Suite 2200 San Francisco California 94111  \nAugust 3, 1998\nLorillard Tobacco Company\nSan Francisco Superior Court- No. 996382\nDonald D. Sellers and Robin J. Sellers v. Raybestos Manhattan et al.",
+      "prediction": "CASE NAME:\n\nCOURT:\n\nLORILLARD\n\nDATE FILED:\nDATE SERVED:\nCASE TYPE:\n\nPLAINTIFF'S\nCOUNSEL:\n\nLORILLARD\nCOUNSEL:\n\nJUDGE:\n\nTRIAL DATE:\n\nCASE FORM\nDonald D. Sellers and Robin J . Sellers v. Raybestos-Manhattan, et al.\nSan Francisco Superior Court - No. 996382\n\nLorillard Tobacco Company\n\nAugust 3, 1998\nAsbestos\n\n‘Wartnick, Chaber, Harowitz, Smith& Tigerman\nStephenM.Tigerman\n\n101 California Street, Suite 2200\n\nSan Francisco, California 94111\n\n415/986-S566\n\n69840528\n\nSIUIS29h6",
+      "exact_match": false,
+      "character_errors": 345,
+      "reference_characters": 446,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82562350",
+      "image": "images\\82562350.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Fax\nLORILLARD TOBACCO COMPANY\n\n001/004\nTo:\nFax:\nCC:\nRe:\nFrom:\nDate:\nFax:\nPages:\nUrgent\n4\nComments:\nCONFIDENTIALITY\nNOTE\nTelephone:\n82562350\n05/01/00 10:21\n612 894 9690\nLORILLARD RGNY 11\nMr. Randy Spell\nRick Redfield\nMay 1, 2000\n952 894- 9690\nMr. Fred Paternostro\nLegal- lowa\nFor Review\nPlease Comment\nPlease Reply\nplease Recycle\nAttached is the Iowa Department of Revenue and Finance Minimum Legal Prices on Cigarettes as of April 3, 2000. I am attempting to obtain a copy of the actual Fair Trade Law and will forward as soon as obtained. Rick\nThis facsimile may contain privileged and confidential information intended only for the use of the individual  entity named above. If the mader of the facsimile is not the intended recipient or employee or delivering. It to the intended recipient you are hereby notified that any dissemination for copying of this facsimile is strictly prohibited. If you have received his facsimile in error, please notify us immediately by telephone (number indicated below) and return the original facsimile to us at the address below via the U.S Postal Service.\n205 River Ridge Circle P. O. Box 7589 Bumsville, MN 5337\n(952) 694-2238",
+      "prediction": "05/01/00\n\n10:21 GZ $94 9890 LORILLARD_RGN#LL\n\nSuh COMPANY\n\nFax\n\nTo: Mr. Randy Spell From: Rick Redfield\nFax: Date: May 1, 2000\ncc: Mr. Fred Patemostro Foxx 952 894-9690\nRe: Legal —lowa Pages: 4\n\nClurgent ()rorReview []PleaseCommont [CJptexse Reply [(]Ptease Recycle\n\nComments:\n\nAttached ts the lowa Department of Revenue and Finance Minimum Legal Prices\non Cigarettes as of April 3, 2000. | am attempting to obtain a copy of the actual\nFair Trade Law and will forward as soon as obtained.\n\nRick\n\nCONFIDENTIALITY NOTE\n\n‘This facelmile rary contain privdeged and confidential Information intended only for tho uso of tha Individual or enlty named\nabove, Ifthe reader of tha facsimile is not the intended reciplent or employee or agent responsible for defivering it to the\nintended recipient, you aco hereby nobiied that any dissemination or copying of this facsimile is striclly prohibited. if you havo\nreceived this facsimnie in emror, please nolily us imenediately by telephone (numbor indicated below) and return tho original\nfacsimile to us at tre address below via the U.S, Postel Service.\n\n208 River Ridge Circle\nP.O. Box 1588\nBumsvilie, MN 55337\n\nTelephone: (852) 894-2238\n\nZoot /oot\n\nOSE79S28",
+      "exact_match": false,
+      "character_errors": 411,
+      "reference_characters": 1166,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82573104",
+      "image": "images\\82573104.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "82573104\n\nDate:\nTo:\nFrom:\nRoom:\nMESSAGE:\nCOVINGTON & BURLING\nxc: RB5 12- 9- 99   RECEIVED DEC -9 1999 R B. SPELL\n1201 Pennsylvania Avenue, N W. P. O. Box 7566 Washington D. C. 20044- 7566 (202) 662- 6000 Fax Numbers (202) 662 6291 or (202) 737 0528 Fax Operator (202) 662- 6280\nTHIS FACSIMILE TRANSMISSION  INTENDED ONLY FOR THE ADDRESSEE SHOWN BELOW LIT MAY CONTAIN INFORMATION THAT IS PRIVILEGED CONFIDENTIAL OR OTHERWISE PROTECTED FROM DISCLOSURE ANY REVIEW DISSEMINATION OR USE OF THIS TRANSMISSION OR ITS CONTENTS BY PERSONS OTHER THAN THE ADDRESSEE IS STRICTLY PROHIBITED  YOU HAVE RECEIVED THIS TRANSMISSION  ERROR PLEASE NOTIFY US IMMEDIATELY AND MAIL THE ORIGINALI TO AT THE ABOVE ADDRESS\nDecember 9, 1999\nHaney H. Bell, Esq.\nDavid H. Remes (202) 778 5212 - direct fax\n803E // Pages (including cover)\n  \n     ",
+      "prediction": "xc: RBS\n\n12-9299\n\nFam RE NED\nCOVINGTON & BURLING pc -9 1999\nR. B. SPELL\n\n1201 Pennsylvania Avenue, N.W.\nP.O. Box 7566\nWashington, D.C. 20044-7566\n(202) 662-6000\nFax Numbers (202) 662-6291 or (202) 737-0528\nFax Operator: (202) 662-6280\n\nTHIS FACSIMILE TRANSMISSION IS INTENDED ONLY FOR THE ADDRESSEE SHOWN\nBELOW. IT MAY CONTAIN INFORMATION THAT IS PRIVILEGED, CONFIDENTIAL OR OTHERWISE\nPROTECTED FROM DISCLOSURE. ANY REVIEW, DISSEMINATION OR USE OF THIS TRANSMISSION\n\nOR ITS CONTENTS BY PERSONS OTHER THAN THE ADDRESSEE IS STRICTLY PROHIBITED. IF\nYOU HAVE RECEIVED THIS TRANSMISSION IN ERROR, PLEASE NOTIFY US IMMEDIATELY AND\nMAIL THE ORIGINAL TO US AT THE ABOVE ADDRESS.\n\nDate: December 9, 1999\nTo: Haney H. Bell, Esq.\nFrom: David H. Remes\n\n(202) 778-5212 — direct fax\n\nRoom: 803E\n\nUV, Pages (including cover)\n\nMESSAGE:\n\nFOLELSZE\n\nToOR ONITHNG ¥ NOLONTAOD Xvd GOTT 66/60/2T",
+      "exact_match": false,
+      "character_errors": 197,
+      "reference_characters": 818,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "82837252",
+      "image": "images\\82837252.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DATE:\nTIME:\nMRA\nMANUFACTURER:\ncc:\n82837252\nNEW COMPETITIVE PRODUCTS\nREPORTED BY:\nBOBBY MILLS, REGIONAL SALES MGR., INDIANAPOLIS, IN\n8/ 10/ 90\nSOURCE OF INFORMATION:\nHALL RODECAP, NOBLESVILLE, IN\nB & W\nVICEROY KING BOX AND VICEROY LIGHTS KING BOX\nBRAND NAME:\nTYPE OF PRODUCT:\nSIZE OR SIZES:\nLIST PRICE:\nEXTENT OF DISTRIBUTION:\nSEE ATTACHED INFORMATION SHEET\nOTHER INFORMATION:\nG. Telford F. J. Schultz A. W. Spears N. P. Ruffalo T.  Achey P. J. McCann A. J. Giacolo\nJ. J. Tatulli L. H. Kersh J. R. Slater S. T. Jones R S. Goldbrenner E. R. Harrow\nA. H. Tisch R. H. Orcutt M. A. Peterson T. H. Mau L. Gordon J. P. Mastandrea",
+      "prediction": "NEW COMPETITIVE PRODUCTS\n\nBOBBY MILLS, REGIONAL SALES MGR., INDIANAPOLIS, IN\n\nDATE:_8/10/90  JiME:.\n\nVICEROY KING BOX AND VICEROY LIGHTS KING BOX\n\nSEE ATTACEED INFORMATION SHEET\n\n| A G. Telford J. J. Tatulli\n“F. J. Schutz L. H. Kersh\nA. W. Spears J. R. Slater\nN. P. Ruffalo .\nT.L Achey 8. T. Jones\nP. J. McCann R. S. Goldbrenner\nA. J. Giacolo E.R, Harrow\n\neseleseg",
+      "exact_match": false,
+      "character_errors": 369,
+      "reference_characters": 622,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83443897",
+      "image": "images\\83443897.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DATE:\nCOMPANY:\nPHONE:\nFROM:\nPHONE:\nMESSAGE:\nYES\nNO\n2\nX\n83443897\nJAN 11 '99 16: 29 FR 8220\nTO 3212128557HC02N P. 01\nDICKSTEIN SHAPIRO MORING OSHINSKY \nFAX TRANSMISSION\nJanuary 11, 1999\nL8557 002\nDewey Tedder\nLorillard Tobacco Company\n336/ 373- 6917\n336/ 373- 6750\nAndy Zausner and Rob Mangas\n202/ 828- 2259 and 202/ 828 2241\nCLIENT NO.:\nMESSAGE TO:\nFAX NUMBER:\nPAGES (including Cover Sheet):\nHARD COPY TO FOLLOW\nJAN 1 2 1999\nThe following is for your review\nIf your receipt of this transmission is in error, please notify this firm immediately by collect call to our Facsimile Department at 202- 861- 9106, and send the original transmission to us by return mail at the address below.\nThis transmission is intended for the sole use of the individual and entity to whom it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable law. You are hereby notified that any dissemination, distribution or duplication of this transmission by someone other than the intended addressee or its designated agent is strictly prohibited.\n2101 L Street NW Washington, DC 20037- 1526 Tel 202- 785 9700 Fax 202- 887 0689",
+      "prediction": "JAN 11 °99 16:29 FR 8220 TO 32121 ZESS7HEO2H P.O1\n\nFAX TRANSMISSION\n\nDICKSTEIN\nSHAPIRO\n\nMORIN\nOSHINSKY\n\nDATE: January 11, 1999\nCLIENTNO.: 18557.002\n\nMESSAGE TO; Dewey Tedder\n\nCOMPANY: Lorillard Tobacco Company\nFAX NUMBER: 336/373-6917\nPHONE: 336/373-6750\n\nFROM: Andy Zausner and Rob Mangas\nPHONE; 202/828-2259 and 202/828-2241\nPAGES (including Cover Sheet): _ 2 | HARD COPY TO FOLLOW: -- - YES X_NO\n\nMESSAGE: [The following is for your review.\n\nJAN 12 1899\n\nIf your ceccipt of this transmission is in error, please notify this firm immediately by\ncollect call to our Facsimile Department at 202-861-9106, and send the original\ntransmission to us by return mail at the address below.\n\n\"This transmission is intended for the sole use of the individual and entity to whom it is addressed, and\nmay contain information ehat is privileged, confidential and exempt from disclosure under applicable\nlaw. You are hereby notified thar any dissemination, disuibution or duplication of this transmission by\nsomeone other than the intended addressee or its designated agent is strictly prohibited.\n\n21011 Street NW Washington, DC 20037-1526 Tel 202-785-9700 Fax 202-887-0689\n\nLESSHHSS",
+      "exact_match": false,
+      "character_errors": 306,
+      "reference_characters": 1164,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83553333_3334",
+      "image": "images\\83553333_3334.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Sender\nDate\nTo\nReference\nNovember\n12,\n1999\n6\nMessage:\n8355333\n11/ 12/ 99 19: 32 FAA 212 450 4800\nDPW 1048\n UUZ/ DUS\nDAVIS POLK & WARDWELL\nFax Transmittal\n450 Lexington Avenue New York, NY 10017 212- 450- 4000\nCharles Duggan\nNumber of Pages (this page included)\nSender Voice Number\nIf problems receiving this fax, call\n212- 450- 4785\n212- 450- 4785\nSender Fax Number\n212- 450- 3785\n17555 002\nFax Number\nCompany\nRecipient Phone Number\nThomas M. Sobol\n617- 439- 3278\nBrown Rudnick Freed & Gesmer\n617- 330- 9000\n843- 720 9000\nNess, Motley, Loadholt, Richardson & Poole\n843- 720- 9290\nJoseph F. Rice\nRobert V. Costello Jeffrey D. Woolf\n617- 722- 0286\n415- 956- 1008\nRichard M. Heimann\nMichael P. Thornton\n617- 720- 2445\nThomton, Early & Naumes\n617- 720- 1333\n415- 956- 1000\n617- 227- 7500\nSchneider, Reilly, Zabin & Costello\nLieff, Cabraser & Heimann\nConfidentiality Note\nThis    only for the person or entity       may   besi  pavilegedal \nof otherwis protected from disclosos. Disscnlation, distribution  popying of the facile  the information herein by anyone other than the  poupil,   waployee   responsible for delivering the message  the    prohibited.  You   thisfacsimile in error please notify as immediately by telephone and return the facsimile by mail.",
+      "prediction": "SA/AZ/¥¥ AVIGE FAA ZLz aDU asuU pew .vae lw vuz/ous\n\n. DAViS POLK & WARDWELL\n\nRS\n\nFax Transmittal Sender\nselec heres Duggan arene a\n212-850-4000 Date of Pages (this page inch\nNovember 12,1998 8\nSender Voice Number If problems receiving this fax, call\n212-450-4785 212-450-4785\nSender Fax Number Reference\n212-450-3785 17555-002\nTo Fax Number Company Recipient Phone Number\nThomas M. Sobol 617-439-3278 Brown Rudnick Freed 617-330-9000\n& Gesmer\nJoseph F. Rice 843-720-9290 Ness, Motley, 843-720-8000\nLoadholt,\nRichardson &\nPoole\nRobert V. Costello 617-722-0286 Schneider, Reilly, 617-227-7500\nJeffrey D. Woolf Zabin & Costello\nRichard M.Heimann 415-956-1003 Lieff, Cabraser & 415-956-4000\nHeimann\nMichael P. Thornton 617-720-2445 Thomton, Early & 617-720-1333\nNaumes\nMessage:\nfoe)\nw\no\non\nWw\nw\nw\nWw\n0¢ otherwise protected from disclosure, Disscenination, distribatian or copying of this facsunile o¢ the informstion hercin by anyone other than the imended\nrevipied, ws au exiployee or agent roaponsible for delivering the message tothe intended recipient, is prohibited. If you have received thitecsimile in exror,\n\nplease notify us immediately by telephone ad retunn the facsimile by raail,",
+      "exact_match": false,
+      "character_errors": 662,
+      "reference_characters": 1259,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83573282",
+      "image": "images\\83573282.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Date:\nFrom:\nRe:\nCOMMENTS:\nRecipient(s):\nCompany:\n83573282\nUrgent!\nDeliver\nImmediately\n04/ 14/ 99 18: 36 FAX 206 623 0594\nHAGENS BERMAN\nHAGENS BERMAN Attorney  Law\nWA Fee Pay    Agree XC: JAW\n1301 FIFTH AVENUE, SUITE 2900 SEATTLE, WA 98101 TELEPHONE (206) 623 7293 FACSIMILE (206) 623- 0594\nFACSIMILE COVER SHEET\nJanuary 14, 1999\nNo. of Pages\n37 (including this page)\n1129. 01\nFile No.:\nTobacco - Fee Payment Agreement and Release\nSteve W. Berman\nPhone No.:\nFax No.:\n(212) 403- 2000\n(212) 450- 4800\n(917) 663- 5399\n(502) 568- 7297\n(336) 335- 7707\n(336) 741- 2998\n(312) 861- 2200\n(312) 861- 2000\n(212) 450- 4000\n(212) 403- 1000\nWachtell, Lipton, Rosen & Katz\nDavis, Polk & Wardwell\nPhilip Morris Inc.\nBrown & Williamson Tobacco Corp.\nLorillard Tobacco Co.\nR. J. Reynolds Tobacco Co\nKirkland & Ellis\nMr. Stephen R. Patton\nMr. Charles A. Blixt\nMr. Ronald Milstein\nMr. F. Anthony Burke\nMr. Martin Barrington\nMr. Arthur F. Golden\nMr. Meyer G. Koplow\nPlease call the Support Center at (206) 268- 9312 or\nat ext\nif you do\nnot receive all of these pages or if there is a problem.\nThe information contained in this facsimile is confidential and may also be attorney privileged. The information is intended only for the use of the individual or entity to whom it is addressed. If you are not the intended recipient, or the employee or agent responsible for delivering it to the intented recipient, you are hereby notified  any use, dissemination, distribution or copying of this communication is strictly prohibited. If you have received this facsimile in error, please immcdiately notify us by a collect  call to (206) 623- 7292, and return the original message to us at the address above via the US Postal Service. Thank you.\nA PROFESSIONAL SERVICE CORPORATION",
+      "prediction": "A fee- Fay,\n—~«fl/14499 18:56 FAX 206 G23 a) HAGENS BERMAN r\") “ foo1/0$7 Aare.\n\nXe: Srod\n\n1301 FIfTH AVENUE, SUITE agoo » SEATTLE, WA 98101\nTRLEPHONE (206) 623-7292 - FACSIMILE (205) 623-0594\n\nFACSIMILE COVER SHEET\n\nJanuary 14, 1999 No. of Pages 3 2 Giocinding this page)\nSteve W. Berman File No.: \\ a ka O\\\n\nTobacco - Fee Payment Agreement and Release\n\nMr. Meyer G. Koplow Wachtell, Lipton, Rosen (212) 403-1000 (212) 403-2000\n\n& Katz\nMr. Arthur F. Golden Davis, Polk & Wardwell (212) 450-4000 (212) 450-4800\nMr. Martin Barrington Philip Morris Inc. (917) 663-5399\nMr. F. Anthony Burke Brown & Williamson (S02) 568-7297\nTobacco Corp.\nMr. Ronald Milstein Lorillard Tobacco Co. (336) 335-7707\nMr. Charles A. Blixt Ri. Reynolds Tobacco (336) 741-2998\nO.\nMr. Stephen R. Patton Kirkland & Ellis (312) 861-2000 (312) 861-2200\n\nUrgent! Deliver Immediately.\n\nPlease call the Support Center at (206) 268-9312 or at ext. ifyou do\nnot receive all of these pages or if there is a problem.\n\n‘The information contained in this facsimile ts confidential and may also be attorney-privileged. The imformation is intended only for the use of\nthe individus! or entity to whom it is addressed. If you arc not the intended recipient, or the emplayee or sgcnt responsible for delivering it to\nthe intended recipient, you are heceby notified that any w59, disseminatica, distribucion or copying of this communication is strictly prohibited.\n\nIfyou have received this facsimile In error, please inaacdlately notify us by a collect tephoae call to (206) 623-7292, and return the original\nmessage to us al ve address above via the US Postal Sorvice. Thaok yout,\n\nZBZELGEB\n\n‘ATROFESSIONA, SERVICE CORPORATION",
+      "exact_match": false,
+      "character_errors": 647,
+      "reference_characters": 1751,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83594639",
+      "image": "images\\83594639.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Date:\nTo:\nCompany:\nFrom:\n3\nLorillard\n83594639\n☑001\n89/ 22/ 97 MON 15: 35 FAX 12124554900\nROPER STARCH WORLDWIDE\nROPER STARCH\nTURNING DATA INTO INTELLIGENCE WORLDWIDE\nFax Fax Fax Fax Fax Fax Fax Fax Fax\nRon Milstein\n(910) 335 7707\nPages (Including cover page):\n\"JJ\" Klein\nFax Number:\nRoper Starch Worldwide nc 205 East 42nd Street New York NY 0017 212 599 0700  212 887 7008 Fax\nRoper Marketing and Public Option Research Search Advertising and Media Research Frederen Marketing Services INRA World Headquarters\nSeptember 22, 1997",
+      "prediction": "39/22/97 MON 15:35 FAX a\n\noor\n\nROPER STARCH a\n\n‘aww aa\n\nTURMING BATA INTO INTELLIGENCE WORLDWIDE™\n\nFax Fax F\n\nDate: September 22, 1997\nTo: Ron Milstein\nCompany: Lorillard\n\nFax Number: (910) 335-7707\n\nFrom: “Jd” Klein\n\nPages (Including cover page): 3\n\nRoper Starch Worldwide Inc,\n205 Enst 42nd Steet\n\nNew York NY 10017\n212.589.0700 Tal\n\n212.887 7008 Fex\n\nRoper Maristing and Public Opinion Research\nSearch Advertising\n\n62946558",
+      "exact_match": false,
+      "character_errors": 303,
+      "reference_characters": 529,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83624198",
+      "image": "images\\83624198.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO\n\nDATE:\nCOMPANY:\nPHONE:\nFROM:\nPHONE:\nMESSAGE:\nYES\nNO\n12\n83624198\nTel\nFax\nFEB 25 '98 18: 23 FR \n #1 28557 002# P. 2101\nFAX TRANSMISSION\nFebruary 25, 1998\nL8557 002\nRonald S. Milstein\nLorillard Tobacco Company\n910/ 335- 7707\n910 /335 -7718\nAndy Zausner\n202 /828 -2259\nFAX NUMBER:\nMESSAGE TO:\nCLIENT NO.:\nPAGES (including Cover Sheet):\nHARD COPY TO FOLLOW:\nSee attached fax from the Committee on Commerce just received in my office. Call me  discuss.\nIf your receipt of this transmission is in error, please notify this firm immediately by collect call to our Facsimile Department at 202- 861 -9106 and send the original transmission to us by return mail at the address below.\nThis transmission is intended for the sole use of the individual and entity to whom it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable law. You are hereby notified that any dissemination, distribution  duplication of this transmission by somcong other than the intended addressee or its designated agent is strictly prohibited.\n2101 L. Street NW Washington DC 20037 1528\n202 785 9700\n202 -887 -0589",
+      "prediction": "- , FEB 25 \"99 18:23 Re To 112058572028 P.at\n\nFAX TRAN a\nAX SMISSION DICKSTEIN\nSHAPIRO\nMORIN &\nOSHINSKY\nDATE: February 25, 1998 .\n\nCLIENTNO.; 1L8557.002\n\nMESSAGE TO: Ronald S. Milstein\n\nCOMPANY: Lorillard Tobacco Company\n\nFAX NUMBER: 910/335-7707\n\nPHONE: 910/335-7718\n\nFROM; Andy Zausner :\n\nPHONE: 202/828-2259\n\nPAGES (Including Cover Sheet);_12 HARD COPY TO FOLLOW; YES NO\n\nMESSAGE: |Scc attached fax from the Committee on Commerce just received in my\n‘office, Call me to discuss.\n\nL\n\nIf your receipt of this transmission is in error, please notify this firm immediately by\ncollect call to our Facsimile Department at 202-861-9106, and send the original\ntransmission to us by retum mail at the address below.\n\n\"This transmission is intcnded for the sole usc of the individual and cntity to whom it is addressed, and\nmay contain information thet is privileged, confidential and exempt from disclosure under applicable\nlaw. You are hereby notified that any dissemination, distribution or duplication of this transmission by\nsomeone other than the intended addressee or its designated agent is strictly probibited.\n\n2101L Steet NW Washington, DC 20037-1528 Tel 202-785-9700 Fax 202-887-0689\n\n¢8\n\nan\n\n8610S",
+      "exact_match": false,
+      "character_errors": 334,
+      "reference_characters": 1145,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83635935",
+      "image": "images\\83635935.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DATE:\nTO:\nFROM:\n83635935\nJUN 05 97 02:00 PM LOEWS CORP \nP. 1/ 6\nLOEWS CORPORATION\n667 Madison Avenue, New York, N. / 10021 8087 (212) 545 2920 Fax (212) 935 6801\nBARRY HIRSCH Senior Vice President Secretary & General Counsel\nFAX CONFIDENTIAL\nJune 4, 1997\nDr. Spears/ A. J. Stevens/ R. Milstein\nBarry Hirsch\nTOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET- 6 IF YOU DO NOT RECEIVE ALL THE PAGES, PLEASE CALL CAROL DOKTORSKI AT (212) 545- 2934.\nOUR FAX NUMBER \n(212) 935 6801\nTHIS TRANSMISSION IS INTENDED ONLY FOR THE USE OF THIS INDIVIDUAL OR ENTITY TO FROM IT IS ADDRESSED. AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED CONFIDENTIAL AND        You      YOU ARE   THAT MY DIRAYDOTIG DISAISONICAR   OF THIS COMKONICATION TA ATRICTLY PROHIBITED   HAVE RECEIVED  TINCOFMONTTIOS        PYTHOND  ROU  ORIGDOL YILSON    ATITE ABOVE ADDR359 VIA    POSTAL SERVICE THANK YOU.",
+      "prediction": ". DUN 8 ’s¢ Be: erm Li CORP LEGAL\n. @\n\nLOBWS\n\n887 Madison Avenue, New York, N.Y. 10021-8087 (212) 645-2920 Fax (212) 935-6801\n\nBARAY HIRSCH\n\nSenior Vice Presicent\nSecretary & Ganoral Counsel FAX\nCONFIDENTIAL\nDATE: Sune 4, 1997\nTO: Dr. Spears/A.J. Stevens/R. Milstein\n\nFROM: Barry Hirsch\n\nTOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET - 6\nI YOU DO NOT RECEIVE ALL THE PAGES, PLEASE CALL\nCAROL DOKTORSKI AT (212) 545-2934,\n\nOUR FAX NUMBER IS (212) 935-6801.\n\n‘THIS TRANSMISSION 16 ISTNORO ONLY POR THE USE OF Thi INDIVIDGAL OR ENTITY TO WEOH IT IS ADORESTUD, AND MAY\nCONTAIN INPORATICN THAT 16 PRIVILEGED, CONPIDNNTIAL AKD EXEMPT VROM DISCLOSORE UNDER APPLICABLE LAK. IP\n\nYOU ARK NOT THE INTRNDKD RECIPIENT, YOU ARK HARADY WOTIVIND THAT ANY DISSCHDOTION, DISTRIBUTION OR COPYING\nOF THIS COMMONICATION 16 GTRICTLY FROMIBITND. IV YOU HAVE RUCRIVED TITS COMMUNICATION IN ERROR, PLEASE\nNOTIFY US IMMEDIATRLY BY TELAPHOMR AND RSTURN THB ORIGINAL MESSAG TO UG AT THE ABOVE ADDRESS VIA THM U.s.\n\nPOSTAL SURVICE. THOWK YOU.\n\nG£6SS9S8",
+      "exact_match": false,
+      "character_errors": 377,
+      "reference_characters": 868,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83641919_1921",
+      "image": "images\\83641919_1921.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "31\n1818\n22\n15\n24\n19\n15\n209\n32\n151/15\n81/9\n138/9\n140/13\n117/9\n118/8\n166/15\n115/13\n163/11\nDISTRIBUTION\nDIVISION:\nREGION:\nFULL\nFlint\nX\nFULL\nPARTIAL\nPARTIAL\n13\n12\n13\nX\n196/13\n16\nTO:\nFROM:\nSUBJECT:\nGEOGRAPHY\nX\n142\n237\n102\n39\n184\n32\n40\n31\nEmra\nWalmart\n83641919\nS. P. ZOLOT\nR. W. RICHARDSON\nOCT 05\nSUBMISSION DATE\nDEC 21\nNOV 16\nOLD GOLD- LIGHT BOX 100'S PROGRESS REPORT\n(ONLY IF PARTIAL REGION, CONTINUE WITH DIVISION(S) SCOPE)\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nDetroit North\nDetroit East\nGrand Rapids\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\nDetroit South\nDetroit West\n# REPS:\n# REPS:\n# REPS:\nDirect Accounts and Chains Headquartered within the Region (15+ Stores) Stocking No Old Gold Light Box 100's\nName of Account\nInd/Lor Volume\nNumber of Stores\nName of Account\nInd/Lor Volume\nNumber of Stores\nQuality Dairy\nBay Stations\nSchmuckal Dil\nWilson Oil\nQuik Stop\nForwards\nPhil Flint\nArbor Rx\nImperial Oil\nSpeedy Q\nDirect Accounts and Chains Headquartered Outside the Region. (15+ Stores) Stocking No Old Gold Light Box 100's\nName of Account\nInd/Lor Volume\nNumber of Stores\nName of Account\nInd/Lor Volume\nNumber of Stores\nClark Gas\n7- Eleven Southland\nUltra Diamond\nDairy Mart\nMobil Oil\nACA Amoco\n   GOD   \nPage 1 of 3",
+      "prediction": "TO: S$. P. ZOLOT\n\nFROM: —_R.W.RICHARDSON ocres [———] ecaa (XT\nNovis []\nSUBJECT: OLD GOLD -LIGHT BOX 100'S PROGRESS REPORT\n\n. GEOGRAPHY :\n\nREGION: FULL PARTIAL x\n\n(ONLY IF PARTIAL REGION, CONTINUE WITH DIVISION(S) SCOPE)\n\nDIVISION: FULL x PARTIAL\nDIVISION NAME: Detroit North DIVISION NAME: Detroit South # REPS: 13\nDIVISION NAME: Detroit East DIVISION NAME: Detroit West # REPS: 12\nDIVISION NAME: Grand Rapids DIVISION NAME: Flint # REPS: 13\n\n~ DISTRIBUTION paves Mas\n\n(15+ Stores) Stocking No Old Gold Light Box 100's\n\nNameofAccount | i/Lor imber of |: Name of Account\nVolume Stores [22 Voliime\n\nCc\nTs\n\n6LELVICS\n\nPAGHISSRFT OL CODLT BOX Has Page tof 3",
+      "exact_match": false,
+      "character_errors": 865,
+      "reference_characters": 1223,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83772145",
+      "image": "images\\83772145.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "NO.\n1796\nP.\n#:\nTIME:\nTO:\nFROM:\nDATE:\n392\n\nOPERATOR:\n\nJack\nCONFIDENTIALITY\nNOTICE\n83772145\nJAN 31. 1997 11: 48 AM\nFAX COVER\nLAW OFFICES SHOOK HARDY & BACON L. L. P.\n1/ 3\nFAX COVER\nOne Kansas City Place 1200 Main Street Kansas City Missouri 64105- 2118 Telephone (816) 474 6550 Facsimile (816) 421- 5547\nJACK REILLY\nTELECOPY NO:\n212/ 545- 3297\nLORI 45048\nORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS\nPages transmitted including cover sheet:\nSHB Client Matter No:\nJANUARY 31, 1997\nJIM DALEY\nIf you experience any problems, please call extension 21000\nPer your request, attached is a memo regarding the process of labeling reviewed diskettes for the purpose of later identification Please call me if you have any questions  regret I cannot join you and the electronic document collection team for lunch today. I hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for the Legal Edge presentation. Best Regards, Jim Daley\nThe documents accompanying this  transmission contain confidential information belonging to the  sender  \nLegally privileged The information is intented only for the    Individual  or entity  named above  pol pre   intended recipen you  heret notified that   copying distribuar  dhe    crion  Islance   content or  lecoled normation  och  If you have received this telecopy in error,  please immediately notify us by telephone to arrange for return of the origin documents to us.\nCOMMENTS/ MESSAGE:\nSpecial Instructions:",
+      "prediction": "Jat. 31.\n\nCOVE R’ One Kansas City Place\n\n1997 $1:48AM an :\n: LAW OFFICES ‘ J\nROK HARDY&BACONLLE. |\n\n1200 Main Street\nKansas City, Missouri 64105-2118\n\\ Telephone (816) 474-6550 * Facsimile (816) 421-5547\n\nTO: | JACK REILLY TELECOPY NO: — 212/545-3297 |\n\nFROM: JIM DALEY Se 392 |\n\nDATE: JANUARY 31, 1997 TIME:\nj\n\nSHB Client Matter No.: LORI.45048\n\nPages ‘ronsmitted including cover sheet: 3\n\n« ORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS,\nSpeci al Instructions:\nie If you cxperience any problems, please call extension BOO\n\nOPERATOR: ae aH\n\nCOMMENTS/MESSAGE:\n\nL_\n\nJacks * ‘\n\n‘ Per your request, attached is a memo regarding, the process of labeling reviewed\n‘diskertes for the purpose of later identification. Please call me if you have any questions.\n\n: Lregret I cannot join you and the electronic document collection team for tunch today.\nThope you agree they have done an outstanding job! I look forward to seeing you on Peoniary 5 for\nthe Legal Edge presentation,\n\nBest Regards,\n\nJim Daley.\n\nCONMDENTIALITY NOTIC:\nJegally privileged. The information is intended only\n\nheecky notified that any disclosure, copying, distribu\n\nWO1796 PR I/?\n\nGrlZc2es",
+      "exact_match": false,
+      "character_errors": 828,
+      "reference_characters": 1483,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83823750",
+      "image": "images\\83823750.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "\n001\nDate\nTo\n2\nCompany\nSender\nReference\nMessage:\n83823750\nConfidentiality\nNote:\n/97 TUE 18: 39 FAX 212 5578\nDPW 30 -59\nDAVIS POLK & WARDWELL\nFax Transmittal\n450 Lexington Avenue New York NY 10017 212- 450 4000\nRobert H. Shaw, Esq.\nNovember 11, 1997\nLorillard Tobacco Company\nFax Number\nVoice Number\n910 -335- 7077\n910 -335- 7720\nNumber of Pages (this page included)\nCharles Duggan\nSender Voice Number\nMain Fax Operator Voice Number\n212 -450- 4785\nSender Fax Number\n212 -450 -5578\n17560 -188\nThis facsimile  intended only  the person or entity to which it is addressed and may contain information that is privileged, confidential\nor otherwise protected from disclosure  distribution or copying of this facsimile or the information herein by anyone other than the intended recipient, or an employee or agent responsible for delivering the message to the intended recipient is prohibited. If you love received the facsimile in error, please notify us immediately by telephone and return the facsimile by mail.",
+      "prediction": "‘97 TUE 18:38 FAX 212 @ 5578 DPW 30-59 e@ oor\n\nDAVIS POLK & WARDWELL\n\nFax Transmittal To Date\npred hosed Pind Robert H. Shaw, Esq. November 11, 1997\n212-450-4000 Company\nLorillard Tobacco Company\nFax Number Voice Number\n910-336-; 910-335-7720\nSender Number of Pages (this page included)\nCharles Duggan 2\nSender Voice Number Main Fax Operator Voice Number\n212-450-4785\nSender Fax Number Reference\n212-450-5578 17560-188\nMessage:\nper nl rang re pre er itera bom penle it\n\n‘recipient, or an employee or egent responsible\n\nfhe message tothe intended recipient, ls prohibited. Lf you have received this facsimile ln ror,\n\nfor delivering\nPlease notify us immediately by telephone and retum the facsimile by mail,\n\nOs\nnh\n\n“J\n\non\nQo",
+      "exact_match": false,
+      "character_errors": 509,
+      "reference_characters": 1006,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "83996357",
+      "image": "images\\83996357.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\nCC:\nPACK/CARTON\nREQUIREMENTS\nPACK\nJOB#\n07809\n594\n14%\n30165\n83996357\nCOUPON CODE REGISTRATION FORM\nKELLI SCRUGGS\nLEONARD JONES\nV. LOSITO M. TAHMASEB G. BAROODY L. STEVENS B. VON DER LIPPE D. Risling\nBRAND(S) APPLICABLE\nOLD GOLD\nDIRECT MAIL\nMEDIA TYPE\nMEDIA NAME\nISSUE FREQUENCY YEAR\nSPACE/ COLOR\n10/ 4/ 99\n3/ 31/ 00\nCOUPON VALUE\nGEOGRAPHICAL AREA(S)\nCIRCULATION DATES\nCIRCULATION(#)\nCOUPON EXPIRATION DATE\nCOUPON ISSUE DATE\n201, 500\nOCTOBER 1999\nDISCOUNT SMOKERS OG GROUPS IANDII\n$1 00 OFF PACK\n  \n4/ 14/ 99\nADVERTISING CREATIVE TITLE\nSIGNATURE OF INITIATOR\nDATE INITIATED\nREDEMPTION RESULTS\nCODE ASSIGNED\nEST. REDEMPTION",
+      "prediction": "COUPON CODE REGISTRATION FORM\n\nTo:\n\nFROM:\n\nce:\n\nKELL SCRUGGS\nLEONARD JONES\nV.LOSITO\n\nG. BAROODY\nB. VON DER LIPPE\n\nM. TAHMASEB\n\nBRAND(S) APPLICABLE\n\nMEDIA TYPE\n\nMEDIA NAME\n\nISSUE FREQUENCY/YEAR\nSPACE/COLOR\n\nCOUPON ISSUE DATE\nCOUPON EXPIRATION DATE\nCIRCULATION (4)\nCIRCULATION DATES\nGEOGRAPHICAL AREA(S)\nCOUPON VALUE\n\nPACKICARTON\n\nADVERTISING CREATIVE TITLE\n\nSIGNATURE OF INITIATOR\nDATE INITIATED\n\nREQUIREMENTS\n\n10/4/99\n\n3/31/00\n\n201,500\n\nOCTOBER 1999\n\nDISCOUNT SMOKERS -OG GROUPS I AND It\n\n$1.00 OFF PACK\n\nPACK\n\n|\n\n411499\n\nREDEMPTION RESULTS\n\nEST. REDEMPTION\n\n, 30165\n\n£9296628",
+      "exact_match": false,
+      "character_errors": 416,
+      "reference_characters": 630,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "85201976",
+      "image": "images\\85201976.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "NAME\nADDRESS\nCITY\nSTATE\nZIP\nAGE\n1.\n2.\n3.\nSMOKING\n85201976\nMarden - Kane, Inc.\nTRUE \"YOU FOUND IT\" SWEEPSTAKES SECOND PRIZE WINNER TRAVEL INFORMATION SHEET\nTHE DESTINATION IN THE CONTINENTAL UNITED STATES I WISH TO TRAVEL TO IS:\nHOME PHONE\nBUSINESS PHONE\nNAME OF GUEST\nRELATIONSHIP TO WINNER\nPLEASE LIST THREE ALTERNATIVE DATES YOU WOULD LIKE TO TRAVEL\nMAJOR AIRPORT NEAREST YOUR HOME\nAIRLINE: (CHECK ONE)\nNON- SMOKING\nSPECIAL DIETARY REQUIREMENTS\nANY ADDITIONAL INFORMATION YOU WOULD LIKE TO PROVIDE",
+      "prediction": "‘Marden- Kane, Inc.\n\nTRUE \"YOU FOUND IT\" SWEEPSTAKES\nSECOND PRIZE WINNER\nTRAVEL INFORMATION SHEET\n\nTHE DESTINATION IN THE CONTINENTAL UNITED STATES I WISH\nTO TRAVEL TO IS:\n\nNAME\n\nADDRESS\n\ncITry STATE ZIP.\n\nHOME PHONE\n\nBUSINESS PHONE\n\nNAME OF GUEST\n\nAGE _\nRELATIONSHIP\nTO WIXNER\n\nPLEASE LIST THREE ALTERNATIVE DATES YOU WOULD LIKE TO TRAVEL\n\nEST YOUR HOKE\n\nAIRLINE:\n(CEECK ON) SMOKING NON-SMOKING\nSPECIAL DIETARY REQUIREMENTS\n\nANY ADDITIONAL\nINFORMATION YOU WOULD LIKE TO PROVIDE\n\n9LETOZSB",
+      "exact_match": false,
+      "character_errors": 155,
+      "reference_characters": 499,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "85240939",
+      "image": "images\\85240939.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "NAME:\nTITLE:\nCOMPANY:\nADDRESS:\nPHONE:\nLorillard\n\nSHERATON- CARLTON HOTEL WASHINGTON, D. C.\nTHE TOBACCO INSTITUTE FIFTH ANNUAL COLLEGE  TOBACCO KNOWLEDGE REGISTRATION FORM\nFEBRUARY 19-21 1980\nGEORGE R. TELFORD\nBrand Manager\n666 Fifth Avenue, New York, NY 10019\n(212) 841- 8787\nCHECK ONE:\nPlease reserve a room for me at the Sheraton- Carlton\nX I will  my own housing arrangements.\nARRIVAL DATE AND TIME:\n2/18/80 7:00 P. M.\nDEPARTURE DATE AND TIME:\n2/21/80 4:00 P. M.\nPlease attach a brief (50 words or so) autobiographical sketch. Note your first name or nickname, your current professional re- sponsibilities, employment background and whatever personal in- formation you feel would be helpful in giving your fellow students an idea of your activities and interests. The sketches will be assembled and provided at the opening class session.\nAny questions?\nCall Connie Drath or Carol Musgrave at 800/424- 9876.\n**PLEASE RETURN IN SELF- ADDRESSED ENVELOPE BY FRIDAY, JANUARY 18, 1980**",
+      "prediction": "THB“ TOBACCO INSTITUTE\n, IPTH ANNUAL\nCOuLEGE ‘OP TOBACCO KNOWLEDGE.\noar “REQISTRATION FORM\n\nMe.\nSHERATON-CARLTON,,\nHOTEL . 74:9\n\nNAME: EORGR_R: TELFORD\n\nTITLE:_ Brand Manager : ’\nCOMPANY: Lorillsrs\n\nADDRESS: Gos Bitth avenue, New york, NY _10019_\nPHONE: (212) 841- 8787\n\nsy, : ; Te\nCHECK ONE: Please reserve a room for me at the Sheraton-Carlton\n\nX__I will,make my own housing arrangements.\n\n.\n\nARRIVAL DATE AND TIME:_ 2/18/80 7:00 P.M.\nDEPARTURE DATE AND TIME:_2/21/80 4:00 P.M.\n\nPlease attach a brief (50 words or 80) autobiographical sketch.\n\nNote your first. name or nickname, your current professional re-\n\nsponeibiiittes, employment background and whatever personal in- .\nformation you feel would be helpful in giving your fellow. students\nan idea of your activities and interests. The sketches will be °\n\nassembled and provided at the opening class session.\n\nAny questions? “Gall Connie Drath or Carol Musgrave at 800/424-9876",
+      "exact_match": false,
+      "character_errors": 337,
+      "reference_characters": 983,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "85540866",
+      "image": "images\\85540866.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "(Name)\n(Date)\n(Position)\n(Name)\n85540866\nMEDIA CONTACT SHEET\n(Publication or station)\nReason for Contact\nQuestions/ Responses\nAdditional Comments\nInquiry handled by:\n(Location address)\n(Phone number)",
+      "prediction": "MEDIA CONTACT SHEET\n\n(Publication or station) (Location/address)\n\n(Name) (Position)\n(Date) (Phone number)\nReason for Contact\n\nQuestions/Responses\n\nAdditional Comments\n\n9980bSS8\n\nInquiry handled by:\n\n(Name)",
+      "exact_match": false,
+      "character_errors": 129,
+      "reference_characters": 199,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "85629964",
+      "image": "images\\85629964.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "YEAR:\nOVERWRAP:\nNICOTINE:\nTAR:\n85629964\nCIGARETTE REPORT FORM\nBRAND NAME:\nNO. PER PACK\nVAR. DESC:\n(SEE EXPLANATION)\nVARIETY UNIT SALES:\nVARIETY DOLLAR SALES:\nCIG. LENGTH:\nFILTER LENGTH:\nFILTER TYPE:\nFLAVORING:\nPACK TYPE:\nLAST SOLD DATE:\nIST MANUFACT. DATE:\nYEARLY SUMMARY:\nIST SALES DATE:\nCARBON MONO:\nADVERTISING EXPENDITURES (SEE EXPLANATION)\nCAT- A- EXPENSES:\nCAT- D- EXPENSES:\nCAT- G- EXPENSES:\nCAT- J- EXPENSES:\nCAT- M- EXPENSES:\nTOTAL ADVERTISING EXPENDITURES:\nCAT- B- EXPENSES:\nCAT- E- EXPENSES:\nCAT- H- EXPENSES:\nCAT- K- EXPENSES:\nCAT- N- EXPENSES:\nCAT- C- EXPENSES:\nCAT- F- EXPENSES:\nCAT- I- EXPENSES:\nCAT- L- EXPENSES:",
+      "prediction": "CIGARETTE REPORT FORM\n\nYEAR: NO. PER PACK:\n\nBRAND NAME:\n\nVAR. DESC: (SEE EXPLANATION)\nVARIETY UNIT SALES: VARIETY DOLLAR SALES:\n\nCIG. LENGTH: FILTER LENGTH:\n\nFILTER TYPE: FLAVORING:____ OVERWRAP:___—Ss PACK «TYPE: _\n1ST MANUFACT. DATE: 1ST SALES DATE:_____—Ss LAST_ SOLD DATE:___\n\nYEARLY SUMMARY:\n\nTAR: NICOTINE: CARBON MONO:\n\nADVERTISING EXPENDITURES (SEE EXPLANATION)\n\nCAT-A-EXPENSES:___—s-s«CAT-B-EXPENSES:___——s—s«CAT'-C-EXPENSES:___\nCAT-D-EXPENSES:____—s- CAT-E-EXPENSES:___—s—s«CAT'-F-EXPENSES:\nCAT-G-EXPENSES:____—s- CAT-H-EXPENSES:_——sé«CCAX'-II-EXPENSES:\nCAT-J-EXPENSES:__—ss« CAT-K-EXPENSES:___—s—s CAT-L-EXPENSES:___\nCAT-M-EXPENSES: ss CAT-N-EXPENSES:_\n\nTOTAL ADVERTISING EXPENDITURES:\n\nwe\na\nn\n2\n©\n©\nn\n>",
+      "exact_match": false,
+      "character_errors": 320,
+      "reference_characters": 628,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86075409_5410",
+      "image": "images\\86075409_5410.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "From:\nTo:\nCC:\n\nCirculation(#)\n\n\n\n\n\n\n\n\n\n\n\n\n\n86075409\nTiers\nII,\n&\nIV\nLynnette Stevens\nKelli Scruggs\nVincent Losito George Baroody\nS. Tesh C. Hill\nDon Kisling\nBrand(s) Applicable\nMedia Type\nMedia Name\nIssue Frequency/ Year\n*Space/ Color\nCoupon Issue Date\nCoupon Expiration Date\nGeographical Area(s)\nCoupon Value\nPack and/ or Carton?\nAdvertising Creative Title.\nSignature of Initiator\nDate Initiated\nAnalytical Requirements\nNewport Parent, Lights. & 120's\nDirect Mail\nCompetitive 21- 34 years\n4/ 14/ 00\n9 /30 00\nAPPROX 600. 000 AR. AZ.A K CA CO FL ID IA. CT, ME, MASS, MN, MT, NE,\nNV, NM, NY ND, DK, OR, RL, SD,  WA, DC, WY $1. 50 OFF PACK\n 21- Jan 00\nFOR CONTROL USE ONLY\nCode Assigned\nJob Number\nEst. Redemption\n05787\n13%\n* Where Applicable",
+      "prediction": "From:\nTo:\n\ncc:\n\nLynnette Stevens\n\nKelli Scruggs\nVincent Losito Don Kisling\nGeorge Baroody Tesh C. Wit\n@ =~ Brand{s) Applicable Newport Parent, Lights. & 120's\n@ = Media Type Direct Mail\n@ = Media Name Competitive 21 - 34 years\n@ == * Issue Frequency / Year\n@ = * Space/ Color\n@ = Coupon Issue Date 4/14/00\n© Coupon Expiration Date 9/30/00\n@ = Circulation (#) APPROX. 600.000\nAR.AZ.AK.CA,COPLAIDIACT,\n@ Geographical Area(s) Tiers Ul & IV NV.NMNY.ND.OK.OR.RISD.L\n@ Coupon Value $1.50_OFF\n@ = Pack and / or Carton? PACK\n@ © Advertising Creative Title\n@ Signature of Initiator\n@ Date Initiated 2Jan%\n\nAnalytical Requirements:\n\nFOR CONTROL USE ONLY\n\nCode Assigned 05187\n\nJob Number\n\nEst. Redemption\n\n13%\n\n* Where Applicable\n\n60794098",
+      "exact_match": false,
+      "character_errors": 537,
+      "reference_characters": 738,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86079776_9777",
+      "image": "images\\86079776_9777.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "SPECIFICS\nExecution:\nMedia:\nOBJECTIVE\nTARGET\nCOMMUNICATION\nPLATFORM\n86079776\nCREATIVE INPUT DOCUMENT\nDate/ Time:\nPrepared By:\n10/30/98 1:46 PM\nMilestone Presentation Date:\nEstimated Creative Budget:\nConcept:\nClient Name:\nMatter Number:\nProject Title:\nEst. Production Budget:\nWhy are we advertising? What do we plan to achieve?\nTo whom are we talking? Who is the primary target? Is there a secondary target? What is their relationship to the brand  what do they currently think about it?\nWhat is the single most important message/idea we are trying to communicate? What is the unique selling position that will help us achieve our advertising goal? Are there any secondary messages?\nWhat is the key benefit to the target? What's in it for the reader?\nIs there an offer/call to action? What are we offering the target to persuade him/her to act now? (A premium, sweepstakes, limited-time offer, free information, or something else?\nWhat would we like our target to think? What would our target say after being exposed to our program?\nc:\\my documents\\wp\\sample cid. doc\n1 of 2\n10/30/98 01:46 PM\n☐ Loyalty\n☐ Lead Generation\n☐ Trial\n☐ Acquisition\n☐ Up-Sell\n☐ Awareness\n☐ Retention\n☐ Cross-Sell\n☐ Direct Sale\n☐ Other\n☐ Change Image Perception\n☐ New Product/Package Intro.\n☐ Competitive Blocking\n☐ Relationship-Building",
+      "prediction": ".\n\nCREATIVE INPUT DOCUMENT\n\nDate/Time: 10/30/98 1:46 PM _ Client Name:\n\nPrepared By: Matter Number:\n\nMilestone Presentation Date: Project Title:\n\nFstimated Creative Budget: fst, Production Budget:\n\nConcept: Execution: Media:\n\nWhy are we advertising?\n\nWhat do we plan to achiove?\nGRelationship-Building = O Retention G Acquisition D Loyalty\nC Competitive Blocking O Cross-Sell O Up-Sell O Lead Generation\nO New Product/Package Intro. O Direct Sale O Awareness OTral\nChange Image Perception 0 Other\n\nTo whom are we talking?\n\nWho is the primary targot? Is there a secondary target? What is their relationship to the brand, and what do they currently think about it\n\nMTT\n» |\n\nI\n\nCOMMUNICATION PLATFORM\n\nWhat is the single most important message/idea we are trying to communicate?\nWhet is the unique selling position that will help us achieve our advertising goal? Are there any secondary messages? |\n\nWhat is the Key henetit to the target?\n\nWhat's in it for the reader?\n\nJs there an offer/call to action?\nWhat are we offering the target to persuade hinvher to act now? (A premium, sweepstakes, limited-time offer, free information, or something else?)\n\nWhat would we lke our target to think?\n\nWhat would our terget say after being exposed to our program?\n\nc:\\my documents\\wp\\sample cid.doc 1 of2 10/30/98 01:46 PM\n\n9LL6L098",
+      "exact_match": false,
+      "character_errors": 673,
+      "reference_characters": 1312,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86220490",
+      "image": "images\\86220490.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "To:\nFirm:\nFAX\n#:\nFrom:\nDate:\nMSA\nAutodial\nMike,\n\n8622042\nLORILLARD TOBACCO COMPANY Market Planning and Information Department\nMike Mozina\nSusan Smith\n335- 7733\n335- 7150\nFAX #:\nPhone #:\n8/ 31/ 98\n3 (including this cover page)\n# Pages:\n- Approval for AWS Quarterly Store Count Database to begin 3rd Quarter 1998\n- Table showing significant jump in Convenience Store market importance in 2nd Quarter 1998\nTalk to you soon!\nAs promised, here are:",
+      "prediction": "LORILLARD TOBACCO COMPANY\nMarket Planning and Information Department\n\nMike Mozina\nMSA\nAutodial_\n\n__ Susan Smith\n335-7733\n335-7150\n\n__ 8/31/98 | a\n\n3 (including this cover page) _\n\nMike,\nAs promised, here are:\n-- Approval for AWS Quarterly Store Count Database to begin 3rd Quarter 1998\n\n-- Table showing significant jump in Convenience Store market importance\nin 2nd Quarter 1998\n\nTalk to you soon! > as)\n\nOGv02298",
+      "exact_match": false,
+      "character_errors": 154,
+      "reference_characters": 443,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86230203_0206",
+      "image": "images\\86230203_0206.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "\nTO:\nFROM:\nSUBJECT:\nX\nGEOGRAPHY\nREGION:\nDIVISION:\nFULL\nPARTIAL\nx\nFULL\nPARTIAL\nDISTRIBUTION\nSeyle\nDantzlen\nEcon\n180\n130\n20\n19\n18\n18\n17\n16\nK&B\nDelchamps\nLitco\n85\n39\n36\n36\n23\n23\n22\n86230203\nPage 1 of 4\nMAVPROG\n11-Dec-96\n12/12/96 08:33\n204 7348616\nLORILLARD TOB\n NYO 1\n 0001/ 004\nK. A. Sparrow\nF. Strickland\nMAVERICK SPECIALS- PROGRESS REPORT\nSUBMISSION DATE\nDEC 13\nJAN 25\nFEB 24\nAPR 4\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S) SCOPE)\nDIVISION NAME:\nDIVISION NAME:\nDIVISION NAME:\n# REPS\n# REPS\n# REPS\nDIVISION: \nDIVISION NAME:\nDIVISION NAME:\nDIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS\nNAME OF ACCOUNT\nNO. OF STORES\nNAME OF ACCOUNT\nNO OF STORES\nWinn Dixie\nSchwegmann\nAurry Greer\nDouble \nHuber Oil\nMorris Corp\nBayou Foods\nCompac Foods\nSoutheast Foods",
+      "prediction": "12712796 08:33 @504 7348616\n\nLORILLARD TOB so» NYO 1 001/004\n\nTO: K. A. Sparrow\nFROM: | F, Strickland\nSUBJECT: MAVERICK SPECIALS — PROGRESS REPORT.\n\n[seocRarhy|\n\nREGION: FuuL\n\nPARTIAL\n\n(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION(S) SCOPE)\n\nvec13[_x ] res2s[_ |\nsan 28 [__] apna (__]\n\nDIVISION: FULL PARTIAL\nDIVISION NAME: DIVISION NAME: @ REPS\nDIVISION NAME: DIVISION NAME: # REPS\nDIVISION NAME: DIVISION NAME: w REPS\n“__ DISTRIBUTION\no C N. ul HEADQI D WITH! Ri\n415+ STORES) ST! KING NO VERK ie\n\nNO, OF\nSTORES\n\n“NAME OF ACCOUNT\n\nNAME OF ACCOUNT.\n\nK&B\n\nDelchamps\n\nDantzler\n\nWinn Dixio\n\n=\n\nSouthoast Foods\n\nCompac Foods\n\nAutry Greer\n\nBayou Foods\n\nDouble Quick\n\nEcon\n\nHuber Oil\n\nMortis Corp.\n\n11-Dec-96\n\nMAVPROG\n\n£0708798\n\nPago 1 of 4",
+      "exact_match": false,
+      "character_errors": 587,
+      "reference_characters": 811,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86236474_6476",
+      "image": "images\\86236474_6476.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nFROM:\n8623474\n☑\nMrs. K. A. Sparrow\nR. G. Ryan\nJUNE7\nAUG.2\nOCT.7\nSUBMISSION DATE:\nNEWPORT LIGHTS HEAVY UP PROGRESS REPORT\nEFFECTIVENESS OF DISTRIBUTION ALLOWANCE:\nDIRECT ACCOUNT/ WHOLESALERS:\nDistribution allowance was very effective in accomplishing our objectives. All accounts have purchased introductory products.\nDIRECT ACCOUNT CHAINS:\nEagle Foods is the only Void.\nNON- DIRECT ACCOUNT CHAINS:\nReception from these accounts is most positive with a solid incentitive to purchase.\nEFFECTIVENESS OF THE RETAIL (1 00 OFF CARTON) DISTRIBUTION ALLOWANCE:\nHas been most helpful in acquiring desireable distribution when needed by Sales Reps.\nPROMOTIONAL ACTIVITY\n40c OFF PACK- GENERAL MARKET:\nThe 40c off promotions continue to be well received at the retail stores and by consumers, as well.",
+      "prediction": "TO: Mrs. K.A. Sparrow SUBMISSION DATE:\n\nFROM: _R.G. Ryan JUNE7 [ X\n\nAUG. 2\nOCT. 7\n\nNEWPORT LIGHTS HEAVY UP PROGRESS REPORT\n\nEFFECTIVENESS OF DISTRIBUTION ALLOWANCE:\n\nDIRECT ACCOUNT/WHOLESALERS:\n\nhave purchased introductory products.\n\nDIRECT ACCOUNT CHAINS:\nEagle Foods is the only Void. . _\n\nNON—DIRECT ACCOUNT CHAINS:\nReception from these accounts is most positive with a solid incentitive to purchase. _\n\nEFFECTIVENESS OF THE\nRETAIL (1.00 OFF CARTON)\nDISTRIBUTION ALLOWANCE: Has been most helpful in acquiring desireable distribution _\n\n- when needed by Sales Reps. _ .\n\nPROMOTIONAL ACTIVITY\n\n40c OFF PACK —\nGENERAL MARKET: The 40c off promotions continue to be well received at the retail\n\nstores and by consumers, as well.\n\nbLy9SZ98",
+      "exact_match": false,
+      "character_errors": 199,
+      "reference_characters": 793,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86244113",
+      "image": "images\\86244113.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DIVISION:\nACCOUNT:\n(STATE)\nDATES:\nBRAND\nNOTE:\nACTION\nPLAN:\nCC:\n8624113\nSTYLEREP\nINVENTORY FOR:\nDIRECT ACCOUNT STATUS REPORT\n# OF CARTONS ON HAND\nAVERAGE WEEKLY MOVEMENT\n# OF WEEKS ON HAND\nSTYLE LIGHT 100'S\nSTYLE LIGHT MENTHOL 100'S\nSTYLE LIGHT BOX 100'S\nSTYLE MEN. LIGHT BOX 100'S\nSTYLE SLIM LIGHT 100's\nSTYLE SLIM MEN. LT. 100's\nREPORT STYLE INVENTORY ONLY. SUBMIT REPORT ONLY IF STYLE IS STILL ON HAND IN THIS ACCOUNT.\nREGIONAL SALES MANAGER, ALL DIVISIONS SERVICED BY THIS ACCOUNT.",
+      "prediction": "DIVISION: __ DATES:\n\nACCOUNT: —\n\nINVENTORY FOR: _\n{STATE}\n\nDIRECT ACCOUNT STATUS REPORT\n\n# OF CARTONS AVERAGE WEEKLY # OF WEEKS:\nBRAND ON HAND MOVEMENT ON HAND\n\nSTYLE LIGHT 100'S\nSTYLE LIGHT MENTHOL 100'S\nSTYLE LIGHT BOX 100'S\n\nSTYLE MEN, LIGHT BOX 100'S\nSTYLE SLIM LIGHT 100'S\n\nSTYLE SLIM MEN. LT. 100'S ——_—_ —_——\n\nNOTE: REPORT STYLE INVENTORY ONLY.\nSUBMIT REPORT ONLY IF STYLE IS STILL ON HAND IN THIS ACCOUNT.\nCC: REGIONAL SALES MANAGER, ALL DIVISIONS SERVICED BY THIS ACCOUNT.\n\nACTION PLAN:\n\nLhLeysog\n\nSTYLEREP",
+      "exact_match": false,
+      "character_errors": 165,
+      "reference_characters": 484,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86263525",
+      "image": "images\\86263525.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DATE\nDATE\nDATE\nDATE\nDATE\nDATE\n141\nN\n/A\nN\n/A\n2051119008\nRECORDS RETENTION SCHEDULE RECONCILIATION RECORDS MANAGEMENT DEPARTMENT - M /C\nDEPARTMENT NAME\nSCIENCE & TECHNOLOGY\nCOST CENTER NUMBER\nINDEX BINDERS CONSOLIDATED BY:\nN /A\nINDEX BINDER RE- LABELED BY:\n Mallery\n2 /15 /90\nRETENTION & RECOMMENDATION FILE REORGANIZED AND RE- LABELED BY:\nRECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:\nWayne Boughan\n4 /18 /90\nBOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:\nRECORDS TRANSFER INVENTORY FORMS UPDATED BY:\nWayne Baughan\n7 /25 /90",
+      "prediction": "RECORDS RETENTION SCHEDULE RECONCILIATION\nRECORDS MANAGEMENT DEPARTMENT - M/C\n\nDEPARTMENT NAME SCIENCE & TECHNOLOGY\n\nCOST CENTER NUMBER 141\n\nINDEX BINDERS CONSOLIDATED BY:\n\nN/A DATE\n\nINDEX BINDER RE-LABELED BY:\n\n22 Mio Oo 89a _______ DATE 2/15/90\n\nRETENTION & RECOMMENDATION FILE REORGANIZED AND RE-LABELED BY:\n\nN/A DATE\n\nRECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:\n\nMase Baus DATE 4/18/90\n\nBOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:\n\nN/A DATE\n\nRECORDS TRANSFER INVENTORY FORMS UPDATED BY:\n\nAnyone Bru DATE 7/25/90\n\nSOOGETTSOG",
+      "exact_match": false,
+      "character_errors": 162,
+      "reference_characters": 556,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "86328049_8050",
+      "image": "images\\86328049_8050.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\nName:\n4\nYes\nNo\n☑\nName:\nName:\nName:\nName:\n1426\n86328049\nFeb-24-99 10:53\nFrom- UNTON WILL\nT-122 P.01/04 F-066\nTELECOPY INFORMATION HUNTON & WILLIAMS Riverfront Plaza 951 East Byrd Street Richmond, Virginia 23219 -4074 (804)788-8200 2nd Floor Telecopier\nTelecopier Nos.\n(804) 788- 8218 (804) 788- 8219 (804) 788- 8669\nFAX NO:\nFAX NO:\nFAX NO.:\nFAX NO.:\nFAX NOc.:\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NOv\nFAX NO.:\nPages (Including Cover)\nOriginal to follow in mail:\nKen Forrest\n212- 403- 2211\nTom Frederick\n312- 558- 5700\nTom Griffin\n617- 523- 1231\nEver Hurwitz\n202- 342- 5999\nBarry Levin/ Curl Caton\n415- 772- 6268\nBarbara Robbins\n212- 403- 2033\nGreg Stone/Ron Olson\n213- 687- 3702\nBill Allinder/Jeff Nelson\n816- 421- 2708\nSteve Krigbaum\n917- 663- 5593\nTom Stoever\n303- 832- 0428\nJudy Bernstein- Gaeta\n202- 942- 5999\nDal Burton\n404- 581- 8330\nAndy McGaan\n312- 861- 2200\nJames Wilson\n336- 335- 7707\nEric Sarner/ Doug Flemming/\nPeter Mckenna\n212- 735- 2000\nThomas McKim\n336- 741- 0671\nD. Scott Wise\n212- 450- 4800",
+      "prediction": "Fob-24-99 10:53\n\nFron-HNTON WiLL 1426 @ we Paves re\n\nTELECOPY INFORMATION\nHUNTON & WiLuams:\nRiverfront Plaza\n957 East Byrd Street Telecapier Nos.\nRichmond, Virginia 23219-4074 {804)788-8218\n(804)788-8200 (804)788-8219\n2nd Floor Telecopier (804)788-8669\n\nHy Ken Forrest\n\n212-403-2211\n\nFAX NO.:\n2 Tom Frederick\n\nFAX NO.: 312-558-5700\n\nName; Tom Griffin\nFAX NQ.: 617-523-1231\nName: Even Hurwitz\nFAX NO.: 202-942-5999\nName: Barry Levin/Curt Caton\nFAX NO.; 415-772-6268\nName: Barbara Robbins\n‘AX NO.: 212-403-2033\nName: Greg Stane/Ron Olson\nFAX NO.:; 213-687-3702\nName: Bill Allinder/Jeff Nelson\nFAX NOL: 816-421-2708\nName: Steve Krighaum\n917-663-6593\nName: Tom Stoever\n\n303-832-0428\n\nFAX NO,\nName: Judy Bernstein-Gaeta\n\nFAXNO.: 202-842-5999\n\nDal Burton\nFAX NO.: 404-881-8330\nY Andy McGaan\nFAX NO.: 312-861-2200\nName: James Wilson\nFAX NO.: 338-335-7707\nEric Sarner/Daug Flemming/\nPeter McKenna\nFAXNO.: = 212-735-2000\nName: Thomas Mciim\nFAX NO.: 336-741-0671\n7 D. Scott Wise\nEAX NO.:; 212-450-4800\nA Pages (Including Cover)\n\nOriginal to follow in mail: [ Yes [& No\n\n6087898",
+      "exact_match": false,
+      "character_errors": 770,
+      "reference_characters": 1130,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87086073",
+      "image": "images\\87086073.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "\nDATE\nSTRUCTURE\nCOMMENTS\nJ.\nD.\nEngle\nR.\nF.\nDufresne\nVanitrope\nIII\nB134\n\n\n87086073\nDECISION TREE ESTIMATION OF TOXIC RISK\nJ. D. Ergle and R. F. Dufresne\nAugust 14, 1990\nCOMPOUND NAME\nCH3CH2O  OH\nESTIMATED TOXICITY CLASS\nLORILLARO COMPOUND CODE NUMBER\nThis ethoxy substitued aromatic falls into class III.\nResearch Chemist\nResearch Chemist\nLORILLARD RESEARCH CENTER\nFORM ",
+      "prediction": "DECISION TREE ESTIMATION OF TOXIC RISK\n\nwm“ J. D. Exrgle and R. F. Dufresne I\" August 14, 1990\n\nCOMPOUND NAME\n\nVanitrope\n\nJESTMMATED TOMCTTY CLASS\n\nLORKLARO COMPOUND CODE NUMBER\nB134 ‘\n\nThis ethoxy substituted aromatic falls into class III.\n\nrir\n\n[COMMENTS\n\nJ. qo.\nRegearch Chemist\n\nR. F. Dufresne\nResearch Chemist\n\n£2098028\n\nLORE LARD FESEAROH CENTER ~ FORa (5005",
+      "exact_match": false,
+      "character_errors": 186,
+      "reference_characters": 369,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87093315_87093318",
+      "image": "images\\87093315_87093318.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Date:\non\nBLEND\nCASTING\nRECASING\nMENIHOL\nFilters\nCigarettes\nMaker\nLength\nCircumference\nWeight\nPaper\nKind\nCircumference\nWeight\nPlast.\n3/14/90\nAttached\nNone\nAttached\nNone\nNone\nmm\n430\nG\nWhite\nBlue\nWhite\nWhite\nJames\nJames\nMFG.\nWrapping\nResponsibility\nClosures\nLabels\nCartons\nMarkings\nShipping\nRequirements\nLaboratory\nAnalysis:\n87093315\n90- B- 1\n1194- 90\n100 mm Filter\n47.5 lbs.\nOriginal Request Made By\nJ. H. Bell\n2/15/90\nPurpose of Sample\nCigarette Modification B- 451\nSample Specifications Written By\nC. W. Lassiter\nFINAL FLAVOR\nMK 8\n99.0 mm\n27 mm\n24.8 mm\n78.0 g / 100\n81- 01- 07\n25- 04- 07\n67 mm White\nSample No.\nType of Cigarette\nBatch Size\nFilter Length\nTip. Paper\nTip. Paper Por.\nGlue Roller\nAir Dilution\n13.0 %\nSection A\nSection B\n27 mm\n3.3/ 35,000\nOG Lt.\n108 mm\n400 mm\n24.45 mm\n75.3 30g / 100\n7 % Kent\n84- 52- 28\n655 \nRod Length\nPressure Drop\nPlug Wrap\nPlug Wrap Por.\nComb. Wrap\nComb. Wrap Por.\nTobacco Blend\nFilter Production\nMaking & Packing\nSample Requistion (Form 02: 20: 06)\nLassiter/ Douglas\nTear Tape\nSample No. on each Carton\nLaboratory Other\n1 Tray\nMainstream Smoke Analysis\nSpecial Requirements\nDirector, Product Development",
+      "prediction": ": . Date: 3/14/90 90-B-1\nid Sample No. 1194-90\n‘Type of Cigarette 100 mm Filter\nBatch Size 47.5 lbs.\nOriginal Request Made By J.H. Bell on 2/15/90\n\nPurpose of Sample Cigarette Modification B-451\nSample Specifications Written By C.W. Lassiter\n\nBLEND CASING RECASING FINAL FLAVOR MENTHOL\nNone Attached None None\nGisarettes Filters\nMaker Mm 8 Section B\nLength 99.0 mm mm\nFilter Length 27 mm Kind\nCircumference 24.8 mm\nWeight 78.0g/100 Rod Length\nPaper 81-01-07 Pressure Drop\nTip. Paper 25-04-07 Circumference\n67 mm White Weight\nTip. Paper Por. 430 Plast.\nGlue Poller G Plug Wrap 84-52-28\nAir Dilution 13.0 & Plug Wrap Por. 655 ¢\nCorb. Wrap\nComb. Wrap Por.\nLabels White ‘Tobacco Blend Lassiter/Douglas\nClosures Blue Filter Production MFG.\nTear Tape White Making & Packing James\nCartons White Shipping\nMarkings Sample No. on Sample Requistion James\neach Carton (Form 02:20:06)\nRequivenents Labora’ Analysis:\nratory 1 Tray Mainstream Analysis\nOther\n‘ial irements\n\nSTEEGOLS\n\nDirector, Product Development\n\n4",
+      "exact_match": false,
+      "character_errors": 864,
+      "reference_characters": 1137,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87125460",
+      "image": "images\\87125460.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "\n87125460\nAPPROVALS\nDATE\nDATE\nSTUDY\nDIRECTOR\n\n\nFINAL REPORT AMENDMENT\nSTUDY NAME\nInduction of Hepatic Enzymes in rats (B202)\nSTUDY NUMBER\nI- 7016. 401\nINITIATION DATE\nOctober 27, 1986\nDATE OF FINAL REPORT\nFebruary 26, 1987\nPART OF FINAL REPORT TO BE AMENDED (EXACT LOCATION)\nPage 14 and Table 4\nREASON FOR THE AMENDMENT\nRequest from sponsor\nAMENDMENT (Attach additional sheets as necessary)\nsee attached\n8/ 7/ 87\n08/ 14/ 87\nQUALITY ASSURANCE",
+      "prediction": "@\n3\nrey\nN\nnn\nD\n2]\n°\n\nSTUDY NUMBER 1-7016.401\n\nINITIATION DATEOctober 27, 1986 DATE OF FINAL REPORT February 26, 1987\n\nPART OF FINAL REPORT TO BE AMENDED (EXACT LOCATION)\n\nPage 14 and Table 4\n\nREASON FOR THE AMENDMENT Request from sponsor\n\nAMENDMENT (Attach additional sheets as necessary)\n\nsee attached\n\nAPPROVALS\ntet\n\nDAT!\n\nWJ\nof) ‘Sa Ih y\nQUALITY ASSURANCE\n\nDATE",
+      "exact_match": false,
+      "character_errors": 169,
+      "reference_characters": 441,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87137840",
+      "image": "images\\87137840.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "DATE:\nDATES:\nBROKEN\nLEAKED\nGOOD\nT07281A\nLorillard\n012590\nOne\nB220\n\n\n87137840\nTEST ARTICLE RECEIPT\nTA #:\nSPONSOR'S NAME:\nTEST ARTICLE IDENTIFICATION:\nLOT #:\nCONDITION OF SHIPMENT:\nSHIPPED VIA\nDirect Exress\nClear brown liquid\nPHYSICAL DESCRIPTION:\nNO. OF CONTAINERS:\nGROSS WEIGHT\nNot provided\nNET WEIGHT (if provided):\n100 g\nNot provided\nEXPIRATION DATE:\nSPECIAL HANDLING REQUIREMENTS:\nStore refrigerated in dark.\nRECEIVED BY:\n03 /01 /90\nSTUDY DIRECTOR /DEPARTMENT\nRay David\nSIGATURE OF DEPARTMENT CONSIGNEE:\n03 /02 /90",
+      "prediction": "‘TEST ARTICLE RECEIPT\n\nTA #:___TO7281A _\nSPONSOR'S NAME: Lorillard\nTEST ARTICLE IDENTIFICATTON: _ 5220\nLor g: 9125907 = conn oF SHIPMENT? G00) - BROKEN. LZARED\nSHIPPED VIA:. Direct: Exess.\nPHYSICAL cgadererreie Clear brown: liquic\nNO. OF CONTAINERS 3 ____*ne_\n“rovided [NET WEIGHT ({f provided) 100 3\n\nGROSS _ WEIGHT; __ ‘lot\nEXPIRATION. DATE:__ fot _“rovided\nSPECIAL HANDLING. REQUIREMENTS:_- Store refrigerated in “dark.\n\n: 93/01/90\n\nRECEIVED BY:, DATE:\nx\n\n“STUDY ‘DIRECTUR/DEPARIMENT : Ray Davie\ny : .\nSIGNATURE.OF DEPARIMENT CONSIGNEE:\n\npate:__ O3/02/9o\n\ng\ng\ng\nry\ni)",
+      "exact_match": false,
+      "character_errors": 324,
+      "reference_characters": 517,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87147607",
+      "image": "images\\87147607.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "VENDOR\nTERMS\nCODE\nDESCRIPTION\nQUANTITY\nDEPARTMENT\nUSE\nONLY\nNC\nDATE\nPrev.\nUNIT\nPRICE\n4111\n8700\n87147607\nFOR\nPURCHASING\n☐ PURCHASING\n☐ STATIONARY\nPURCHASE REQUISITION\nPLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION\nP. O. 1534   LT-1979\nApril 19, 1988\nPiedmont Research Laboratory 2748 Patterson Ave., Greensboro,\nORDER NO\nor Recommended Supplier\nLorillard Research Center\nN. A. Thaggard\nAs required\nDATE WANTED\nSHIP TO (DEPT BRANCH)\n27407 NET 15 F. O. B. N/A VIA N/A\n420 English St., Greensboro, NC 27405\nThis is your authorization to prepare cigarette smoke condensate according to the protocol \"Standard Operating Procedure for the Preparation of Smoke Condensate for Mouse Skin Bioassay,\" for the period April 1, 1988 through December 31, 1988. Condensate will be prepared acording to a time schedule provided by Lorillard. The fixed price for condensate collection will be at a rate of $1, 750/10, 000 cigarettes smoked. Piedmont will pay the cost of consumable supplies. This work is to be conducted in accordance with the December 10, 1984 formal agreement between Piedmont Reseach Laboratories and Lorillard. All work is to be coordinated with our Mr. Neil Thaggard (919) 373-6628\nFOLLOW UP DATE\nBUDGET NO.\nREQUISITION NO.\nISSUED BY\nAPPROVED BY\n  \nDEPT. NO.\nACCT. NO.",
+      "prediction": "P.O. 1534 REV.10/79] oATE\n\nCO purcnasina PURCHASE REQUISITION LF-1e-70\n\nVENOOR FOR PURCHASING DEPARTMENT USE ONLY OROER NO.\nPiedmont Research Laboratory 2748 Patterson Ave., Greensboro,NC\n\nSHIP TO (OEPT., BRANCH) OATE WANTEO .\nLorillard Research Center N. A. Thaggard As required\n\n420 English St., Greensboro, NC 27405\n\nprepared acdording to a tine schedule provided by Lorillafa. the\nfixed price\n#1,750/10,040 cigarettes snoked. Piednont will pay the cbet of\n\nMr. Neil Thaggard (919) 373-6628.\n\nFOLLOW UP DATE REQUISITION NO. ISSUED BY\n\n|\n\nh\n\n:\n\nO stationary PLEASE INCLUDE ONLY ONE TYPE OF MATERIAL ON THIS REQUISITION April 19, 1988\n\nz0 Prev, or Recommended Supplier\nTERMS NET 15 F.0.8. N/A via N/A\n\nDESCRIPTION UNIT PRICE\n\nperiod Apri} 1, 1988 through December 31, 1988 Condensate will be\n\n7 with the Dedember 10, 1984 formal agreement between Piedmpnt Reseach\n| Laboratorieq and Lorillard All work is to be coordinatefi with our",
+      "exact_match": false,
+      "character_errors": 874,
+      "reference_characters": 1285,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87332450",
+      "image": "images\\87332450.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "Name:\nFirst\nTitle\nMiddle\nLast\nInstitution:\nStreet\nCity\nState\nZIP Code\nCountry\nTelephone:\nTOTAL\nDATE\nTIME\nArrival:\nDeparture:\nCARRIER\n87332450\nTelephone:\nFAX:\nAddress:\n47th TCRC REGISTRATION FORM\nPlease type or print\nFAX #:\nP.O. Box#\nName of guest:\nContinental Breakfast on Tuesday\nFall Foliage Tour on Tuesday\nBreakfast on Wednesday\nCraftsman Village Tour  Wednesday\nAdvance Registration Fee:\n(prior to September 1)\nafter September \nLate Registration Fee\n$135 00\n$150 00\n$ 30. 00\nGround Transportation (round trip)\nExtra banquet tickets tickets $40. 00\nPlease complete this portion if you need transportation from and to the Knoxville Airport.\nNo. in Party:\nFLIGHT #\nSend this registration form, along with payment to the address noted below. Enclose a check or international money order payable in U. S. funds to the University of Tennessee - 47th TCRC\nMail to:\nDr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743\n(615) ) 638- 5532\n(615) ) 638- 6458",
+      "prediction": "47\" TCRC REGISTRATION FORM\n—_—————————————————@m=0e2\n\nTile First Middle Last\nInstitution:\nAddress:\n\nStreet P.O, Boxt\n\nCy State ZIP Code Country\nTelephone: FAX #:.\nName of guest:\n___.. Continenstal Breakfast on Tuesday ____._ Breakfast on Wednesday\n____. Fall Foliage Tour on Tuesday Craftsman Village Tour on Wednesday\nAdvance Registration Fee: (prior to September 1) $135.00\nLate Registration Fee: (after September 1) $150.00\n____ Extra banquet tickets @ $40.00\nGround Transportation (round trip) $ 30.00\n\nTOTAL\n\nPlease complete this portion if you need transportation from and to the Knoxville Airport.\nNo. in Party:____\nDATE TIME CARRIER FLIGHT #\n\nSend this registration form, along with payment to the address noted below. Enclose a check\nor international money order payable in U.S. funds to the University of Tennessee - 47th TCRC.\n\nMail to: Dr. Phil P. Hunter\nU. T. Tobacco Experiment Station Telephone: (615) 638-6532\nRoute 5 Box 113 FAX: (615) 638-6458\nGreeneville, TN 37743\n\nOSPZEELS",
+      "exact_match": false,
+      "character_errors": 461,
+      "reference_characters": 988,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87428306",
+      "image": "images\\87428306.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "pH\nSOLUBILITY\n\nORAL\nA221\nSIGNATURE\nCENTER\nRESEARCH\nLORILLARD\n87428306\nDATE\nCOMPOUND PHYSICAL PARAMETERS\nLRC FILE NUMBER\nLOT NUMBER\nPHYSICAL STATE\nA crystalline solid at room temperature which melts at > 56 C.\nThe pH of a 50 % concentration of A221 in water was theoretically calculated to be 7.26 at 22 C from a 0.5 % solution in 79.5 % aqueous dioxane according to the extrapolation procedures of Dr. P. D. Schickedantz, Lozillard Accession Number 1662. Referenced 45- 10- 1.\nSPECIFIC GRAVITY\nNot Determined.\nMUTAGENICITY SOLVENTS A221 is soluble  EtOH at 0.2 g/ ml, with stirring, at room temperature. Reference BC30- 88.\nA221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 8888.\nA221 forms a solution in corn oil at 0.5 g/ 0.5 mL, with stirring at room temperature. Reference BC30- 88.\nACUTE CARDIOVASCULAR\nA221 is insoluble for this procedure. Reference BC30- 38\nSTORAGE RECOMMENDATIONS\nRefrigerate in an amber glass bottle at no more than 8 C.\nCOMPOUND SENSITIVE TO\n☐ AIR\n☐ HEAT\n☐ MOISTURE\n☐ OTHER\nSAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE:\n  \nA - 13\n   \nFORM  ",
+      "prediction": "COMPOUND PHYSICAL PARAMETERS\n\nThe pH of a 50% concentration of A221 in water was theoretically\ncalculated to be 7.26 at 22°C from a 0.5% solution in 79.5% aqueous\ndioxane according to the extrapolation procedures of Dr. P. D.\n\nSchickedantz, Lorillard Accession Number 1662. Reference@f45-10-1.\n\n‘SHC GRAVY\nNot Determined.\n\nsowveaity\nMUTAGENCITY SOLVENTS\n\nA221 is soluble in EtOH at 0.2 g/mL, with stirring, at room\ntemperature. Reference BC30-88.\n\n‘A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring\nat room temperature. Reference BC30-88.\n\non,\n\nA221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring\nat room temperature. Reference BC30-88.\n\nACUTE CAROOVASCAAR,\n\nA221 is insoluble for this procedure. Reference BC30-88.\n\nRefrigerate in an amber glass bottle at no more than 8°C.\n\nSOESZPLS\n\n‘SAFETY COMMENTS (SUGGESTED MANOLING PROCEDURE)",
+      "exact_match": false,
+      "character_errors": 343,
+      "reference_characters": 1121,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87528321",
+      "image": "images\\87528321.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "RJRT\n\nPosition\nChange\nof\nType\nAddition\nDeletion\nChange\nMat\nAffected\nGlass\nBrand/\nAssembly/\nMaterial\nSlit\nand\nMat\nGlass\nDesign\nCompatibity\nManufacturability\nOther\nEmergency\nUrgent\nRoutine\nPage\nDate\nChange\nOrder\nNumber\n8410059\n8-17-88\n5398\n880029\nRFC\nX\nX\nX\n51484\n3791\nDate\nDATE\nHOLDER\nSPEC\nTitle\nSignature\nApproved\nRejected\nCOMMITTEE\nREVIEW\nPRODUCT\nCOMMITTEE\nACCEPTANCE\nPRODUCT\n8-17-88\n\n\n\nKA\n\n\n9/8/88\nREQUEST FOR CHANGE\nF- 1001 7/ 88\nORIGINATOR Name:\nDan Straka\nDate Prepared\n1 of 1\nB-17-88\nD. Marsh\nReceived By\nTelephone No\nDepartment Name and Location\n611- 13 3rd Floor\nDescription of Problem\nSpec Change\nCost Reduction\nThe current specifications for glass mat and slit glass mat can be made more accurate and complete with the following changes:\nGlass Mat:\nslit Glass Mat:\nDelete C- glass from Iten description. Change glass softening point to 756 + / - 10 degrees from 750. Change rolls per pallet to 2 from 1.\nDelete C- glass from item description Change bobbins per stack to 47 from 45. Add outside diameter specs of 30.0, 26.0 - 31.0 inches.\nProposed Solution\nChange the current MSS specifications as outlined above.\nAccepted for Investigation\nFinal Disposition\nAction Taken or Reason for Rejection\nProposed Effective Date\nhabanisy Dhes       ",
+      "prediction": "RIRT REQUEST FOR CBANGE\nF-1001 7/88\n\nRFC 880029\n\nPage Date\n__)_of_1_|__8-17-88_\nReceived By D. Marsh\n\nORIGINATOR Name: Dan Straka Date Prepared\n17-88.\nTelephone No.\n\n5398.\n\nPosition\n\nChange Order Number\n\n£ELCOS?.\n\nDepartment Name and Location\n611-13_3rd_Ploor.\n\nBrand/Assembly/Material Affected\n\n|_Glass Mat and Slit Glass Mat.\n\nAddition Design Spec Change __. Emergency\nDeletion Compatibity Cost Reduction ____ Urgent\nX_ Change Manufacturability _X_ Other _X_ Routine\n\nDescription of Problem\nThe current specifications for glass mat and slit glass mat can be made more accurate\nand complete with the following changes:\n\nGlass Mat: Delete C-glass from item description.\nChange glass softening point to 756 +/- 10 degrees from 750.\nChange rolls per pallet to 2 from 1.\n\nSlit Glass Mat: Delete c-glass from item description.\nChange bobbins per stack to 47 from 45.\nAdd outside diameter specs of 30.0, 26.0 - 31.0 inches.\n\nProposed Solution\nChange the current MSS specifications as outlined above.\n\nuw\nry\n>\n©\ncad\nw\n~\no\nra\nSignature Title Date\nAccepted for\nInvestigation\nFinal Disposition Approved Rejected DATE\n\nAction Taken or Reason for Rejection\n\n= COMMJTTEE\n= We8\n\nProposed Effective Date:\n\nA[s[se",
+      "exact_match": false,
+      "character_errors": 663,
+      "reference_characters": 1248,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87528380",
+      "image": "images\\87528380.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "10675\nPROPOSAL\nFOR\nDATE\nTO\nADDRESS\nCITY\nSTATE\nAttn:\nITEM:\nMATERIAL:\nALUMINUM\nSIZE:\nGAUGE\nCOLORS:\nHOLES:\nYES\nEMBOSSED\nSQUARE\nCORNERS:\nEDGES:\nPACKING:\nOTHER:\n☑\nAluminum\n☑\n4\n☑\n☑\n☑\nTooling:\nQUANTITIES:\nPRICE:\nBILLING:\nWAREHOUSING:\n☑\n☑\n87528380\n\nCONDITIONS:\n4050\n\nTOTAL\n8650\n\nS\n☑\n10\nSTOUT INDUSTRIES, INC.\n6425 W. FLORISSANT AVE. ST. LOUIS MO 63136 . (314) 385- 2280\nLorillard Corporation\n666 Fifth Avenue\nNew York\nNew York 10103\nMetal \"Pack\" Plaque\nOctober 16, 1987\nMr. A. D. Steinberg\nYOUR REPRESENTATIVE\nIt is our pleasure to propose the following:\nMr. Robert Kennedy\nHarley Davidson Metal Plaque\n171/4 x 231/2 \"\n.025\" \nSTEEL ☐\nOTHER ☐\nTransparent gold, opaque black, white and orange\nBASE COLOR\nSINGLE FACE\nDOUBLE FACE ☐\nNO ☐\nNUMBER OF\nROUND ☐\nANGLE ☐\nCUT TO SHAPE ☐\nHEMMED ☐\nSTAMP FRAME\nBEADED BORDER ☐\nBACK FRAME ☐\nRIGHT ANGLE BEND ☐\nCURLED ☐\nPER CARTON\nPER CRATE\nPER BUNDLE\nPrice is based on reproduction of customer supplied \"Pack\" box.\nForm die, brass emboss die to achieve detail on eagle.\n500 Plaques\n$ 9.18 each\nOne time tooling\nSteel tips\n@ $ 3,015.00\n$ 1,045.00\nBILL AS MANUFACTURE\n☐ BILL AS SHIP FOR.\n☐ 6 MOS.\n☐ 12 MOS\nSHIP IMMEDIATELY\n☐ 6 MOS. WHSE.\n☐ 12 MOS. WHSE\nPER SHIPMENT\nDROP SHIPPING:\nTERMS - NET 10 DAYS A service charge of 11/2  per month will be applied to all unpaid balances over 30 days.\n           \nSTOUT INDUSTRIES INC,\nA 15 service charge will be added to reight costs for all prepaid shipments involving 5 or more pieces.\nPRICES QUOTED HEREIN ARE BASED ON CURRENT COSTS AND ARE FOR IMMEDIATE ACCEPTANCE *These prices will be updated periodically from date of order, to reflect changes in material and labor costs. Prices and terms quoted herein are not subject to verbal changes unless confirmed in writing by the home office of this company in S. T. LOUIS M. O. All contracts for delivers are contingent upon fires, strikes or other causes beyond our control. Purchaser agrees to accept overun or underrun to the extent of 10% of the quantity ordered.\nAny taxes or governmental changes which the seller may be required to pay or collect upon the production sale storage, or delivery under any existing or\nfuture law shall be for the account of the buyer who shall promptly pay the amount hereof to the seller upon\nF. O. B. S. T. LOUIS MISSOURI Shipments via truck shipped freight collect.",
+      "prediction": "10675\nSTOUT INDUSTRIES, Inc.\n\n6425 W. FLORISSANT AVE., ST. LOUIS, MO: 63136 - (G14) 365-2280\n\nPROPOSAL\nTo Lorillard Corporation FOR Metal “Pack\" Plaque\naooress__ 666 Fifth Avenue DATE October 16, 1987\n\ncity New York\nstate New York 10103 Mr. A, D. Steinberg\n\nAttn: Mr. Robert Kennedy = REP NTATIVE\n\nIt i our pleasure to propose the following:\n\nITEM:___Harley Davidson Metal Plaque SIZE: 17% _x_23%\"\nMATERIAL: STEEL (_} ALUMINUM. (33 OTHER (]____GAUGE___ 025\"\n\nCOLORS:.Transparent gold, opaque black, white and orange\nBASE COLOR Aluminum \"SINGLE FACE DOUBLE FACE [-j\n\nHOLES: YES kx NOC] NUMBER OF__4_\nCORNERS: ROUND} SQUARE &} ANGLE [| CUT TO SHAPE [_)\n\nEDGES: HEMMED (] CURLED (} EMBOSSED [x BEADED BORDER [_}\nSTAMP FRAME [% RIGHT ANGLE BEND [}_ BACK FRAME (_}\n\nPACKING: PER CARTON __10 PER CRATE PER BUNDLE\nOTHER:_Price is based on reproduction of customer supplied \"Pack\" box.\nTooling: Form die, brass emboss die to achieve detail on eagle.\n\nQUANTITIES: 500 Plaques One time tooling @ $3,015.00\nSteel tips $1,045.00\n\nPRICE: $9.18 each\n\nBILLING: x] BILL AS MANUFACTURE. BILL AS SHIP FOR, 6.MOS. Ohe MOS.\nWAREHOUSING SHIP IMMEDIATELY. Die MOS. WHSE. 12 MOS. WHSE fy, -\n$0\n\nOROP' SHIPPING: ___ PER’ SHIPMENT. (AU\n\nCONDITIONS.\nPRICES. QUOTED HERTIN ARE BASED ON CURRENT COSTS AND ARE FOR IMMEDIATE ACCEPTANCE\n\n“These pricey will be updated periodically. from date of order, 10 reflect changes in: material and labor costs\n\nPrices and! terms quoted hercimare not subject to verbal changes unless confirmed in writing by the home office of this company in ST. LOUIS. MO. All\ncontracts for dclivery. are: contingent upon fires, strikes.or otKer causes beyond our contro\n\nPurchaser agrees to accept oseerun.or undereun tothe extent of 10 of the quantity ordered\n\nAny taxes oF governmental charges whichithe seller may be required to pay or collect upon the production, sale, storage, or delivery, under any existing oF\nfuture law shall be for the account of the buyer who shall promptly pay the amount hereof to:the seller upan demand.\n\nF.0.B. SJ. LOUIS. MISSOURI. Shipments via truck shipped’ freight collect 8'7528380\n\nA. ISG service charge will be added) to:freight costs for all prepaid shipments involving $ or more pieces.\n\nTERMS — NET 10 DAYS\n\nA service charge of 1%% per month will be\nappliedito all unpaid balances over 30 days.",
+      "exact_match": false,
+      "character_errors": 1282,
+      "reference_characters": 2318,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "87594142_87594144",
+      "image": "images\\87594142_87594144.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "ADDRESS\nBaltimore\n(A)\n(B)\n21205\nTHRU\nTHRU\n$\n$\n$\nTHRU\n01/01/94\n01/01/95\n01/01/96\n12/31/94\n12/31/95\n12/31/96\n5/26/93\n87594142\nAPPLICATION FOR RESEARCH CONTRACT\nCENTER FOR INDOOR AIR RESEARCH 1099 WINTERSON ROAD SUITE 280 LINTHICUM, MD. 21090 (410) 684-3777 FAX (410) 684-3729\n1. PRINCIPAL INVESTIGATOR NAME, TITLE, TELEPHONE # AND MAILING ADDRESS.\nSteven R. Kleeberger, Ph. D.\nAssociate Professor\n(410) 955-3515/955-0299\nJohns Hopkins University, School of Hyg. & Pub. Hlth.\nEnvironmental Health Sciences\n615 North Wolfe Street, Baltimore, Maryland\n2. PROJECT TITLE\nMechanisms of Chronic Ozone Exposure: Role of Inflammation\n3. KEY WORDS PLEASE PROVIDE THREE (3) KEY WORDS WHICH WILL BE USED AS REFERENCE HEADINGS Ozone,\nInflammation, Mast Cell\n4. INSTITUTION NAME AND ADDRESS OF INSTITUTION RESPONSIBLE AND ACCOUNTABLE FOR OF AWARDED ON THE OF DISPOSITION FUNDS BASIS THIS APPLICATION.\nJohns Hopkins University\n615 North Wolfe Street\nMaryland 21205\n5. LOCATION LIST LOCATION WHERE RESEARCH WILL BE CONDUCTED IF OTHER THAN INSTITUTION IDENTIFIED IN #4 ABOVE.\n6. INCLUSIVE DATES AND TOTAL COSTS OF THIS SPECIFIC PROJECT RELATED TO EACH 12 MONTH PERIOD IF MORE THAN ONE YEAR IS REQUIRED TO COMPLETE PROJECT. SUMMARIZE FROM BUDGET PAGE ITEM 12(s). IT MUST BE UNDERSTOOD THAT AWARDS FOR 2ND AND 3RD PERIODS ARE DEPENDENT ON CENTER APPROVAL OF CONTINUATION APPLICATION.\n(A) 1ST 12 MONTH PERIOD\n(B) 2ND 12 MONTH PERIOD IF REQUIRED\n(C) 3RD 12 MONTH PERIOD IF REQUIRED\nINCLUSIVE DATE\n210, 910\n212, 481\n220, 416\nTOTAL COST\n7. INSTITUTIONAL OFFICER. NAME, TITLE AND TELEPHONE NUMBER OF INDIVIDUAL AUTHORIZED TO SIGN FOR THE INSTITUTION IDENTIFIED IN #4 ABOVE. IT IS UNDERSTOOD THAT THE OFFICER, IN APPLYING FOR A CONTACT. HAS READ AND FOUND ACCEPTABLE THE CENTER'S MANAGEMENT OF RESEARCH CONTRACTS AND CONTRACT ADMINISTRATION POLICY.\nAlan M. Goldberg, Ph. D.\nAssoc. Dean for Research\n(410) 955-9253\n(A) NAME\n(C) TELEPHONE\n(D) SIGNATURE OF\n(B) TITLE\n(E) DATE\n(C) City\n(D) STATE/ZIP\n(a) STREET\n(A) INSTITUTION\n(F) MAILING\n(D) DEPARTMENT\n(A) NAME\n(a) TITLE\n(E) INSTITUTION\n(c) TELEPHONE\n(G) STATE/ZIP\n8. PRELIMINARY STUDIES* QUALIFICATIONS OF INVESTIGATOR\n9. EXPERIMENTAL PLAN* (A) METHODS DATA INTERPRETATION RESULTS INVESTIGATION LITERATURE CITED\n10. AVAILABLE FACILITIES AND RESOURCES\n11. OTHER SUPPORT\n* APPEND AS MUCH MATERIAL AS REQUIRED TYPE, SINGLE SPACE USE 8-1/2 x 11\" WHITE PAPER AND LABEL EACH SHEET WITH NAME THE PRINCIPAL NVESTIGATOR IN THE UPPER RIGHT HAND CORNER AND PAGE NUMBER AT THE BOTTOM. CONSECUTIVELY NUMBER EACH ADDENDUM BEGINNING WITH PAGES 5. DO NOT INSERT PACES BETWEEN PAGES 1 AND 6 E.G. 2A 2B 3A ETC. INCLUDE NINE COPIES AND AN ORIGINAL If SENDING PHOTOGRAPHS, INCLUDE 2 ORIGINAL SETS. NOTE: EACH OF THE NINE COPIES MUST BE PLACED IN  BINDER PER MAILING INSTRUCTIONS.",
+      "prediction": "CENTER FOR INDOOR AIR RESEARCH\n1099 WinteRsON ROAD Surte 280 Lintuicum, Mp. 21090\n\nAPPLICATION FOR (410) 684-3777 FAX (410) 684-3729\nRESEARCH CONTRACT\n\n1, PRINCIPAL INVESTIGATOR. NAME, TITLE, TELEPHONE # AND MAILING ADDRESS.\n\n(a) Steven R. Kleeberger, Ph.D. (s) Associate Professor (c) (410)_955-3515/955-0299\nNAME Tre TELEPHONE ##/ Fax #\n\n‘ (o) Environmental Health Sciences (e) Johns Hopkins University, School of Hyg. & Pub. Hlth.\nDEPARTMENT InsTrTUTION\n©. 615 North Wolfe Street, Baltimore, Maryland © 21205\n\n) MAILING ADDRESS STATe/ZiP\n\n2.PROJECTTITLE. Mechanisms of Chronic Ozone Exposure: Role of Inflammation\n3. KEY WORDS. PLEASE PROVIDE THREE (3) KEY WORDS WHICH WILL’BE USED AS REFERENCE HEADINGSQzone, Inflammation, Mast Cell\n\n4. INSTITUTION. NAME AND ADDRESS OF INSTITUTION RESPONSIBLE AND ACCOUNTABLE FOR DISPOSITION OF FUNDS AWARDED ON THE BASIS\nOF THIS APPLICATION.\n\n(4) Johns Hopkins University (n)_615 North Wolfe Street\n\nInstrruTION STREET ADDRESS\n(¢ Baltimore (o) Maryland__21205\nCrry StaTe/ZiP\n\n5. LOCATION. LisT LOCATION WHERE RESEARCH WILL BE CONDUCTED /F OTHER THAN INSTITUTION IDENTIFIED IN #4 ABOVE.\n\n(a)\n\n(8)\n\n6.INCLUSIVE DATES anb TOTAL COSTS OF THIS SPECIFIC PROJECT RELATED TO EACH 12 MONTH PERIOD IF MORE THAN ONE YEAR IS\n\nREQUIRED TO COMPLETE PROJECT. SUMMARIZE FROM BUDGET PAGE, ITEM 12()). IT MUST BE UNDERSTOOD THAT AWARDS FOR 2ND AND 3RD\nPERIODS ARE DEPENDENT ON CENTER APPROVAL OF CONTINUATION APPLICATION.\n\nIncuusive Date Totat Cost\n(a) Isr 12 Monts perion —O1/01/94 any 12/31/94 ¢ 210,910\n\n(8) 2ND 12 MONTH PERIOD IF REQUIRED 01/01/95 THRU 12/31/95 $ 212,481\nmuny 22/31/96 ¢ 220,416\n\n(©) 3RD 12 MONTH PERIOD IF REQUIRED\n\n7, INSTITUTIONAL OFFICER. NAME, TITLE AND FR OF INDIVIDUAL AUTHORIZED TO SIGN FOR THE INSTITUTION IDENTIFIED\nIN #4 ABOVE. IT IS UNDERSTOOD THAT THE OFFICER, IN \\CT, HAS READ AND FOUND ACCEPTABLE THE CENTER'S.\nMANAGEMENT OF RESEARCH CONTRACTS AND Ci LICY.\n\n(a). Alan M. Goldberg, Ph.D.\n\n(H't410) 955-9253\n\n‘TELEPHONE\n8.PRELIMINARY STUDIES*.\n\n(A) FEASIBILITY OF PROPOSED RESEARCH\n(8) QUALIFICATIONS OF INVESTIGATOR\n\n9. EXPERIMENTAL PLAN*.\n(a) Desicn\n\n(8) MeTHops\n\n(C) ANALYSIS OF DATA\n\n(D) INTERPRETATION OF RESULTS\n\n(€) TIMETABLE FOR THE INVESTIGATION\n(F) LrreRATURE CITED\n\n10. AVAILABLE FACILITIES AND RESOURCES.\n11, OTHER SUPPORT\n\n* APPEND AS MUCH MATERIAL AS REQUIRED. TYPE, SINGLE SPACE, USE 8-1/2\" X 11” WHITE PAPER AND LABEL EACH SHEET WITH NAME OF THE\nPRINCIPAL INVESTIGATOR IN THE UPPER RIGHT HAND CORNER AND PAGE NUMBER AT THE BOTTOM. CONSECUTIVELY NUMBER EACH ADDENDUM.\nBEGINNING WITH PAGE 5. Do NOT INSERT PAGES BETWEEN PAGES | AND 6, E.G., 2A, 2B, 3A, ETC. INCLUDE NINE COPIES AND AN ORIGINAL. IF _\n‘SENDING PHOTOGRAPHS, INCLUDE 2 ORIGINAL SETS. NOTE: EACH OF THE NINE COPIES MUST BE PLACED IN A BINDER PER MAILING\n\nINSTRUCTIONS.\n\n2PTPESLs8",
+      "exact_match": false,
+      "character_errors": 1039,
+      "reference_characters": 2781,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "89856243",
+      "image": "images\\89856243.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "file\nPRODUCT\nDate\nTriumph\nyes\nyes\nno\nno\nApproved\nby:\nIncidence\n-\n4\n1\nTopline\nFinal\n89856243\nMarketing\nResearch\nDirector\n\n\n\nOctober 17, 1979\nMARKETING RESEARCH RPROJECT APPROVAL\n(To be filled out by Marketing Research Department)\nPROJECT TITLE\nTriumph Disaster Check Study\n5546/ 1979\nResearch Design (N, Cells, Elegibility, Design, Key Danner Breaks, Methodololy, Cities)\nContact respondents from Buffalo and Kansas City who had previously participated in a steak knife offer This will consist of one cell of approximately 175 respondents who are Triumph most often smokers /triers This study is intended to provide us with any negatives associated with Triumph Banner points will include Triumph most often smokers (we anticipate approximately 25 most of ten people Switchers away from Triumph (N approximately 45). It should be noted that an action standard of at least 50% be obtained in acting upon any product negatives associated with these groups see research limitations below for additional action standard.\n(See attached memo\nKey Criteria for Analysis\n-Triumph switchers asked why no longer smoking Triumph\n-Present smokers of Triumph asked reasons for switching to Triumph\n-Mentions of \"harshness\"\nResearch Limitations\nDue to sample size and experience we feel 25 respondents will presently be Triumph smokers. An action standard of 75% should be utilized for judgments on product negatives only among this group\nIf 75% of Triumph smokers mention harshness we could consider it a 50- 75% problem If of Triumph smokers mention \"harshness\" we could it a look consider possible problem at other areas).\nIf below 50% of Triumph smokers mention \"harshness\" we could consider it at a problem\nResearch Firm\nLenght Int\n# Open \n# Reports\nThe Data Group. Inc\n10 minutes\n2 wks from start of fid.\n4 wks from start of fld\nGroup Product Manager\nProduct Manager\nPrepared by:\nCost Estimate + - 10% Contingency Final Report Inc.\nScott R. Benson \n$ 2.250",
+      "prediction": "= imte — October 17, 1979\nMARKRTTNG RESEARCH PROIHOT APPHOVAL ———\n\n(To be filled out by Marketing Research Bepartiaent, )\n. PROJECT -\nPRODUCT Triumph TITLE Triumph Disaster Check Study -:. * | 5546/1979\n\nResearch Design (N, Cells, Elegibility, Desisn, Key Panner Breaks, Methodoloay, Cities\n\nContact respondents from Buffalo and Kansas City who had previously participated\nin a steak knife offer. This will consist of one cell of approximately 175 respondents\nwho are Triumph most often smokers/triers. This study is‘intended to provide us with\nany negatives associated with Triumph. Banner points will include Triumph most often\nsmokers (we anticipate approximately 25 most often people), switchers away from Triumph\n(N approximately 45). It should be noted that an action standard of at least 50% be\nobtained in acting upon any product negatives associated with these groups--see\nresearch limitations below for additional action standard.\n\n(See attached memo)\n\nKey Criteria For Analysis\n\n- Triumph switchers asked why no longer smoking Triumph\n~ Present smokers of Triumph asked reasons for switching to Triumph\n~ Mentions. of \"harshness\"\n\nResearch Limitations\n\nDue to sample size and experience we feel 25 respondents will presently be Triumph\n\nsmokers. An action standard of 75% should be utilized for judgments on product negatives\nonly among this group,\n\nIf 75% of Triumph smokers mention “harshness” we could consider it a problem. If\n50-75% of Triumph smokers mentién \"harshness\" we could consider it a possible problem\n\n(look at other areas).\njon.\"harshness!!_we_could conaider it not a_problem.\n\n+t\n\nsearch Firm _ The Date Group. Inc.\n\nCost. Estimate\n+ - 10% Contingency yes.f%} no CJ]\n\nFinal Report Ine. yes (] no gy Tae idence =\nPrepared by: Scott R. Benson Jb * Longin Tat. 10 minutes\nApproved by: 4\n1\nTepline 2 wks from start of fld.\nFinal —4wks from start of fd.\n89856243",
+      "exact_match": false,
+      "character_errors": 516,
+      "reference_characters": 1946,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "91814768_91814769",
+      "image": "images\\91814768_91814769.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "November\n3,\n1992\nMassachusetts\nballot\n*Note:\n19\n92\nAddress\n\nDate\nPurpose\n91814768\n☑\nFinal\n\n\n\n\"CORRECTED FORM\" The Commonwealth of Massachusetts OFFICE OF CAMPAIGN AND POLITICAL FINANCE\nOffice Use Only\nForm CPF 22 (formerly CPF 10)\nREPORT OF CORPORATE TREASURER\nFile with:\nDirector, Office of Campaign & Political Finance One Ashburton Place, Boston, MA 02108\n☐ 60th Day Prior to Election\n☐ 5th Day of the Month\n☐ 20th Day of the Month\n(CHECK ONE)\nPlease Print or Type, except Signatures.\n1. Name of Treasurer\n2. Name of Corporation\n3. Address of Corporation\nM. Alfred Peterson; Assistant Treasurer Peter J. Marzullo\nLorillard Tobacco Company\nOne Park Avenue New York. NY 10016 -5895\n4. Question No.\n1 relating to Tobacco Excise Tax Increase\n(Describe question briefly)\nsubmitted to the voters on\n(Election Date)\non the\n(Name of City/ Town of State)*\nIf this expenditure is made to influence a local ballot question, a copy of this form should be filed with the city or town clerk or election commission.\nFil in Dates:\nReporting Period Beginning\nOctober 16,\nand Ending\nNovember 5. 1992\ncontribution I certify that this report is a true statement of the amount of value of gift, payment, expenditure or or whom promise to give, pay,, expend or contribute, together with the date, purpose, and full name and address of the person to Mass. Laws, Section, as amended. It was made. I make this General report in accordance with the requirements of Chapter,\nSigned under the penalties of perjury.\n Preasurer Senato\nMarch 30, 1993\nAssistant Treasurer\nDate Paid\nTo Whom Paid (Alphabetical Listing Mandatory)\nEXPENDITURES OR DISBURSEMENTS\nAmount or Value**\n10/ 26/ 92\n10/ 30/ 92\nCommittee Against Unfair Taxes\nCommittee Against Unfair Taxes\nP. O. B03 5979 Boston, MA 0212\nP. O. Box 5979. Boston, MA 02114\nOppose Tax Increase\nOppose Tax increas\n28, 482. 00\n19, 503 00\n**In- kind contributions should be included here. Attach additional pages if necessary.\nREPORTING REQUIREMENTS CONTINUED ON REVERSE SIDE\nTotal Expenditures or Disbursements on This Report\nTotal Expenditures for Disbursements Previously Reported\nTotal Expenditures or Disbursements to Date\n48, 585 00\n508. 789 00\n556 874. 00",
+      "prediction": "\"CORRECTED FORM\"\nThe Commontuealth of Massachusetts\n\nOFFICE OF CAMPAIGN AND POLITICAL FINANCE\n\nREPORT OF\nCORPORATE TREASURER S Form CPF 22\n(formerly CPF 10)\n\nOffice Use Only\n\nFile with: Director,\nOffice of Campaign & Political Finance ha (CHECK ONE)\nOne Ashburton Place, Boston, MA 02108 © 60th Day Prior to Election\n© Sth Day of the Month\n= Please Print or Type, except Signatures. Z Estee’ ofthe Month\n\n1. Name of Treasurer “i:_Alfred Peterson; Assistant Treasurer: Peter J. Marzullo\n2. Name of Corporation Lorillard Tobacco Company\nOne Park Avenue\n\nNew York, NY 1 =\n\n3. Address of Corporation\n\n4. Question No. — relating to Tobac\n(Describe question briefly)\nsubmitted to the voters on November 3, 1932rhe__ Massachusetts allot,\n\n(Election Date) (Name of City/Town or State)*\n\n| * Note: If this expenditure is made to influence a local ballot question, a copy of this form should be filed with the city or\ntown clerk or election commission. .\n\n| ae Filtin Dates: Reporting Period Beginning October 16. 19 _92 ang Ending November 5, 1992\n\n| I certify that this report is a true statement of the amount or value of every gift, payment, expenditure or contribution or\n\npromise io give, pay, expend or contribute, together with the date, purpose, and full name and address of the person to whom\nit was made. I make this report in accordance with the requirements of Mass. General Laws, Chapter 55, Section 22, as amended.\n\nSignsspundsr the penalties of perjury.\nY\n\n“Baces ACO March 30, 1\nnatare ~ Date\n\nAssistance: Treasurer EXPENDITURES OR DISBURSEMENTS\nDate | To Whom Paid Amount\nPaid Alphabetical Listing Mandatory) Address Purpose | or Value**\n\nP.0. Box 5979, Boston, MA 02114 | Tax PREESase\n\n10/26/92 (42\n\n| P.O. Box\n\n10/30/92 | Comittee Against Unfair Taxes\n1\n7 T\n| | i\n| | |\n-\n| | ' |\n| | |\n7 T |\nu ———+-\nTotal Expenditures or Disbursements on This Report |\n** In-kind contributions should be included here. Total Expei res or Disbursements Previously Reported\n\nAttach additional pages if necessary, ; i\nres or Disbursements to Date |\n\nTotal Expenditu\n\n(REPORTING REAVIDENMSENTS CONTINI'ED ON REVERSE SIDF)",
+      "exact_match": false,
+      "character_errors": 1053,
+      "reference_characters": 2180,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "92380595",
+      "image": "images\\92380595.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "RECEIVED\nDATE:\nTO:\nATTN:\nRE:\nx\n033052\nvia:\nx\nSummons\nComplaint\nOther:\nX\nGarnishment\nSubpoena\nvs.\nRETURN\nDATE\nCollect\n)\n)\n)\n)\n475,592\nCOMMENTS:\nPhone\nOther\nX\n92380595\nSigned:\nORIGINAL\nExecutive Offices 1 GULF+ WESTE PLAZA . NEW YORK, NEW YORK 23- 7773 (212) 373- 7500\nPRENTICE HALL CORPORATE SERVICES\nUnited States Corporation Company\nThe Prentice- Hall Corporation System, Inc.\nTX 3951 U\n12- 13- 89\nLORILLARD, INC. ONE PARK AVENUE 18TH FL NEW YORK, N. Y. 10016\nDEC 14 89\nMR. ARTHUR STEVENS, ESQ A. J. STEVENS\nMOTOR CARRIER\nOR STATUTORY\nAccount #\nLORILLARD, INC.\n(Represented Company)\nNOTICE OF SERVICE OF PROCESS\nWe enclose the following documents which were served upon:\nUNITED STATES CORPORATION COMPANY IN TEXAS\nas registered agent for the above- captioned corporation on\n12- 13- 89\nPersonal Service\nMail: Regular\nor Certified\nCertified #\nDuplicate copies of the Notice and Acknowledgement enclosed\nA self- addressed stamped envelope enclosed\nNotice of Attorney's Lien\nNotice of Mechanic's Lien\nNotice of Default Jucgment\nCITATION AND FIRST ORIGINAL PETITION\nTITLE OF ACTION:\nWEBSTER CRECC\nR. J. REYNOLDS TOBACCO COMPANY, ET AL\nCase No.\nCOURT OR JURISDICTION\n345th Judicial District Court Travis County. Tx\nMonday next 20 days from date of service\nAgent called New York Office\nTel Call Placed Direct\nSpoke to\nATTORNEYS FOR CLAIMANT\nMary Ellen Felps 1000 West Ave. Austin, Tx. 78701\n512/478- 4873\nPAPERS TRANSMITTED TO CLIENT\nFed X\nReg Mail\nFORM PREPARED BY\nPAT HIGGINS\nDate Received:\n12/ 14/ 89\nDUPLICATE COPY A BUSINESS REPLY ENVELOPE IS ENCLOSED FOR YOUR CONVENIENCE\nPLEASE ACKNOWLEDGE RECEIPT OF THIS NOTICE AND THE ENCLOSURES BY SIGNING\nAND RETURNING THE",
+      "prediction": "Executive Offices\n1 GULF +WESTE PLAZA +» NEW YORK, NEW YORK 23-7773\n\n(212) 373-7500\nPRENTICE HALL CORPORATE SERVICES\nUnited States Corporation Company The Prentice-Hall Corporation: System, Inc.\nDATE: __12-13-89\n—_—SS=—_——_—=—— RECEIVED) +4 asesa u\nTO: LORILLARD, INC. —— a\nONE PARK AVENUE 18TH FL pe 14 89\nNEW YORK, N.Y. 10016\nATIN: MR. ARTHUR STEVENS, ESQ.A. J. STEVENS MOTOR CARRIER\nOR\nstatutory _*\n5 033052\nRE: LORILLARD, INC. Account #\n(Represented Company)\nWe enclose the following documents which were served upon:\nUNITED STATES CORPORATION COMPANY IN TEXAS\nas registered agent for the above-captioned corporation on_12=13-89 _ via:\nPersonal Service __X___ Mail: Regular or Certified Certified #\n\nNotice of Mechanic's Lien\n\nSummons A self-addressed stampec\n_—__— Complaint envelope enciosed Notice of Default Jucgment\n______ Duplicate copies of the Notice and Garnishment Subpoena\nAcknowledgement enclosed —_—_ Notice of Attomey’'s Lien\n\n_X_ Other: CITATION AND FIRST ORIGINAL PETITION\n\nes\n\nTITLE OF ACTION: ___iwepsTeR-crec¢ ——____)\n) Case No. 475,592\n\nvs.\nR. J. REYNOLDS TOBACCO COMPANY, ET AL }\n\nCOURT OR JURISDICTION id: 1 District Court Travis County, Tx\n\nRETURN DATE Monday next 20 days from date of service\n\nTel Call Placed Direct____. Collect ___ Spoke to ___._§._#_=_=_=_=—_=_==_=_=_=____ Agent called New York Office ___\nCOMMENTS:\n\nATTORNEYS FOR CLAIMANT MATY at me ws\n\nAustin, Tx. 78701\n\n“+ pihaga78-4873\n\nPAPERS TRANSMITTED TO CLIENT\nFed-X __y Reg. Mail\n\nFORM PREPARED BY _PAT WIGGINS\n\nPLEASE ACKNOWLEDGE RECEIPT OF THIS NOTICE AND THE ENCLOSURES BY SIGNING AND Ri\nDUPLICATE COPY. A BUSINESS REPLY ENVELOPE !S ENCLOSED FOR YOUR CONVENIENC!\n\nDate Received:\nORIGINAL\n\nSésogezs",
+      "exact_match": false,
+      "character_errors": 938,
+      "reference_characters": 1661,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "93106788",
+      "image": "images\\93106788.png",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "TO:\nATTN:\nDATE:\nADVERTISER:\nPRODUCT:\nLORILLARD\nNEWPORT\nAD#:\nCAPTION:\nSPACE:\nDATE:\nP5CE\nPO\n#77219\nATTN:\n93106788\nCigarette\nLORILLARD MEDIA SERVICES ONE PARK AVENUE, NEW YORK, NY 10016- 5896 MAGAZINE INSERTION ORDER\nESSENCE 1500 BROADWAY NEW YORK, NY 10036\nJOYCE WINSTON\nMARCH 17, 1995\nTHIS ADVERTISEMENT COMPLIES WITH THE FTC REQUIREMENT FOR A WARNING STATEMENT AND TAR AND NICOTINE LINE WHICH MUST APPEAR IN ALL CIGARETTE ADVERTISING CHECK MATERIAL YOU RECEIVE AGAINST THE PROOF TO BE SURE IT IS CORRECT, UNDER NO CIRCUMSTANCES ARE TO YOU RUN SUBSTITUTE MATERIALS, ALTERIOR OR OMIT ANY COPY WITHOUT PRIOR APPROVAL FROM LORILLARD MEDIA SERVICES.\nNPT- 533- 7\nFOUNTAIN COUPLE\nJUNE 1995\nIF UNABLE TO INSERT ON THE DATE ORDERED KINDLY NOTIFY US AT ONCE AND WAIT FOR NEW INSERTION DATE. NO CREDIT CAN BE ALLOWED SHOULD THIS ADVERTISEMENT APPEAR INCORRECTLY OR ON A DATE OTHER THAN THAT AUTHORIZED.\nPOSITION URGENTLY REQUESTED:\nFAR FORWARD, OPPOSITE FULL EDITORIAL\n- No coupon ad on backing page.\n- Maintain at least six page separation from bompetitive ads.\n- No aditional/ advertising matter  to cigarette within 6 pages of our ad.\nCOPY INSTRUCTIONS:\n5 COLOR PROOF ATTACHED, FILM FROM COLLIER WITH \"D\" WARNING\nSURGEON GENERALS WARNING\nSmoke contains carbon Monoxide\nIMPORTANT INSTRUCTIONS:\nA. Check material carefully against proof to make sure it corresponds in every respect\nB. Please inspect repro material immediately. They should produce good printing results. Advise us promptly if Hor satisfactory\nC. Poor printing will not be paid for.\nD. Advise us at once if instructions are not clear.\nE. Under no circumstances are you to space out our advertisement without specific instructions from us.\nSPACE BILLING INSTRUCTIONS:\nThe space is being brdered by:\nLOAILLARD MEDIA SERVICES\nDirect all invoices and full checking copies of all regional and national additions to:\nLORILLARD MEDIA SERVICES ONE PARK AVENUE 17TH FLOOR NEW YORK NEW YORK 10016- 5896\nSTEVE MOLLOY",
+      "prediction": "LORILLARD MEDIA SERVICES\nONE PARK AVENUE, NEW YORK, NY 10016-5896\n\nMAGAZINE INSERTION ORDER\n\nTO: ESSENCE OATE: MARCH 17, 1995\n\n1500 BROADWAY\nNEW YORK, NY 10036\nATTN: JOYCE WINSTON\n\nADVERTISER: — LORILLARD\n\nPRODUCT: _ NEWPORT\n\nTHIS ADVERTISEMENT COMPLIES WITH THE FTC REQUIREMENT FOR A WARNING STATEMENT AND ‘TAR* AND NICCTINE UNE\nWHICH MUST APPEAR IN ALL CIGARETTE ADVERTISING. CHECK MATERIAL YOU RECEIVE AGAINST THE PROOF TO GE SURE ITIS\n\nCORRECT. UNDER NO CIRCUMSTANCES AR: ALTER OR OMIT ANY COPY WITHOUT PRIOR.\nAPPROVAL FROM LORILLARO MEDIA SERVICES,\n\nADA: CAPTION: SPACE: OATE:\nNPT-533-7 FOUNTAIN COUPLE PSCB JUNE 1995\nPO'#7219.\n\nIF UNABLE TO INSERT ON THE DATE ORDERED, KINDLY NOTIFY US AT ONCE AND WAIT FOR NEW INSERTION DATE. NO CREDIT\n(CAN BE ALLOWED SHOULD THIS ADVERTISEMENT APPEAR INCORRECTLY OR ON A DATE OTHER THAN THAT AUTHORIZED,\n\nPOSITION URGENTLY REQUESTED: .\n\nFAR FORWARD, OPPOSITE FULL EDITORIAL\n\n= No coupon ad on backing page. — Maintain at least six page separation from compostive ade.\n= No edkorivadvertsing matter ansthatee! to cigarettes within 6 pages of our ad.\n\nCOPY INSTRUCTIONS:\n3EON GENERAL'S WARNING: Cigarette\n\nSone Contains Carbox.tagnen\n\nS COLOR PROOF ATTACHED, FILM FROM COLLIER WITH *D* WARNING\n\nING INSTRUCTIONS:\n\nIMPORTANT INSTRUCTIONS:\n\nA. Check material carefully against proof This space is being ordered by:\n\nto make aure it corresponds in every\nrespect, LORILLARD MEDIA SERVICES\n\nB. Please inspect repro material immediately.\nThey should produce good printing results.\n\nDirect all invoices and full checking copios\nof all regional and national editions to:\n\nAdvise us promptly if not satisfactory.\nC. Poor printing will net be paid for, o. LORILLARD MEDIA SERVICES.\n(ONE PARK AVENUE\n0. Advise us at once Hf instructions are not 17TH FLOOR\nclear. NEW YORK. NEW YORK 10016-5396\nATTN: STEVE MOLLOY\n\nE. Under no circumstances aro you to space\nOut cur advertisement without specific\ninstructions from us.\n\nF8L90I1 86",
+      "exact_match": false,
+      "character_errors": 935,
+      "reference_characters": 1961,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "benchmark_type": "generic_ocr",
+  "dataset": {
+    "name": "Mozhi-Hindi",
+    "language": "Hindi",
+    "modality": "printed word images from real scanned pages",
+    "license": "CC BY 4.0",
+    "source_url": "https://ilocr.iiit.ac.in/dataset/7/",
+    "download_url": "https://cdn.iiit.ac.in/cdn/ilocr.iiit.ac.in/public/printed/phase-0/v0.5/hindi/akshara/test.zip",
+    "split": "test",
+    "selection": "first 100 rows in provider test_gt.txt order"
+  },
+  "samples": [
+    {
+      "id": "images/0057-0010_2_3_1.jpeg",
+      "image": "images\\0057-0010_2_3_1.jpeg",
+      "ground_truth": "पड़ता"
+    },
+    {
+      "id": "images/0057-0010_2_3_2.jpeg",
+      "image": "images\\0057-0010_2_3_2.jpeg",
+      "ground_truth": "था"
+    },
+    {
+      "id": "images/0057-0010_2_3_3.jpeg",
+      "image": "images\\0057-0010_2_3_3.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0095_2_3_1.jpeg",
+      "image": "images\\0057-0095_2_3_1.jpeg",
+      "ground_truth": "के"
+    },
+    {
+      "id": "images/0057-0095_2_3_2.jpeg",
+      "image": "images\\0057-0095_2_3_2.jpeg",
+      "ground_truth": "बीच"
+    },
+    {
+      "id": "images/0057-0095_2_3_3.jpeg",
+      "image": "images\\0057-0095_2_3_3.jpeg",
+      "ground_truth": "एक"
+    },
+    {
+      "id": "images/0057-0095_2_3_4.jpeg",
+      "image": "images\\0057-0095_2_3_4.jpeg",
+      "ground_truth": "किवाड़"
+    },
+    {
+      "id": "images/0057-0095_2_3_5.jpeg",
+      "image": "images\\0057-0095_2_3_5.jpeg",
+      "ground_truth": "था"
+    },
+    {
+      "id": "images/0057-0095_2_3_6.jpeg",
+      "image": "images\\0057-0095_2_3_6.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0095_2_3_7.jpeg",
+      "image": "images\\0057-0095_2_3_7.jpeg",
+      "ground_truth": "वह"
+    },
+    {
+      "id": "images/0057-0095_2_3_8.jpeg",
+      "image": "images\\0057-0095_2_3_8.jpeg",
+      "ground_truth": "किवाड़"
+    },
+    {
+      "id": "images/0057-0095_2_3_9.jpeg",
+      "image": "images\\0057-0095_2_3_9.jpeg",
+      "ground_truth": "खोलकर"
+    },
+    {
+      "id": "images/0057-0095_2_3_10.jpeg",
+      "image": "images\\0057-0095_2_3_10.jpeg",
+      "ground_truth": "मेरे"
+    },
+    {
+      "id": "images/0057-0095_2_3_11.jpeg",
+      "image": "images\\0057-0095_2_3_11.jpeg",
+      "ground_truth": "कमरे"
+    },
+    {
+      "id": "images/0057-0095_2_3_12.jpeg",
+      "image": "images\\0057-0095_2_3_12.jpeg",
+      "ground_truth": "में"
+    },
+    {
+      "id": "images/0057-0095_2_3_13.jpeg",
+      "image": "images\\0057-0095_2_3_13.jpeg",
+      "ground_truth": "आया"
+    },
+    {
+      "id": "images/0057-0095_2_3_14.jpeg",
+      "image": "images\\0057-0095_2_3_14.jpeg",
+      "ground_truth": "और"
+    },
+    {
+      "id": "images/0057-0095_3_10_1.jpeg",
+      "image": "images\\0057-0095_3_10_1.jpeg",
+      "ground_truth": "जब"
+    },
+    {
+      "id": "images/0057-0095_3_10_2.jpeg",
+      "image": "images\\0057-0095_3_10_2.jpeg",
+      "ground_truth": "मैं"
+    },
+    {
+      "id": "images/0057-0095_3_10_3.jpeg",
+      "image": "images\\0057-0095_3_10_3.jpeg",
+      "ground_truth": "होश"
+    },
+    {
+      "id": "images/0057-0095_3_10_4.jpeg",
+      "image": "images\\0057-0095_3_10_4.jpeg",
+      "ground_truth": "में"
+    },
+    {
+      "id": "images/0057-0095_3_10_5.jpeg",
+      "image": "images\\0057-0095_3_10_5.jpeg",
+      "ground_truth": "आयी"
+    },
+    {
+      "id": "images/0057-0095_3_10_6.jpeg",
+      "image": "images\\0057-0095_3_10_6.jpeg",
+      "ground_truth": "तो"
+    },
+    {
+      "id": "images/0057-0095_3_10_7.jpeg",
+      "image": "images\\0057-0095_3_10_7.jpeg",
+      "ground_truth": "दिल"
+    },
+    {
+      "id": "images/0057-0095_3_10_8.jpeg",
+      "image": "images\\0057-0095_3_10_8.jpeg",
+      "ground_truth": "धड़कने"
+    },
+    {
+      "id": "images/0057-0095_3_10_9.jpeg",
+      "image": "images\\0057-0095_3_10_9.jpeg",
+      "ground_truth": "लगा"
+    },
+    {
+      "id": "images/0057-0095_3_10_10.jpeg",
+      "image": "images\\0057-0095_3_10_10.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0095_3_10_11.jpeg",
+      "image": "images\\0057-0095_3_10_11.jpeg",
+      "ground_truth": "अब"
+    },
+    {
+      "id": "images/0057-0095_3_10_12.jpeg",
+      "image": "images\\0057-0095_3_10_12.jpeg",
+      "ground_truth": "भी"
+    },
+    {
+      "id": "images/0057-0095_3_10_13.jpeg",
+      "image": "images\\0057-0095_3_10_13.jpeg",
+      "ground_truth": "मैंने"
+    },
+    {
+      "id": "images/0057-0095_3_10_14.jpeg",
+      "image": "images\\0057-0095_3_10_14.jpeg",
+      "ground_truth": "वही"
+    },
+    {
+      "id": "images/0057-0096_4_10_1.jpeg",
+      "image": "images\\0057-0096_4_10_1.jpeg",
+      "ground_truth": "कुछ"
+    },
+    {
+      "id": "images/0057-0096_4_10_2.jpeg",
+      "image": "images\\0057-0096_4_10_2.jpeg",
+      "ground_truth": "दिन"
+    },
+    {
+      "id": "images/0057-0096_4_10_3.jpeg",
+      "image": "images\\0057-0096_4_10_3.jpeg",
+      "ground_truth": "तक"
+    },
+    {
+      "id": "images/0057-0096_4_10_4.jpeg",
+      "image": "images\\0057-0096_4_10_4.jpeg",
+      "ground_truth": "मैं"
+    },
+    {
+      "id": "images/0057-0096_4_10_5.jpeg",
+      "image": "images\\0057-0096_4_10_5.jpeg",
+      "ground_truth": "बाहर"
+    },
+    {
+      "id": "images/0057-0096_4_10_6.jpeg",
+      "image": "images\\0057-0096_4_10_6.jpeg",
+      "ground_truth": "कहीं"
+    },
+    {
+      "id": "images/0057-0096_4_10_7.jpeg",
+      "image": "images\\0057-0096_4_10_7.jpeg",
+      "ground_truth": "निकलती"
+    },
+    {
+      "id": "images/0057-0096_4_10_8.jpeg",
+      "image": "images\\0057-0096_4_10_8.jpeg",
+      "ground_truth": "नहीं"
+    },
+    {
+      "id": "images/0057-0096_4_10_9.jpeg",
+      "image": "images\\0057-0096_4_10_9.jpeg",
+      "ground_truth": "थी"
+    },
+    {
+      "id": "images/0057-0096_4_10_10.jpeg",
+      "image": "images\\0057-0096_4_10_10.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0096_4_10_11.jpeg",
+      "image": "images\\0057-0096_4_10_11.jpeg",
+      "ground_truth": "रामकृष्ण"
+    },
+    {
+      "id": "images/0057-0096_4_10_12.jpeg",
+      "image": "images\\0057-0096_4_10_12.jpeg",
+      "ground_truth": "मठ"
+    },
+    {
+      "id": "images/0057-0096_4_10_13.jpeg",
+      "image": "images\\0057-0096_4_10_13.jpeg",
+      "ground_truth": "में"
+    },
+    {
+      "id": "images/0057-0077_2_3_1.jpeg",
+      "image": "images\\0057-0077_2_3_1.jpeg",
+      "ground_truth": "क्षणिकावेश"
+    },
+    {
+      "id": "images/0057-0077_2_3_2.jpeg",
+      "image": "images\\0057-0077_2_3_2.jpeg",
+      "ground_truth": "में"
+    },
+    {
+      "id": "images/0057-0077_2_3_3.jpeg",
+      "image": "images\\0057-0077_2_3_3.jpeg",
+      "ground_truth": "मैं"
+    },
+    {
+      "id": "images/0057-0077_2_3_4.jpeg",
+      "image": "images\\0057-0077_2_3_4.jpeg",
+      "ground_truth": "क्या"
+    },
+    {
+      "id": "images/0057-0077_2_3_5.jpeg",
+      "image": "images\\0057-0077_2_3_5.jpeg",
+      "ground_truth": "कर"
+    },
+    {
+      "id": "images/0057-0077_2_3_6.jpeg",
+      "image": "images\\0057-0077_2_3_6.jpeg",
+      "ground_truth": "बैठा"
+    },
+    {
+      "id": "images/0057-0077_2_3_7.jpeg",
+      "image": "images\\0057-0077_2_3_7.jpeg",
+      "ground_truth": "!"
+    },
+    {
+      "id": "images/0057-0077_2_3_8.jpeg",
+      "image": "images\\0057-0077_2_3_8.jpeg",
+      "ground_truth": "वह"
+    },
+    {
+      "id": "images/0057-0077_2_3_9.jpeg",
+      "image": "images\\0057-0077_2_3_9.jpeg",
+      "ground_truth": "कितना"
+    },
+    {
+      "id": "images/0057-0077_2_3_10.jpeg",
+      "image": "images\\0057-0077_2_3_10.jpeg",
+      "ground_truth": "उदात्त"
+    },
+    {
+      "id": "images/0057-0077_2_3_11.jpeg",
+      "image": "images\\0057-0077_2_3_11.jpeg",
+      "ground_truth": "मन"
+    },
+    {
+      "id": "images/0057-0077_2_3_12.jpeg",
+      "image": "images\\0057-0077_2_3_12.jpeg",
+      "ground_truth": "वाला"
+    },
+    {
+      "id": "images/0057-0077_2_3_13.jpeg",
+      "image": "images\\0057-0077_2_3_13.jpeg",
+      "ground_truth": "है"
+    },
+    {
+      "id": "images/0057-0077_2_3_14.jpeg",
+      "image": "images\\0057-0077_2_3_14.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0077_2_3_15.jpeg",
+      "image": "images\\0057-0077_2_3_15.jpeg",
+      "ground_truth": "जब"
+    },
+    {
+      "id": "images/0057-0083_3_3_1.jpeg",
+      "image": "images\\0057-0083_3_3_1.jpeg",
+      "ground_truth": "में"
+    },
+    {
+      "id": "images/0057-0083_3_3_2.jpeg",
+      "image": "images\\0057-0083_3_3_2.jpeg",
+      "ground_truth": "उसे"
+    },
+    {
+      "id": "images/0057-0083_3_3_3.jpeg",
+      "image": "images\\0057-0083_3_3_3.jpeg",
+      "ground_truth": "कोई"
+    },
+    {
+      "id": "images/0057-0083_3_3_4.jpeg",
+      "image": "images\\0057-0083_3_3_4.jpeg",
+      "ground_truth": "दोष"
+    },
+    {
+      "id": "images/0057-0083_3_3_5.jpeg",
+      "image": "images\\0057-0083_3_3_5.jpeg",
+      "ground_truth": "दिखायी"
+    },
+    {
+      "id": "images/0057-0083_3_3_6.jpeg",
+      "image": "images\\0057-0083_3_3_6.jpeg",
+      "ground_truth": "नहीं"
+    },
+    {
+      "id": "images/0057-0083_3_3_7.jpeg",
+      "image": "images\\0057-0083_3_3_7.jpeg",
+      "ground_truth": "पड़ता"
+    },
+    {
+      "id": "images/0057-0083_3_3_8.jpeg",
+      "image": "images\\0057-0083_3_3_8.jpeg",
+      "ground_truth": "।"
+    },
+    {
+      "id": "images/0057-0083_3_3_9.jpeg",
+      "image": "images\\0057-0083_3_3_9.jpeg",
+      "ground_truth": "उन"
+    },
+    {
+      "id": "images/0057-0083_3_3_10.jpeg",
+      "image": "images\\0057-0083_3_3_10.jpeg",
+      "ground_truth": "दिनों"
+    },
+    {
+      "id": "images/0057-0083_3_3_11.jpeg",
+      "image": "images\\0057-0083_3_3_11.jpeg",
+      "ground_truth": "मैं"
+    },
+    {
+      "id": "images/0057-0083_3_3_12.jpeg",
+      "image": "images\\0057-0083_3_3_12.jpeg",
+      "ground_truth": "ईर्ष्या,"
+    },
+    {
+      "id": "images/0057-0083_3_3_13.jpeg",
+      "image": "images\\0057-0083_3_3_13.jpeg",
+      "ground_truth": "द्वेष"
+    },
+    {
+      "id": "images/0057-0083_3_3_14.jpeg",
+      "image": "images\\0057-0083_3_3_14.jpeg",
+      "ground_truth": "ज़ैसे"
+    },
+    {
+      "id": "images/0057-0083_3_3_15.jpeg",
+      "image": "images\\0057-0083_3_3_15.jpeg",
+      "ground_truth": "शब्दों"
+    },
+    {
+      "id": "images/0057-0015_6_20_1.jpeg",
+      "image": "images\\0057-0015_6_20_1.jpeg",
+      "ground_truth": "“क्या"
+    },
+    {
+      "id": "images/0057-0015_6_20_2.jpeg",
+      "image": "images\\0057-0015_6_20_2.jpeg",
+      "ground_truth": "तुमने"
+    },
+    {
+      "id": "images/0057-0015_6_20_3.jpeg",
+      "image": "images\\0057-0015_6_20_3.jpeg",
+      "ground_truth": "उसे"
+    },
+    {
+      "id": "images/0057-0015_6_20_4.jpeg",
+      "image": "images\\0057-0015_6_20_4.jpeg",
+      "ground_truth": "कभी"
+    },
+    {
+      "id": "images/0057-0015_6_20_5.jpeg",
+      "image": "images\\0057-0015_6_20_5.jpeg",
+      "ground_truth": "भी"
+    },
+    {
+      "id": "images/0057-0015_6_20_6.jpeg",
+      "image": "images\\0057-0015_6_20_6.jpeg",
+      "ground_truth": "वैसे"
+    },
+    {
+      "id": "images/0057-0015_6_20_7.jpeg",
+      "image": "images\\0057-0015_6_20_7.jpeg",
+      "ground_truth": "लोगों"
+    },
+    {
+      "id": "images/0057-0015_6_20_8.jpeg",
+      "image": "images\\0057-0015_6_20_8.jpeg",
+      "ground_truth": "के"
+    },
+    {
+      "id": "images/0057-0015_6_20_9.jpeg",
+      "image": "images\\0057-0015_6_20_9.jpeg",
+      "ground_truth": "साथ"
+    },
+    {
+      "id": "images/0057-0015_6_20_10.jpeg",
+      "image": "images\\0057-0015_6_20_10.jpeg",
+      "ground_truth": "रहना"
+    },
+    {
+      "id": "images/0057-0015_6_20_11.jpeg",
+      "image": "images\\0057-0015_6_20_11.jpeg",
+      "ground_truth": "देखा"
+    },
+    {
+      "id": "images/0057-0015_6_20_12.jpeg",
+      "image": "images\\0057-0015_6_20_12.jpeg",
+      "ground_truth": "है"
+    },
+    {
+      "id": "images/0057-0015_6_20_13.jpeg",
+      "image": "images\\0057-0015_6_20_13.jpeg",
+      "ground_truth": "?"
+    },
+    {
+      "id": "images/0057-0015_6_20_14.jpeg",
+      "image": "images\\0057-0015_6_20_14.jpeg",
+      "ground_truth": "उसका"
+    },
+    {
+      "id": "images/0057-0058_5_20_1.jpeg",
+      "image": "images\\0057-0058_5_20_1.jpeg",
+      "ground_truth": "लिखा"
+    },
+    {
+      "id": "images/0057-0058_5_20_2.jpeg",
+      "image": "images\\0057-0058_5_20_2.jpeg",
+      "ground_truth": "था"
+    },
+    {
+      "id": "images/0057-0058_5_20_3.jpeg",
+      "image": "images\\0057-0058_5_20_3.jpeg",
+      "ground_truth": "कि"
+    },
+    {
+      "id": "images/0057-0058_5_20_4.jpeg",
+      "image": "images\\0057-0058_5_20_4.jpeg",
+      "ground_truth": "वे"
+    },
+    {
+      "id": "images/0057-0058_5_20_5.jpeg",
+      "image": "images\\0057-0058_5_20_5.jpeg",
+      "ground_truth": "वाल्टेर"
+    },
+    {
+      "id": "images/0057-0058_5_20_6.jpeg",
+      "image": "images\\0057-0058_5_20_6.jpeg",
+      "ground_truth": "आकर"
+    },
+    {
+      "id": "images/0057-0058_5_20_7.jpeg",
+      "image": "images\\0057-0058_5_20_7.jpeg",
+      "ground_truth": "रहेंगे"
+    },
+    {
+      "id": "images/0057-0058_5_20_8.jpeg",
+      "image": "images\\0057-0058_5_20_8.jpeg",
+      "ground_truth": "और"
+    },
+    {
+      "id": "images/0057-0058_5_20_9.jpeg",
+      "image": "images\\0057-0058_5_20_9.jpeg",
+      "ground_truth": "इसलिए"
+    },
+    {
+      "id": "images/0057-0058_5_20_10.jpeg",
+      "image": "images\\0057-0058_5_20_10.jpeg",
+      "ground_truth": "किराये"
+    },
+    {
+      "id": "images/0057-0058_5_20_11.jpeg",
+      "image": "images\\0057-0058_5_20_11.jpeg",
+      "ground_truth": "पर"
+    },
+    {
+      "id": "images/0057-0058_5_20_12.jpeg",
+      "image": "images\\0057-0058_5_20_12.jpeg",
+      "ground_truth": "घर"
+    }
+  ]
+}

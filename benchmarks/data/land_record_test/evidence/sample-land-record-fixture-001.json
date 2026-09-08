@@ -1,0 +1,7 @@
+{
+  "source_image": "sample_documents/sample_land_record.png",
+  "source_status": "Repository-provided fictional demonstration data only",
+  "ground_truth_provenance": "Independent fixture expectations encoded in tests/test_extraction.py and tests/test_validation.py before this benchmark manifest was created.",
+  "review_status": "Fixture baseline verified against source image and existing test expectations.",
+  "privacy_note": "No real-person or production land-record data is represented by this fixture."
+}

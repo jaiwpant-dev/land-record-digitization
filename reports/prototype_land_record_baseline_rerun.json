@@ -1,0 +1,730 @@
+{
+  "dataset": {
+    "name": "Synthetic land-record prototype baseline",
+    "version": "1",
+    "license": "Repository-created fictional demonstration data",
+    "split": "test",
+    "ground_truth_method": "Frozen values authored before benchmark execution; no ground-truth field is passed to the API.",
+    "selection": "Four representative, programmatically rendered single-record layouts with invented data.",
+    "representativeness": "PROTOTYPE BASELINE ONLY. It is not a government-record or population-accuracy claim."
+  },
+  "benchmark_type": "field_extraction",
+  "evaluated_images": 4,
+  "skipped_images": [],
+  "http_responses_received": 4,
+  "transport_failures": 0,
+  "successful_http_requests": 4,
+  "failed_http_requests": 0,
+  "extraction_success_rate": 1.0,
+  "complete_extraction_rate": 1.0,
+  "ocr_text_available": 4,
+  "ocr_text_unavailable": 0,
+  "pipeline_failure_count": 0,
+  "non_complete_pipeline_results": 0,
+  "macro_average_raw_exact_match_rate": 1.0,
+  "macro_average_normalized_match_rate": 1.0,
+  "micro_average_raw_exact_match_rate": 1.0,
+  "micro_average_normalized_match_rate": 1.0,
+  "overall_land_record_extraction_accuracy": 1.0,
+  "overall_land_record_extraction_accuracy_definition": "Micro-average normalized field match across required land-record fields; this is not OCR CER.",
+  "missing_field_rate": 0.0,
+  "record_raw_exact_match_rate": 1.0,
+  "record_normalized_match_rate": 1.0,
+  "pipeline_status_counts": {
+    "complete": 4
+  },
+  "http_status_counts": {
+    "200": 4
+  },
+  "evaluation_normalization": "NFKC, case-folding, trimming, and whitespace collapse only; it performs no punctuation, digit, unit, or value correction.",
+  "ocr_quality": {
+    "scored_images": 4,
+    "character_errors": 40,
+    "reference_characters": 1057,
+    "character_error_rate": 0.037843,
+    "word_errors": 0,
+    "reference_words": 148,
+    "word_error_rate": 0.0,
+    "note": "Raw OCR text transcription quality, scored separately from field extraction."
+  },
+  "field_metrics": {
+    "area": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 133,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "district": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 33,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "father_name": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 42,
+      "word_errors": 0,
+      "reference_words": 8,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "khasra_number": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 18,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "khata_number": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 28,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "land_type": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 37,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "owner_name": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 41,
+      "word_errors": 0,
+      "reference_words": 8,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "tehsil": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 32,
+      "word_errors": 0,
+      "reference_words": 4,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    },
+    "village": {
+      "evaluated": 4,
+      "raw_exact_matches": 4,
+      "normalized_matches": 4,
+      "missing": 0,
+      "character_errors": 0,
+      "reference_characters": 41,
+      "word_errors": 0,
+      "reference_words": 7,
+      "validation_error_count": 0,
+      "raw_exact_match_rate": 1.0,
+      "normalized_match_rate": 1.0,
+      "missing_field_rate": 0.0,
+      "character_error_rate": 0.0,
+      "word_error_rate": 0.0
+    }
+  },
+  "samples": [
+    {
+      "id": "prototype-en-001",
+      "image": "images/prototype-en-001.png",
+      "http_status": 200,
+      "pipeline_status": "complete",
+      "ocr_text_available": true,
+      "extraction_success": true,
+      "ocr_quality": {
+        "expected": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Aarav Mehta\nFather Name: Vikram Mehta\nDistrict: Nainital\nTehsil: Bhimtal\nVillage: Suryagaon\nKhata No: KH-2101\nKhasra No: 101/2\nArea: 1.25 hectare\nLand Type: Agricultural",
+        "predicted": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\n\nFictional non-sensitive demonstration data\n\nOwner Name: Aarav Mehta\n\nFather Name: Vikram Mehta\n\nDistrict: Nainital\n\nTehsil: Bhimtal\n\nVillage: Suryagaon\n\nKhata No: KH-2101\n\nKhasra No: 101/2\n\nArea: 1.25 hectare\n\nLand Type: Agricultural",
+        "character_errors": 10,
+        "reference_characters": 269,
+        "word_errors": 0,
+        "reference_words": 36
+      },
+      "fields": {
+        "owner_name": {
+          "expected": "Aarav Mehta",
+          "predicted": "Aarav Mehta",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "father_name": {
+          "expected": "Vikram Mehta",
+          "predicted": "Vikram Mehta",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 12,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "district": {
+          "expected": "Nainital",
+          "predicted": "Nainital",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 8,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "tehsil": {
+          "expected": "Bhimtal",
+          "predicted": "Bhimtal",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "village": {
+          "expected": "Suryagaon",
+          "predicted": "Suryagaon",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 9,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "khata_number": {
+          "expected": "KH-2101",
+          "predicted": "KH-2101",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "khasra_number": {
+          "expected": "101/2",
+          "predicted": "101/2",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 5,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "area": {
+          "expected": {
+            "value": "1.25",
+            "unit": "hectare"
+          },
+          "predicted": {
+            "unit": "hectare",
+            "value": "1.25"
+          },
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 33,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "land_type": {
+          "expected": "Agricultural",
+          "predicted": "Agricultural",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 12,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        }
+      },
+      "pipeline_errors": []
+    },
+    {
+      "id": "prototype-en-002",
+      "image": "images/prototype-en-002.png",
+      "http_status": 200,
+      "pipeline_status": "complete",
+      "ocr_text_available": true,
+      "extraction_success": true,
+      "ocr_quality": {
+        "expected": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Nisha Verma\nFather Name: Mohan Verma\nDistrict: Almora\nTehsil: Ranikhet\nVillage: Pine Valley\nKhata No: KH-2102\nKhasra No: 88/3\nArea: 0.75 acre\nLand Type: Orchard",
+        "predicted": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\n\nFictional non-sensitive demonstration data\n\nOwner Name: Nisha Verma\n\nFather Name: Mohan Verma\n\nDistrict: Almora\n\nTehsil: Ranikhet\n\nVillage: Pine Valley\n\nKhata No: KH-2102\n\nKhasra No: 88/3\n\nArea: 0.75 acre\n\nLand Type: Orchard",
+        "character_errors": 10,
+        "reference_characters": 260,
+        "word_errors": 0,
+        "reference_words": 37
+      },
+      "fields": {
+        "owner_name": {
+          "expected": "Nisha Verma",
+          "predicted": "Nisha Verma",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "father_name": {
+          "expected": "Mohan Verma",
+          "predicted": "Mohan Verma",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "district": {
+          "expected": "Almora",
+          "predicted": "Almora",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 6,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "tehsil": {
+          "expected": "Ranikhet",
+          "predicted": "Ranikhet",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 8,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "village": {
+          "expected": "Pine Valley",
+          "predicted": "Pine Valley",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "khata_number": {
+          "expected": "KH-2102",
+          "predicted": "KH-2102",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "khasra_number": {
+          "expected": "88/3",
+          "predicted": "88/3",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 4,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "area": {
+          "expected": {
+            "value": "0.75",
+            "unit": "acre"
+          },
+          "predicted": {
+            "unit": "acre",
+            "value": "0.75"
+          },
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 30,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "land_type": {
+          "expected": "Orchard",
+          "predicted": "Orchard",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        }
+      },
+      "pipeline_errors": []
+    },
+    {
+      "id": "prototype-en-003",
+      "image": "images/prototype-en-003.png",
+      "http_status": 200,
+      "pipeline_status": "complete",
+      "ocr_text_available": true,
+      "extraction_success": true,
+      "ocr_quality": {
+        "expected": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Kabir Singh\nFather Name: Dev Singh\nDistrict: Pithoragarh\nTehsil: Didihat\nVillage: River Bend\nKhata No: KH-2103\nKhasra No: 240/1\nArea: 3.00 hectare\nLand Type: Pasture",
+        "predicted": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\n\nFictional non-sensitive demonstration data\n\nOwner Name: Kabir Singh\n\nFather Name: Dev Singh\n\nDistrict: Pithoragarh\n\nTehsil: Didihat\n\nVillage: River Bend\n\nKhata No: KH-2103\n\nKhasra No: 240/1\n\nArea: 3.00 hectare\n\nLand Type: Pasture",
+        "character_errors": 10,
+        "reference_characters": 265,
+        "word_errors": 0,
+        "reference_words": 37
+      },
+      "fields": {
+        "owner_name": {
+          "expected": "Kabir Singh",
+          "predicted": "Kabir Singh",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "father_name": {
+          "expected": "Dev Singh",
+          "predicted": "Dev Singh",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 9,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "district": {
+          "expected": "Pithoragarh",
+          "predicted": "Pithoragarh",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "tehsil": {
+          "expected": "Didihat",
+          "predicted": "Didihat",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "village": {
+          "expected": "River Bend",
+          "predicted": "River Bend",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 10,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "khata_number": {
+          "expected": "KH-2103",
+          "predicted": "KH-2103",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "khasra_number": {
+          "expected": "240/1",
+          "predicted": "240/1",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 5,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "area": {
+          "expected": {
+            "value": "3.00",
+            "unit": "hectare"
+          },
+          "predicted": {
+            "unit": "hectare",
+            "value": "3.00"
+          },
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 33,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "land_type": {
+          "expected": "Pasture",
+          "predicted": "Pasture",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        }
+      },
+      "pipeline_errors": []
+    },
+    {
+      "id": "prototype-en-004",
+      "image": "images/prototype-en-004.png",
+      "http_status": 200,
+      "pipeline_status": "complete",
+      "ocr_text_available": true,
+      "extraction_success": true,
+      "ocr_quality": {
+        "expected": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\nFictional non-sensitive demonstration data\nOwner Name: Ira Shah\nFather Name: Ketan Shah\nDistrict: Dehradun\nTehsil: Vikasnagar\nVillage: Green Field\nKhata No: KH-2104\nKhasra No: 19/4\nArea: 450 sq m\nLand Type: Residential",
+        "predicted": "SYNTHETIC LAND RECORD — PROTOTYPE EVALUATION\n\nFictional non-sensitive demonstration data\n\nOwner Name: Ira Shah\n\nFather Name: Ketan Shah\n\nDistrict: Dehradun\n\nTehsil: Vikasnagar\n\nVillage: Green Field\n\nKhata No: KH-2104\n\nKhasra No: 19/4\n\nArea: 450 sq m\n\nLand Type: Residential",
+        "character_errors": 10,
+        "reference_characters": 263,
+        "word_errors": 0,
+        "reference_words": 38
+      },
+      "fields": {
+        "owner_name": {
+          "expected": "Ira Shah",
+          "predicted": "Ira Shah",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 8,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "father_name": {
+          "expected": "Ketan Shah",
+          "predicted": "Ketan Shah",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 10,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "district": {
+          "expected": "Dehradun",
+          "predicted": "Dehradun",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 8,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "tehsil": {
+          "expected": "Vikasnagar",
+          "predicted": "Vikasnagar",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 10,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "village": {
+          "expected": "Green Field",
+          "predicted": "Green Field",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 2,
+          "validation_errors": []
+        },
+        "khata_number": {
+          "expected": "KH-2104",
+          "predicted": "KH-2104",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 7,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "khasra_number": {
+          "expected": "19/4",
+          "predicted": "19/4",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 4,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "area": {
+          "expected": {
+            "value": "450",
+            "unit": "square_meter"
+          },
+          "predicted": {
+            "unit": "square_meter",
+            "value": "450"
+          },
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 37,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        },
+        "land_type": {
+          "expected": "Residential",
+          "predicted": "Residential",
+          "raw_exact_match": true,
+          "normalized_match": true,
+          "missing": false,
+          "character_errors": 0,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "reference_words": 1,
+          "validation_errors": []
+        }
+      },
+      "pipeline_errors": []
+    }
+  ]
+}

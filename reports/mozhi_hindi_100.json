@@ -1,0 +1,2037 @@
+{
+  "dataset": {
+    "name": "Mozhi-Hindi",
+    "language": "Hindi",
+    "modality": "printed word images from real scanned pages",
+    "license": "CC BY 4.0",
+    "source_url": "https://ilocr.iiit.ac.in/dataset/7/",
+    "download_url": "https://cdn.iiit.ac.in/cdn/ilocr.iiit.ac.in/public/printed/phase-0/v0.5/hindi/akshara/test.zip",
+    "split": "test",
+    "selection": "first 100 rows in provider test_gt.txt order"
+  },
+  "benchmark_type": "generic_ocr",
+  "evaluated_images": 100,
+  "skipped_images": [],
+  "http_responses_received": 100,
+  "transport_failures": 0,
+  "successful_http_requests": 0,
+  "failed_http_requests": 100,
+  "ocr_text_available": 37,
+  "ocr_text_unavailable": 63,
+  "exact_matches": 0,
+  "exact_match_rate": 0.0,
+  "character_errors": 350,
+  "reference_characters": 336,
+  "character_error_rate": 1.041667,
+  "http_status_counts": {
+    "422": 37,
+    "502": 63
+  },
+  "pipeline_status_counts": {
+    "failed": 100
+  },
+  "land_record_field_extraction_accuracy": null,
+  "land_record_field_extraction_note": "Not applicable: this is a generic word/line OCR dataset, not a labeled land-record field dataset.",
+  "samples": [
+    {
+      "id": "images/0057-0010_2_3_1.jpeg",
+      "image": "images\\0057-0010_2_3_1.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "पड़ता",
+      "prediction": "Vedi",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0010_2_3_2.jpeg",
+      "image": "images\\0057-0010_2_3_2.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "था",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0010_2_3_3.jpeg",
+      "image": "images\\0057-0010_2_3_3.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_1.jpeg",
+      "image": "images\\0057-0095_2_3_1.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "के",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_2.jpeg",
+      "image": "images\\0057-0095_2_3_2.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "बीच",
+      "prediction": "aya",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_3.jpeg",
+      "image": "images\\0057-0095_2_3_3.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "एक",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_4.jpeg",
+      "image": "images\\0057-0095_2_3_4.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "किवाड़",
+      "prediction": "[mars",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_5.jpeg",
+      "image": "images\\0057-0095_2_3_5.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "था",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_6.jpeg",
+      "image": "images\\0057-0095_2_3_6.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_7.jpeg",
+      "image": "images\\0057-0095_2_3_7.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "वह",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_8.jpeg",
+      "image": "images\\0057-0095_2_3_8.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "किवाड़",
+      "prediction": "fHaIs",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_9.jpeg",
+      "image": "images\\0057-0095_2_3_9.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "खोलकर",
+      "prediction": "wWiany",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_10.jpeg",
+      "image": "images\\0057-0095_2_3_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मेरे",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_11.jpeg",
+      "image": "images\\0057-0095_2_3_11.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कमरे",
+      "prediction": "= aig",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_12.jpeg",
+      "image": "images\\0057-0095_2_3_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "में",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_13.jpeg",
+      "image": "images\\0057-0095_2_3_13.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "आया",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_2_3_14.jpeg",
+      "image": "images\\0057-0095_2_3_14.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "और",
+      "prediction": "aryz",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_1.jpeg",
+      "image": "images\\0057-0095_3_10_1.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "जब",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_2.jpeg",
+      "image": "images\\0057-0095_3_10_2.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मैं",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_3.jpeg",
+      "image": "images\\0057-0095_3_10_3.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "होश",
+      "prediction": "1ST",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_4.jpeg",
+      "image": "images\\0057-0095_3_10_4.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "में",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_5.jpeg",
+      "image": "images\\0057-0095_3_10_5.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "आयी",
+      "prediction": "array",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_6.jpeg",
+      "image": "images\\0057-0095_3_10_6.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "तो",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_7.jpeg",
+      "image": "images\\0057-0095_3_10_7.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "दिल",
+      "prediction": "2a",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_8.jpeg",
+      "image": "images\\0057-0095_3_10_8.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "धड़कने",
+      "prediction": "dena",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_9.jpeg",
+      "image": "images\\0057-0095_3_10_9.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "लगा",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_10.jpeg",
+      "image": "images\\0057-0095_3_10_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_11.jpeg",
+      "image": "images\\0057-0095_3_10_11.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "अब",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_12.jpeg",
+      "image": "images\\0057-0095_3_10_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "भी",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_13.jpeg",
+      "image": "images\\0057-0095_3_10_13.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मैंने",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0095_3_10_14.jpeg",
+      "image": "images\\0057-0095_3_10_14.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "वही",
+      "prediction": "qFl",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_1.jpeg",
+      "image": "images\\0057-0096_4_10_1.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "कुछ",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_2.jpeg",
+      "image": "images\\0057-0096_4_10_2.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "दिन",
+      "prediction": "{ca",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_3.jpeg",
+      "image": "images\\0057-0096_4_10_3.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "तक",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_4.jpeg",
+      "image": "images\\0057-0096_4_10_4.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मैं",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_5.jpeg",
+      "image": "images\\0057-0096_4_10_5.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "बाहर",
+      "prediction": "dine",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_6.jpeg",
+      "image": "images\\0057-0096_4_10_6.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कहीं",
+      "prediction": "Hel",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_7.jpeg",
+      "image": "images\\0057-0096_4_10_7.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "निकलती",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_8.jpeg",
+      "image": "images\\0057-0096_4_10_8.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "नहीं",
+      "prediction": "Tet",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_9.jpeg",
+      "image": "images\\0057-0096_4_10_9.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "थी",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_10.jpeg",
+      "image": "images\\0057-0096_4_10_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_11.jpeg",
+      "image": "images\\0057-0096_4_10_11.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "रामकृष्ण",
+      "prediction": "CTHHRT",
+      "exact_match": false,
+      "character_errors": 8,
+      "reference_characters": 8,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_12.jpeg",
+      "image": "images\\0057-0096_4_10_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मठ",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0096_4_10_13.jpeg",
+      "image": "images\\0057-0096_4_10_13.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "में",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_1.jpeg",
+      "image": "images\\0057-0077_2_3_1.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "क्षणिकावेश",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 10,
+      "reference_characters": 10,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_2.jpeg",
+      "image": "images\\0057-0077_2_3_2.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "में",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_3.jpeg",
+      "image": "images\\0057-0077_2_3_3.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मैं",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_4.jpeg",
+      "image": "images\\0057-0077_2_3_4.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "क्या",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_5.jpeg",
+      "image": "images\\0057-0077_2_3_5.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कर",
+      "prediction": "ae",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_6.jpeg",
+      "image": "images\\0057-0077_2_3_6.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "बैठा",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_7.jpeg",
+      "image": "images\\0057-0077_2_3_7.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "!",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_8.jpeg",
+      "image": "images\\0057-0077_2_3_8.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "वह",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_9.jpeg",
+      "image": "images\\0057-0077_2_3_9.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कितना",
+      "prediction": "fHaayqT",
+      "exact_match": false,
+      "character_errors": 7,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_10.jpeg",
+      "image": "images\\0057-0077_2_3_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "उदात्त",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_11.jpeg",
+      "image": "images\\0057-0077_2_3_11.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मन",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_12.jpeg",
+      "image": "images\\0057-0077_2_3_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "वाला",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_13.jpeg",
+      "image": "images\\0057-0077_2_3_13.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "है",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_14.jpeg",
+      "image": "images\\0057-0077_2_3_14.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0077_2_3_15.jpeg",
+      "image": "images\\0057-0077_2_3_15.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "जब",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_1.jpeg",
+      "image": "images\\0057-0083_3_3_1.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "में",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_2.jpeg",
+      "image": "images\\0057-0083_3_3_2.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "उसे",
+      "prediction": "za",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_3.jpeg",
+      "image": "images\\0057-0083_3_3_3.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "कोई",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_4.jpeg",
+      "image": "images\\0057-0083_3_3_4.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "दोष",
+      "prediction": "iq",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_5.jpeg",
+      "image": "images\\0057-0083_3_3_5.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "दिखायी",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_6.jpeg",
+      "image": "images\\0057-0083_3_3_6.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "नहीं",
+      "prediction": "Tel",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_7.jpeg",
+      "image": "images\\0057-0083_3_3_7.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "पड़ता",
+      "prediction": "Gsdl",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_8.jpeg",
+      "image": "images\\0057-0083_3_3_8.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "।",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_9.jpeg",
+      "image": "images\\0057-0083_3_3_9.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "उन",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_10.jpeg",
+      "image": "images\\0057-0083_3_3_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "दिनों",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_11.jpeg",
+      "image": "images\\0057-0083_3_3_11.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "मैं",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_12.jpeg",
+      "image": "images\\0057-0083_3_3_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "ईर्ष्या,",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 8,
+      "reference_characters": 8,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_13.jpeg",
+      "image": "images\\0057-0083_3_3_13.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "द्वेष",
+      "prediction": "qY",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_14.jpeg",
+      "image": "images\\0057-0083_3_3_14.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "ज़ैसे",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0083_3_3_15.jpeg",
+      "image": "images\\0057-0083_3_3_15.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "शब्दों",
+      "prediction": "ayset",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_1.jpeg",
+      "image": "images\\0057-0015_6_20_1.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "“क्या",
+      "prediction": "fSrT",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_2.jpeg",
+      "image": "images\\0057-0015_6_20_2.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "तुमने",
+      "prediction": "aA",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_3.jpeg",
+      "image": "images\\0057-0015_6_20_3.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "उसे",
+      "prediction": "og\n\nLY",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_4.jpeg",
+      "image": "images\\0057-0015_6_20_4.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कभी",
+      "prediction": "Wy",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_5.jpeg",
+      "image": "images\\0057-0015_6_20_5.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "भी",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_6.jpeg",
+      "image": "images\\0057-0015_6_20_6.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "वैसे",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_7.jpeg",
+      "image": "images\\0057-0015_6_20_7.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "लोगों",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_8.jpeg",
+      "image": "images\\0057-0015_6_20_8.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "के",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_9.jpeg",
+      "image": "images\\0057-0015_6_20_9.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "साथ",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_10.jpeg",
+      "image": "images\\0057-0015_6_20_10.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "रहना",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_11.jpeg",
+      "image": "images\\0057-0015_6_20_11.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "देखा",
+      "prediction": "SeaT",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_12.jpeg",
+      "image": "images\\0057-0015_6_20_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "है",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_13.jpeg",
+      "image": "images\\0057-0015_6_20_13.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "?",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 1,
+      "reference_characters": 1,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0015_6_20_14.jpeg",
+      "image": "images\\0057-0015_6_20_14.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "उसका",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_1.jpeg",
+      "image": "images\\0057-0058_5_20_1.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "लिखा",
+      "prediction": "as aT",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 4,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_2.jpeg",
+      "image": "images\\0057-0058_5_20_2.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "था",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_3.jpeg",
+      "image": "images\\0057-0058_5_20_3.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "कि",
+      "prediction": "fa",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_4.jpeg",
+      "image": "images\\0057-0058_5_20_4.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "वे",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_5.jpeg",
+      "image": "images\\0057-0058_5_20_5.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "वाल्टेर",
+      "prediction": "aqleez",
+      "exact_match": false,
+      "character_errors": 7,
+      "reference_characters": 7,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_6.jpeg",
+      "image": "images\\0057-0058_5_20_6.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "आकर",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 3,
+      "reference_characters": 3,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_7.jpeg",
+      "image": "images\\0057-0058_5_20_7.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "रहेंगे",
+      "prediction": "C27",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_8.jpeg",
+      "image": "images\\0057-0058_5_20_8.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "और",
+      "prediction": "arty",
+      "exact_match": false,
+      "character_errors": 4,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_9.jpeg",
+      "image": "images\\0057-0058_5_20_9.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "इसलिए",
+      "prediction": "safau",
+      "exact_match": false,
+      "character_errors": 5,
+      "reference_characters": 5,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_10.jpeg",
+      "image": "images\\0057-0058_5_20_10.jpeg",
+      "http_status": 422,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": true,
+      "ground_truth": "किराये",
+      "prediction": "xa’",
+      "exact_match": false,
+      "character_errors": 6,
+      "reference_characters": 6,
+      "pipeline_errors": [
+        {
+          "message": "Missing expected OCR field labels: Owner Name, Father Name, District, Tehsil, Village, Khata No, Khasra No, Area, Land Type",
+          "stage": "extraction"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_11.jpeg",
+      "image": "images\\0057-0058_5_20_11.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "पर",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    },
+    {
+      "id": "images/0057-0058_5_20_12.jpeg",
+      "image": "images\\0057-0058_5_20_12.jpeg",
+      "http_status": 502,
+      "pipeline_status": "failed",
+      "http_response_received": true,
+      "http_request_success": false,
+      "ocr_text_available": false,
+      "ground_truth": "घर",
+      "prediction": "",
+      "exact_match": false,
+      "character_errors": 2,
+      "reference_characters": 2,
+      "pipeline_errors": [
+        {
+          "message": "OCR produced no text",
+          "stage": "ocr"
+        }
+      ]
+    }
+  ]
+}

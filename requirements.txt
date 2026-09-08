@@ -1,0 +1,9 @@
+pytesseract
+Pillow
+pdf2image
+Flask
+Flask
+fastapi
+uvicorn
+python-multipart
+httpx

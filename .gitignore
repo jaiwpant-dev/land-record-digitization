@@ -7,6 +7,17 @@
 *.p12
 *.pfx
 
+# Python & Virtual Environments
+venv/
+venv*/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.exe
+
+# Logs
+*.log
+
 # Dependencies and generated output
 node_modules/
 dist/
@@ -14,7 +25,6 @@ build/
 coverage/
 .cache/
 .parcel-cache/
-*.log
 
 # Editor and operating-system files
 .DS_Store
@@ -22,5 +32,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Separate backend project; frontend root only is being published
+# Separate backend project (historical ignore)
 official-portal/
