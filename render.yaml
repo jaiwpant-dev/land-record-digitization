@@ -1,9 +1,12 @@
 services:
   - type: web
     name: land-record-backend
-    env: docker
+    runtime: docker
+    repo: https://github.com/jaiwpant-dev/land-record-digitization.git
+    branch: main
     rootDir: backend
     dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     autoDeploy: true
     healthCheckPath: /health
