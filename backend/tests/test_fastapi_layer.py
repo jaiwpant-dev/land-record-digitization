@@ -15,6 +15,12 @@ from api.main import create_app
 from api.services.land_record_service import LandRecordService
 
 
+PROTOTYPE_IMAGES = (
+    PROJECT_ROOT / "benchmarks" / "data" / "prototype_land_record_test" / "images" / "prototype-en-001.png",
+    PROJECT_ROOT / "benchmarks" / "data" / "prototype_land_record_test" / "images" / "prototype-en-002.png",
+)
+
+
 class MemoryRecordRepository:
     def __init__(self) -> None:
         self.rows: dict[str, dict] = {}
@@ -67,6 +73,23 @@ class FastApiLayerTests(unittest.TestCase):
         self.assertEqual(upload.json()["pipeline"]["status"], "failed")
         self.assertEqual(self.client.get("/api/v1/records").status_code, 503)
         self.assertEqual(self.client.get(f"/api/v1/records/{uuid4()}").status_code, 503)
+
+    def test_two_real_uploaded_documents_produce_distinct_extracted_records(self) -> None:
+        """Guard against a fixture, cache, or hard-coded processing response."""
+        results = []
+        for image in PROTOTYPE_IMAGES:
+            response = self.client.post(
+                "/api/v1/records/process",
+                files={"document": (image.name, image.read_bytes(), "image/png")},
+                data={"language": "eng"},
+            )
+            self.assertEqual(response.status_code, 200)
+            results.append(response.json()["pipeline"]["normalized_data"])
+
+        self.assertNotEqual(results[0]["owner_name"], results[1]["owner_name"])
+        self.assertNotEqual(results[0]["khasra_number"], results[1]["khasra_number"])
+        self.assertNotEqual(results[0]["village"], results[1]["village"])
+        self.assertNotEqual(results[0]["area"], results[1]["area"])
 
     def test_database_record_crud_uses_the_injected_service_boundary(self) -> None:
         client = TestClient(create_app(land_record_service=LandRecordService(MemoryRecordRepository())))

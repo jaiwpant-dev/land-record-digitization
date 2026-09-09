@@ -3,9 +3,9 @@
 from typing import Annotated
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, File, HTTPException, Query, Request, Response, UploadFile, status
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Query, Request, Response, UploadFile, status
 
-from api.repositories.land_records import PersistenceConfigurationError, PersistenceError, RecordNotFoundError
+from api.repositories.land_records import PersistenceAuthenticationError, PersistenceConfigurationError, PersistenceError, RecordNotFoundError
 from api.schemas.records import LandRecordCreate, LandRecordRead, LandRecordUpdate, RecordListResponse
 from api.services.land_record_service import LandRecordService
 from api.services.record_processing_service import RecordProcessingService
@@ -30,6 +30,8 @@ ProcessingService = Annotated[RecordProcessingService, Depends(get_record_proces
 def _database_error(exc: Exception) -> HTTPException:
     if isinstance(exc, PersistenceConfigurationError):
         return HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(exc))
+    if isinstance(exc, PersistenceAuthenticationError):
+        return HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail=str(exc))
     if isinstance(exc, RecordNotFoundError):
         return HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Land record not found")
     return HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Database request failed")
@@ -37,7 +39,7 @@ def _database_error(exc: Exception) -> HTTPException:
 
 def _pipeline_http_status(result: dict[str, object]) -> int:
     if result.get("status") == "complete":
-        return status.HTTP_201_CREATED
+        return status.HTTP_200_OK
     if result.get("status") == "needs_review":
         return status.HTTP_422_UNPROCESSABLE_CONTENT
     errors = result.get("errors")
@@ -45,15 +47,17 @@ def _pipeline_http_status(result: dict[str, object]) -> int:
     return status.HTTP_502_BAD_GATEWAY if stage == "ocr" else status.HTTP_422_UNPROCESSABLE_CONTENT
 
 
-@router.post("/process", status_code=status.HTTP_201_CREATED, summary="Process and persist a land-record document")
-async def process_document(service: ProcessingService, response: Response, document: UploadFile = File(...)) -> dict[str, object]:
-    """Run the existing OCR pipeline and persist its structured land-record output."""
-    try:
-        processed = await service.process(document)
-        response.status_code = _pipeline_http_status(processed["pipeline"])
-        return processed
-    except (PersistenceConfigurationError, PersistenceError, RecordNotFoundError) as exc:
-        raise _database_error(exc) from exc
+@router.post("/process", status_code=status.HTTP_200_OK, summary="Process a land-record document without saving it")
+async def process_document(
+    service: ProcessingService,
+    response: Response,
+    document: UploadFile = File(...),
+    language: str = Form("eng"),
+) -> dict[str, object]:
+    """Run OCR and return evidence; saving is an explicit later request."""
+    processed = await service.process(document, language=language)
+    response.status_code = _pipeline_http_status(processed["pipeline"])
+    return processed
 
 
 @router.post("", response_model=LandRecordRead, status_code=status.HTTP_201_CREATED, summary="Persist a land record")

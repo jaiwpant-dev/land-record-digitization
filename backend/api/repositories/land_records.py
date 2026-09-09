@@ -1,11 +1,15 @@
 """Supabase/PostgREST adapter for land-record persistence."""
 
 import os
+import logging
 from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
 import httpx
+
+
+logger = logging.getLogger(__name__)
 
 
 class PersistenceConfigurationError(RuntimeError):
@@ -20,33 +24,40 @@ class PersistenceError(RuntimeError):
     """Raised for a database failure that is safe to expose as a generic API error."""
 
 
+class PersistenceAuthenticationError(PersistenceError):
+    """Raised when Supabase rejects the server-only credential."""
+
+
+def _environment_value(name: str) -> str:
+    """Read a Render secret defensively without ever logging its value."""
+    value = os.getenv(name, "").strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        value = value[1:-1].strip()
+    return value
+
+
 class SupabaseLandRecordRepository:
     """Keep all PostgREST details outside routes and application services."""
 
     table_name = "land_records"
-    EXISTING_DB_COLUMNS = {
+    DB_COLUMNS = {
         "id", "created_at", "updated_at", "owner_name", "father_name",
         "district", "tehsil", "village", "khata_number", "khasra_number",
-        "land_area", "land_type", "record_date", "status"
+        "document_url", "area", "area_unit", "land_type", "record_date",
+        "validation_status", "validation_result", "confidence", "processing_status",
     }
 
     def __init__(
         self, *, url: str | None = None, key: str | None = None, transport: httpx.AsyncBaseTransport | None = None
     ) -> None:
-        self._url = (url or os.getenv("SUPABASE_URL", "")).rstrip("/")
-        self._key = key or os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_ANON_KEY", "")
+        self._url = (url if url is not None else _environment_value("SUPABASE_URL")).strip().rstrip("/")
+        self._key = (key if key is not None else _environment_value("SUPABASE_SERVICE_ROLE_KEY")).strip()
         self._transport = transport
 
     @classmethod
     def _to_db_payload(cls, values: dict[str, Any]) -> dict[str, Any]:
         payload = dict(values)
-        if "area" in payload and "land_area" not in payload:
-            payload["land_area"] = payload.pop("area")
-        if "processing_status" in payload and "status" not in payload:
-            payload["status"] = payload.pop("processing_status")
-        elif "validation_status" in payload and "status" not in payload:
-            payload["status"] = payload.pop("validation_status")
-        filtered = {k: v for k, v in payload.items() if k in cls.EXISTING_DB_COLUMNS and v is not None}
+        filtered = {k: v for k, v in payload.items() if k in cls.DB_COLUMNS and v is not None}
         return filtered if filtered else payload
 
     @classmethod
@@ -62,7 +73,7 @@ class SupabaseLandRecordRepository:
         return data
 
     def _headers(self, *, return_representation: bool = False) -> dict[str, str]:
-        if not self._url or not self._key:
+        if not self._url.startswith(("https://", "http://")) or not self._key:
             raise PersistenceConfigurationError(
                 "Database persistence is not configured. Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY."
             )
@@ -86,7 +97,11 @@ class SupabaseLandRecordRepository:
         except httpx.HTTPError as exc:
             raise PersistenceError("Database request failed") from exc
 
+        if response.status_code in {401, 403}:
+            logger.warning("Supabase rejected backend credentials with HTTP %s", response.status_code)
+            raise PersistenceAuthenticationError("Database authentication failed. Check server-side Supabase configuration.")
         if response.status_code >= 400:
+            logger.warning("Supabase request failed with HTTP %s", response.status_code)
             raise PersistenceError("Database request failed")
         if not response.content:
             return []

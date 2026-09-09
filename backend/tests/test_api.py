@@ -65,11 +65,11 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(empty.status_code, 400)
         self.assertEqual(empty.get_json()["errors"][0]["stage"], "ingestion")
 
-    def test_unsupported_file_type_is_rejected_before_pipeline_processing(self) -> None:
+    def test_invalid_pdf_reaches_pdf_rendering_and_returns_a_processing_error(self) -> None:
         response = self.post(b"%PDF-1.7", "record.pdf")
 
-        self.assertEqual(response.status_code, 400)
-        self.assertEqual(response.get_json()["errors"][0]["stage"], "upload")
+        self.assertEqual(response.status_code, 422)
+        self.assertEqual(response.get_json()["errors"][0]["stage"], "preprocessing")
 
     def test_extension_signature_mismatch_is_rejected_by_existing_ingestion(self) -> None:
         response = self.post(b"\xff\xd8\xff\xe0jpeg-content", "record.png")

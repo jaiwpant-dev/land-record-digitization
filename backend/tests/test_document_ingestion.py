@@ -33,14 +33,17 @@ class DocumentIngestionTests(unittest.TestCase):
         self.assertEqual(result["status"], "rejected")
         self.assertIn("does not exist", result["errors"][0]["message"])
 
-    def test_unsupported_format_is_rejected(self) -> None:
-        with tempfile.NamedTemporaryFile(suffix=".pdf") as document_file:
+    def test_pdf_signature_is_accepted_for_rendering(self) -> None:
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as document_file:
             document_file.write(b"%PDF-1.7")
-            document_file.flush()
-            result = ingest_document(document_file.name)
+            document_path = Path(document_file.name)
+        try:
+            result = ingest_document(document_path)
+        finally:
+            document_path.unlink(missing_ok=True)
 
-        self.assertEqual(result["status"], "rejected")
-        self.assertIn("Unsupported", result["errors"][0]["message"])
+        self.assertEqual(result["status"], "accepted")
+        self.assertEqual(result["document"]["format"], "pdf")
 
     def test_empty_document_is_rejected(self) -> None:
         with tempfile.NamedTemporaryFile(suffix=".png") as document_file:

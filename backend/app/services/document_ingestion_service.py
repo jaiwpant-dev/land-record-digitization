@@ -13,6 +13,7 @@ SUPPORTED_FORMATS = {
         "media_type": "image/png",
         "signature": b"\x89PNG\r\n\x1a\n",
     },
+    ".pdf": {"format": "pdf", "media_type": "application/pdf", "signature": b"%PDF-"},
 }
 
 
@@ -47,7 +48,7 @@ def ingest_document(
     if format_specification is None:
         return _rejected(
             str(path),
-            "Unsupported document format. Supported formats: JPG, JPEG, PNG",
+            "Unsupported document format. Supported formats: JPG, JPEG, PNG, PDF",
         )
 
     try:

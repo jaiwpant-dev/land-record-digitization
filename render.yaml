@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: land-record-backend
+    env: docker
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: LAND_RECORD_API_CORS_ORIGINS
+        sync: false

@@ -9,21 +9,28 @@ from typing import Any
 
 from fastapi import HTTPException, UploadFile, status
 
-from api.schemas.records import LandRecordCreate, LandRecordRead
-from api.services.land_record_service import LandRecordService
 from app.services.document_ingestion_service import MAX_DOCUMENT_SIZE_BYTES
 from app.services.ocr_pipeline_service import process_land_record_document
+from app.services.ocr_service import SUPPORTED_OCR_LANGUAGES
 
 
 class RecordProcessingService:
-    """Run the existing document pipeline, then persist its structured result."""
+    """Run an uploaded document through OCR without persisting it.
 
-    def __init__(self, record_service: LandRecordService) -> None:
-        self._record_service = record_service
+    Persistence is deliberately a separate user action.  This boundary ensures
+    a database outage can never hide a completed OCR result or turn processing
+    into an implicit save.
+    """
 
-    async def process(self, document: UploadFile) -> dict[str, Any]:
+    async def process(self, document: UploadFile, *, language: str = "eng") -> dict[str, Any]:
         if not document.filename:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="A document filename is required")
+        language = language.casefold()
+        if language not in SUPPORTED_OCR_LANGUAGES:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Unsupported OCR language. Supported languages: {', '.join(sorted(SUPPORTED_OCR_LANGUAGES))}",
+            )
 
         suffix = Path(document.filename).suffix.casefold()
         temp_path: str | None = None
@@ -37,7 +44,7 @@ class RecordProcessingService:
                         raise HTTPException(status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, detail="Document exceeds 20 MiB")
                     temporary.write(chunk)
 
-            result = process_land_record_document(temp_path)
+            result = process_land_record_document(temp_path, language=language)
         finally:
             if temp_path:
                 try:
@@ -50,31 +57,4 @@ class RecordProcessingService:
             public_result["document"].pop("source_path", None)
             public_result["document"]["filename"] = document.filename
 
-        if result.get("status") == "failed":
-            return {"pipeline": public_result, "record": None}
-
-        record = await self._record_service.create(self._to_land_record(result))
-        return {"pipeline": public_result, "record": record}
-
-    @staticmethod
-    def _to_land_record(result: dict[str, Any]) -> LandRecordCreate:
-        normalized = result.get("normalized_data") if isinstance(result.get("normalized_data"), dict) else {}
-        validation = result.get("validation") if isinstance(result.get("validation"), dict) else None
-        area = normalized.get("area") if isinstance(normalized.get("area"), dict) else {}
-        return LandRecordCreate(
-            owner_name=normalized.get("owner_name"),
-            father_name=normalized.get("father_name"),
-            district=normalized.get("district"),
-            tehsil=normalized.get("tehsil"),
-            village=normalized.get("village"),
-            khata_number=normalized.get("khata_number"),
-            khasra_number=normalized.get("khasra_number"),
-            area=area.get("value"),
-            area_unit=area.get("unit"),
-            land_type=normalized.get("land_type"),
-            record_date=datetime.now(timezone.utc).date().isoformat(),
-            validation_status="valid" if validation and validation.get("is_valid") else "needs_review",
-            validation_result=validation,
-            confidence=result.get("confidence") if isinstance(result.get("confidence"), dict) else None,
-            processing_status=str(result.get("status", "unknown")),
-        )
+        return {"pipeline": public_result, "record": None}

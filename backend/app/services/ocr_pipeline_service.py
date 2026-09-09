@@ -4,7 +4,9 @@ This module deliberately keeps evidence from each layer separate.  It does not
 try to repair OCR output or replace values produced by the extractor.
 """
 
+import os
 from pathlib import Path
+import tempfile
 from typing import Any
 
 from app.services.confidence_service import calculate_field_confidence
@@ -119,11 +121,31 @@ def process_land_record_document(document_path: str, language: str = "eng") -> d
             "document": None,
         }
 
+    rendered_path: str | None = None
+    source_path = ingestion["document"]["source_path"]
     try:
+        if ingestion["document"]["format"] == "pdf":
+            # The pipeline handles one record per request, so render only page
+            # one rather than silently combining different records in a PDF.
+            from pdf2image import convert_from_path
+
+            pages = convert_from_path(source_path, dpi=300, first_page=1, last_page=1)
+            if not pages:
+                raise ValueError("PDF has no renderable first page")
+            descriptor, rendered_path = tempfile.mkstemp(prefix="land-record-pdf-", suffix=".png")
+            os.close(descriptor)
+            pages[0].save(rendered_path, format="PNG")
+            source_path = rendered_path
+
         from app.services.preprocessing_service import preprocess_image
 
-        preprocessing = preprocess_image(ingestion["document"]["source_path"])
-    except (FileNotFoundError, RuntimeError, ValueError, OSError) as exc:
+        preprocessing = preprocess_image(source_path)
+    except Exception as exc:
+        # pdf2image raises library-specific errors for malformed PDFs and for a
+        # missing Poppler binary.  Report those as genuine preprocessing
+        # failures, never as a successful OCR result or an adapter 500.
+        if rendered_path:
+            Path(rendered_path).unlink(missing_ok=True)
         return {
             **_failure("", "preprocessing", str(exc)),
             "document": ingestion["document"],
@@ -134,6 +156,8 @@ def process_land_record_document(document_path: str, language: str = "eng") -> d
         result = process_land_record_image(preprocessing["processed_path"], language=language)
     finally:
         Path(preprocessing["processed_path"]).unlink(missing_ok=True)
+        if rendered_path:
+            Path(rendered_path).unlink(missing_ok=True)
     result["document"] = ingestion["document"]
     result["preprocessing"] = {
         key: value for key, value in preprocessing.items() if key != "processed_path"
